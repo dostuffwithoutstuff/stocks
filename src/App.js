@@ -9,16 +9,13 @@ export default function App() {
 
   // read our data file in the public folder
   const getConfig = new Promise((resolve, reject) => {
-    fetch('data.json').then(response => {
-      return response? response.json() : [];
-    }).then(data => {
-      // Work with JSON data here
-      console.log(data);
-    }).catch(err => {
-      // Do something for an error here
-      console.log("Error Reading data " + err);
-    });
-
+    fetch('data.json')
+      .then(function (response) {
+        resolve(response.json());
+      })
+      .catch(function (err) {
+        reject(Error("Get config failed"));
+      });
   });
 
   // handle canadian stocks
