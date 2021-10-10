@@ -1,12 +1,13 @@
 # Stocks
 
-This sample gets stock info (dynamically) and analyst predictions (manully).
+This sample gets stock info (dynamically) and analyst predictions (manually).
 
 ## Setup
 
 1. update public data.json with tickers (optional to add analyst predictions)
 2. check in changes
-3. cmd: npm run deploy
+3. cmd: npm install
+4. cmd: npm run deploy
 
 ### Notes
 
@@ -25,7 +26,7 @@ This sample gets stock info (dynamically) and analyst predictions (manully).
       * "predeploy": "npm run build",
       * "deploy": "gh-pages -d build"
 
-4. To run locally, use npm start 
+4. To run locally, cmd: npm start 
 
-### run time sample
+### Run time sample
 https://thingsthatdothings.github.io/stocks/

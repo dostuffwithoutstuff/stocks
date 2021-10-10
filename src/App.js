@@ -35,7 +35,6 @@ const columns = [
   {
     field: 'Change',
     headerName: 'Change',
-    //type: 'number',
   },
   {
     field: '52W-Low',
@@ -232,6 +231,17 @@ const columns = [
     headerName: 'Sept 2021 Upside',
     width: 150,
   },
+  {
+    field: 'AP - Oct 2021',
+    headerName: 'Oct 2021',
+    type: 'number',
+  },
+  {
+    field: 'AP - Oct 2021 Upside',
+    headerName: 'Oct 2021 Upside',
+    width: 150,
+  },
+  
   // {
   //   field: 'AP - xxx 2021',
   //   headerName: 'xxx 2021',
@@ -260,7 +270,7 @@ const sampleData = [
     "AP - Jun 2021": "91",
     "AP - Aug 2021": "93",
   },
-  
+
   {
     "id": 600,
     "ticker": "TSLA",
@@ -276,13 +286,13 @@ const sampleData = [
     "AP - Aug 2021": "900",
     "AP - Sep 2021": "862",
   },
-  
+
   {
     "id": 700,
     "ticker": "XIU",
     "type": "etf"
   },
-  
+
   {
     "id": 1400,
     "ticker": "QQQ",
@@ -318,7 +328,14 @@ export default function App() {
 
   // read our data file in the public folder
   const getConfig = new Promise((resolve, reject) => {
-    fetch('data.json')
+    fetch('./data.json',
+      {
+        // headers: {
+        //   'Content-Type': 'application/json',
+        //   'Accept': 'application/json'
+        // }
+      }
+    )
       .then(function (response) {
         resolve(response.json());
         //resolve(sampleData);
@@ -457,7 +474,7 @@ export default function App() {
       }
 
       if (props['exchange'].startsWith('NYSE')) {
-          ticker = ticker + '-N/';
+        ticker = ticker + '-N/';
       }
       else { //Nasdaq
         ticker = ticker + '-Q/';
