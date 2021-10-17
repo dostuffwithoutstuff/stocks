@@ -15,7 +15,7 @@ This sample gets stock info (dynamically) and analyst predictions (manually).
    npm install --save request
    npm install --save request-promise
 
-2. For CORS proxy use: https://cors.bridged.cc
+2. To bypass CORS errors, switch out proxy services in App.js as needed
 
 3. To deploy to github pages use: 
 
@@ -26,7 +26,9 @@ This sample gets stock info (dynamically) and analyst predictions (manually).
       * "predeploy": "npm run build",
       * "deploy": "gh-pages -d build"
 
-4. To run locally, cmd: npm start 
+4. To run locally:
+  remove the homepage in package.json, then
+  cmd: npm start 
 
 ### Run time sample
 https://thingsthatdothings.github.io/stocks/

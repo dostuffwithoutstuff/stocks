@@ -4,6 +4,14 @@ import { DataGrid } from '@mui/x-data-grid';
 import { makeStyles } from '@mui/styles';
 import "./App.css";
 
+
+//const proxy = 'https://cors-anywhere.herokuapp.com/';  // unlock time period
+//const proxy = 'https://cors.bridged.cc/';   // api key
+const proxy = 'https://api.allorigins.win/get?url=';    // data.contents
+//const proxy = 'https://api.codetabs.com/v1/proxy/?quest=';  // 5 calls per second
+
+
+
 const columns = [
   {
     field: 'id',
@@ -222,13 +230,13 @@ const columns = [
     width: 150,
   },
   {
-    field: 'AP - Sept 2021',
-    headerName: 'Sept 2021',
+    field: 'AP - Sep 2021',
+    headerName: 'Sep 2021',
     type: 'number',
   },
   {
-    field: 'AP - Sept 2021 Upside',
-    headerName: 'Sept 2021 Upside',
+    field: 'AP - Sep 2021 Upside',
+    headerName: 'Sep 2021 Upside',
     width: 150,
   },
   {
@@ -241,7 +249,7 @@ const columns = [
     headerName: 'Oct 2021 Upside',
     width: 150,
   },
-  
+
   // {
   //   field: 'AP - xxx 2021',
   //   headerName: 'xxx 2021',
@@ -349,14 +357,15 @@ export default function App() {
   const handleStocks = (props) => {
     const ticker = props.ticker;
     const country = props.country ? props.country : 'CAN';
-    let url = 'https://cors.bridged.cc/https://marketsandresearch.td.com/tdwca/Public/Stocks/Overview/ca/';
+    let url = proxy + 'https://marketsandresearch.td.com/tdwca/Public/Stocks/Overview/ca/';
     if (country === 'US') {
-      url = 'https://cors.bridged.cc/https://marketsandresearch.td.com/tdwca/Public/Stocks/Overview/us/';
+      url = proxy + 'https://marketsandresearch.td.com/tdwca/Public/Stocks/Overview/us/';
     }
 
     rp(url + ticker)
       .then(html => {
         // Convert the HTML string into a document object
+        html = JSON.parse(html).contents; // for this proxy only
         var parser = new DOMParser();
         var doc = parser.parseFromString(html, 'text/html');
         var elm = {};
@@ -409,14 +418,15 @@ export default function App() {
     const ticker = props.ticker;
     const country = props.country ? props.country : 'CAN';
 
-    let url = 'https://cors.bridged.cc/https://marketsandresearch.td.com/tdwca/Public/ETFsProfile/Summary/ca/';
+    let url = proxy + 'https://marketsandresearch.td.com/tdwca/Public/ETFsProfile/Summary/ca/';
     if (country === 'US') {
-      url = 'https://cors.bridged.cc/https://marketsandresearch.td.com/tdwca/Public/ETFsProfile/Summary/us/';
+      url = proxy + 'https://marketsandresearch.td.com/tdwca/Public/ETFsProfile/Summary/us/';
     }
 
     rp(url + ticker)
       .then(html => {
         // Convert the HTML string into a document object
+        html = JSON.parse(html).contents; // for this proxy only
         var parser = new DOMParser();
         var doc = parser.parseFromString(html, 'text/html');
         var elm = {};
@@ -466,7 +476,7 @@ export default function App() {
     const country = props.country ? props.country : 'CAN';
     const id = props.id;
 
-    let url = 'https://cors.bridged.cc/https://www.theglobeandmail.com/investing/markets/stocks/' + ticker + '-T/';
+    let url = proxy + 'https://www.theglobeandmail.com/investing/markets/stocks/' + ticker + '-T/';
     if (country === 'US') {
       // the above url doesn't work well with US ETFs
       if (props['type'] === 'etf') {
@@ -479,12 +489,13 @@ export default function App() {
       else { //Nasdaq
         ticker = ticker + '-Q/';
       }
-      url = 'https://cors.bridged.cc/https://www.theglobeandmail.com/investing/markets/stocks/' + ticker;
+      url = proxy + 'https://www.theglobeandmail.com/investing/markets/stocks/' + ticker;
     }
 
     rp(url)
       .then(html => {
         // Convert the HTML string into a document object
+        html = JSON.parse(html).contents; // for this proxy only
         var parser = new DOMParser();
         var doc = parser.parseFromString(html, 'text/html');
 
@@ -520,14 +531,15 @@ export default function App() {
     const country = props.country ? props.country : 'CAN';
     const id = props.id;
 
-    let url = 'https://cors.bridged.cc/https://marketsandresearch.td.com/tdwca/Public/ETFsProfile/PerformanceAndRisk/ca/';
+    let url = proxy + 'https://marketsandresearch.td.com/tdwca/Public/ETFsProfile/PerformanceAndRisk/ca/';
     if (country === 'US') {
-      url = 'https://cors.bridged.cc/https://marketsandresearch.td.com/tdwca/Public/ETFsProfile/PerformanceAndRisk/us/';
+      url = proxy + 'https://marketsandresearch.td.com/tdwca/Public/ETFsProfile/PerformanceAndRisk/us/';
     }
 
     rp(url + ticker)
       .then(html => {
         // Convert the HTML string into a document object
+        html = JSON.parse(html).contents; // for this proxy only
         var parser = new DOMParser();
         var doc = parser.parseFromString(html, 'text/html');
 
