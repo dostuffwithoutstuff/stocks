@@ -65,8 +65,8 @@ const columns = [
     type: 'number',
   },
   {
-    field: 'Dividend-Yield',
-    headerName: 'Dividend-Yield',
+    field: 'DividendYield',
+    headerName: 'DividendYield',
     type: 'number',
   },
   {
@@ -105,8 +105,8 @@ const columns = [
     type: 'number',
   },
   {
-    field: 'Dividend-Yield',
-    headerName: 'Dividend-Yield',
+    field: 'DividendYield',
+    headerName: 'DividendYield',
     type: 'number',
   },
   {
@@ -384,7 +384,7 @@ export default function App() {
 
         //stocks
         elm['Market-Cap'] = doc.querySelectorAll('.fundamentalsTable tr')[0].querySelectorAll('div')[1].textContent;
-        elm['Dividend-Yield'] = doc.querySelectorAll('.fundamentalsTable tr')[3].querySelectorAll('div')[1].textContent;
+        elm['DividendYield'] = doc.querySelectorAll('.fundamentalsTable tr')[3].querySelectorAll('div')[1].textContent;
         elm['Ex-Dividend-Date'] = doc.querySelectorAll('.fundamentalsTable tr')[5].querySelectorAll('div')[1].textContent;
 
         // loop through Analyst Prices
@@ -447,7 +447,7 @@ export default function App() {
         elm['Category'] = doc.querySelector('.topFundInfo').querySelectorAll('tr')[1].querySelector('span:last-child').textContent;
         elm['Inception'] = doc.querySelector('.topFundInfo').querySelectorAll('tr')[3].querySelector('span:last-child').textContent;
         elm['Assets'] = doc.querySelectorAll(".FundProfileView table tr")[5].querySelector('td')?.textContent;
-        elm['Dividend-Yield'] = doc.querySelectorAll(".FundProfileView table tr")[10].querySelector('td')?.textContent;
+        elm['DividendYield'] = doc.querySelectorAll(".FundProfileView table tr")[10].querySelector('td')?.textContent;
         elm['Ex-Dividend-Date'] = doc.querySelectorAll(".FundProfileView table tr")[12].querySelector('td')?.textContent;
         elm['MER'] = doc.querySelectorAll(".FundProfileView table tr")[19].querySelector('td')?.textContent;
 
@@ -616,6 +616,9 @@ export default function App() {
                 else if (params.field === 'Change') {
                   return Number(params.value?.split('%')[0]) >= 0 ? 'hot' : 'cold';
                 }
+                else if (['5d-return','1m-return','3m-return','6m-return','1y-return','3y-return','5y-return','10y-return'].indexOf(params.field) !== -1) {
+                  return Number(params.value?.split('%')[0]) >= 2.5 ? 'hot' : null;
+                }                
                 else if (params.field === 'id') {
                   return 'sticky';
                 }
@@ -624,7 +627,7 @@ export default function App() {
                 }
               }}
               onRowDoubleClick={(params, event) => {
-                alert(`${params.row.Ticker} --> ${params.row.Name} --> ${params.row.Price}`);
+                alert(`${params.row.Ticker} --> ${params.row.Name} --> ${params.row.Price} --> Div ${params.row.DividendYield}`);
               }}
             />
           </div>
