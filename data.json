@@ -11,7 +11,8 @@
         "AP - May 2021": "91.71",
         "AP - Jun 2021": "91",
         "AP - Aug 2021": "93",
-        "AP - Sep 2021": "93"
+        "AP - Sep 2021": "93",
+        "AP - Nov 2021": "91"
     },
     {
         "id": 101,
@@ -24,7 +25,8 @@
         "AP - Apr 2021": "136",
         "AP - May 2021": "153",
         "AP - Jun 2021": "158.5",
-        "AP - Aug 2021": "161.6"
+        "AP - Aug 2021": "161.6",
+        "AP - Nov 2021": "158"
     },
     {
         "id": 102,
@@ -38,7 +40,8 @@
         "AP - May 2021": "140",
         "AP - Jun 2021": "139",
         "AP - Aug 2021": "146",
-        "AP - Oct 2021": "139"
+        "AP - Oct 2021": "139",
+        "AP - Nov 2021": "145.5"
     },
     {
         "id": 103,
@@ -65,7 +68,8 @@
         "AP - May 2021": "86.25",
         "AP - Jun 2021": "88.4",
         "AP - Aug 2021": "87.4",
-        "AP - Oct 2021": "87"
+        "AP - Oct 2021": "87",
+        "AP - Nov 2021": "89"
     },
     {
         "id": 200,
@@ -80,7 +84,8 @@
         "AP - Jun 2021": "40.5",
         "AP - Aug 2021": "40.5",
         "AP - Sep 2021": "40.5",
-        "AP - Oct 2021": "40.5"
+        "AP - Oct 2021": "40.5",
+        "AP - Nov 2021": "40.5"
     },
     {
         "id": 201,
@@ -95,7 +100,8 @@
         "AP - Jun 2021": "29",
         "AP - Aug 2021": "32",
         "AP - Sep 2021": "32",
-        "AP - Oct 2021": "32"
+        "AP - Oct 2021": "32",
+        "AP - Nov 2021": "34"
     },
     {
         "id": 202,
@@ -126,7 +132,8 @@
         "AP - Jun 2021": "67",
         "AP - Aug 2021": "70",
         "AP - Sep 2021": "74.25",
-        "AP - Oct 2021": "71"
+        "AP - Oct 2021": "71",
+        "AP - Nov 2021": "75"
     },
     {
         "id": 300,
@@ -187,7 +194,7 @@
         "AP - Aug 2021": "32",
         "AP - Sep 2021": "34",
         "AP - Oct 2021": "43",
-        "AP - Nov 2021": "39"
+        "AP - Nov 2021": "40"
     },
     {
         "id": 304,
@@ -202,7 +209,7 @@
         "AP - Jun 2021": "54.5",
         "AP - Aug 2021": "56",
         "AP - Sep 2021": "56",
-        "AP - Oct 2021": "55"
+        "AP - Oct 2021": "57"
     },
     {
         "id": 305,
@@ -216,7 +223,8 @@
         "AP - May 2021": "20.75",
         "AP - Aug 2021": "21",
         "AP - Sep 2021": "21",
-        "AP - Oct 2021": "20.5"
+        "AP - Oct 2021": "20.5",
+        "AP - Nov 2021": "20.75"
     },
     {
         "id": 306,
@@ -227,7 +235,8 @@
         "AP - Apr 2021": "39.14",
         "AP - Aug 2021": "37",
         "AP - Sep 2021": "37",
-        "AP - Oct 2021": "39"
+        "AP - Oct 2021": "39",
+        "AP - Nov 2021": "39"
     },
     {
         "id": 307,
@@ -239,7 +248,8 @@
         "AP - Apr 2021": "21.5",
         "AP - May 2021": "21",
         "AP - Aug 2021": "17.5",
-        "AP - Oct 2021": "18"
+        "AP - Oct 2021": "18",
+        "AP - Nov 2021": "18.5"
     },
     {
         "id": 308,
@@ -252,7 +262,8 @@
         "AP - Jun 2021": "62",
         "AP - Aug 2021": "60",
         "AP - Sep 2021": "65",
-        "AP - Oct 2021": "62"
+        "AP - Oct 2021": "62",
+        "AP - Nov 2021": "61.8"
     },
     {
         "id": 309,
@@ -266,7 +277,7 @@
         "AP - May 2021": "53",
         "AP - Aug 2021": "57",
         "AP - Sep 2021": "50",
-        "AP - Nov 2021": "43.5"
+        "AP - Nov 2021": "47"
     },
     {
         "id": 310,
@@ -294,7 +305,8 @@
         "AP - May 2021": "24",
         "AP - Aug 2021": "25.5",
         "AP - Sep 2021": "27",
-        "AP - Oct 2021": "26.65"
+        "AP - Oct 2021": "26.65",
+        "AP - Nov 2021": "24.95"
     },
     {
         "id": 312,
@@ -309,22 +321,35 @@
         "AP - Jun 2021": "49",
         "AP - Aug 2021": "45",
         "AP - Sep 2021": "48",
-        "AP - Oct 2021": "50"
+        "AP - Oct 2021": "50",
+        "AP - Nov 2021": "48.3"
     },
     {
         "id": 313,
         "ticker": "PPL",
-        "type": "stock"
+        "type": "stock",
+        "AP - Jun 2021": "45",
+        "AP - Aug 2021": "45",
+        "AP - Nov 2021": "45.75"
     },
     {
         "id": 314,
         "ticker": "POW",
-        "type": "stock"
+        "type": "stock",
+        "AP - Aug 2021": "45",
+        "AP - Sep 2021": "47",
+        "AP - Oct 2021": "48",
+        "AP - Nov 2021": "47.5"
     },
     {
         "id": 315,
         "ticker": "CNQ",
-        "type": "stock"
+        "type": "stock",
+        "AP - May 2021": "53",
+        "AP - Aug 2021": "53",
+        "AP - Sep 2021": "67.5",
+        "AP - Oct 2021": "51",
+        "AP - Nov 2021": "63.2"
     },
     {
         "id": 400,
@@ -336,7 +361,7 @@
         "AP - Apr 2021": "14.5",
         "AP - May 2021": "14.65",
         "AP - Aug 2021": "15",
-        "AP - Nov 2021": "15.5"
+        "AP - Nov 2021": "16"
     },
     {
         "id": 401,
@@ -364,7 +389,7 @@
         "AP - May 2021": "64",
         "AP - Jun 2021": "77",
         "AP - Aug 2021": "80.5",
-        "AP - Sep 2021": "81"
+        "AP - Sep 2021": "90.75"
     },
     {
         "id": 500,
@@ -391,7 +416,8 @@
         "AP - May 2021": "157",
         "AP - Aug 2021": "151",
         "AP - Sep 2021": "155",
-        "AP - Oct 2021": "160"
+        "AP - Oct 2021": "160",
+        "AP - Nov 2021": "168"
     },
     {
         "id": 502,
@@ -417,7 +443,8 @@
         "AP - May 2021": "56",
         "AP - Jun 2021": "49.5",
         "AP - Aug 2021": "57",
-        "AP - Sep 2021": "58.5"
+        "AP - Sep 2021": "58.5",
+        "AP - Nov 2021": "73"
     },
     {
         "id": 504,
@@ -446,7 +473,8 @@
         "AP - May 2021": "92",
         "AP - Aug 2021": "96",
         "AP - Sep 2021": "80",
-        "AP - Oct 2021": "90"
+        "AP - Oct 2021": "90",
+        "AP - Nov 2021": "86.6"
     },
     {
         "id": 506,
@@ -461,7 +489,8 @@
         "AP - Jun 2021": "32",
         "AP - Aug 2021": "25.26",
         "AP - Sep 2021": "21.5",
-        "AP - Oct 2021": "19.5"
+        "AP - Oct 2021": "19.5",
+        "AP - Nov 2021": "15.7"
     },
     {
         "id": 507,
@@ -474,7 +503,7 @@
         "AP - May 2021": "230",
         "AP - Aug 2021": "242",
         "AP - Oct 2021": "230",
-        "AP - Nov 2021": "218"
+        "AP - Nov 2021": "233"
     },
     {
         "id": 508,
@@ -488,7 +517,8 @@
         "AP - May 2021": "81.73",
         "AP - Aug 2021": "91",
         "AP - Sep 2021": "98",
-        "AP - Oct 2021": "92"
+        "AP - Oct 2021": "92",
+        "AP - Nov 2021": "107"
     },
     {
         "id": 600,
@@ -504,7 +534,8 @@
         "AP - Jun 2021": "800",
         "AP - Aug 2021": "900",
         "AP - Sep 2021": "1000",
-        "AP - Oct 2021": "1225"
+        "AP - Oct 2021": "1225",
+        "AP - Nov 2021": "1333"
     },
     {
         "id": 601,
@@ -520,7 +551,8 @@
         "AP - Jun 2021": "220",
         "AP - Aug 2021": "225",
         "AP - Sep 2021": "220",
-        "AP - Oct 2021": "200"
+        "AP - Oct 2021": "200",
+        "AP - Nov 2021": "203"
     },
     {
         "id": 602,
@@ -537,7 +569,7 @@
         "AP - Aug 2021": "172.5",
         "AP - Sep 2021": "175",
         "AP - Oct 2021": "180",
-        "AP - Nov 2021": "162"
+        "AP - Nov 2021": "155.75"
     },
     {
         "id": 603,
@@ -552,7 +584,8 @@
         "AP - Jun 2021": "620",
         "AP - Aug 2021": "640",
         "AP - Sep 2021": "641",
-        "AP - Oct 2021": "675"
+        "AP - Oct 2021": "675",
+        "AP - Nov 2021": "695"
     },
     {
         "id": 604,
@@ -568,7 +601,8 @@
         "AP - Jun 2021": "281.6",
         "AP - Aug 2021": "278",
         "AP - Sep 2021": "277",
-        "AP - Oct 2021": "275"
+        "AP - Oct 2021": "275",
+        "AP - Nov 2021": "280"
     },
     {
         "id": 605,
@@ -585,7 +619,7 @@
         "AP - Aug 2021": "430",
         "AP - Sep 2021": "482",
         "AP - Oct 2021": "430",
-        "AP - Nov 2021": "460"
+        "AP - Nov 2021": "452"
     },
     {
         "id": 606,
@@ -602,7 +636,7 @@
         "AP - Aug 2021": "350",
         "AP - Sep 2021": "353",
         "AP - Oct 2021": "365",
-        "AP - Nov 2021": "367"
+        "AP - Nov 2021": "378"
     },
     {
         "id": 607,
@@ -618,7 +652,8 @@
         "AP - Jun 2021": "170",
         "AP - Aug 2021": "172.5",
         "AP - Sep 2021": "165",
-        "AP - Oct 2021": "188"
+        "AP - Oct 2021": "188",
+        "AP - Nov 2021": "170"
     },
     {
         "id": 608,
@@ -635,7 +670,7 @@
         "AP - Aug 2021": "482",
         "AP - Sep 2021": "506",
         "AP - Oct 2021": "510",
-        "AP - Nov 2021": "520"
+        "AP - Nov 2021": "546"
     },
     {
         "id": 609,
@@ -645,7 +680,8 @@
         "AP - Dec 2020": "164",
         "AP - Jan 2021": "164",
         "AP - Feb 2021": "192",
-        "AP - Jun 2021": "225"
+        "AP - Jun 2021": "225",
+        "AP - Nov 2021": "236"
     },
     {
         "id": 610,
@@ -662,7 +698,7 @@
         "AP - Aug 2021": "4100",
         "AP - Sep 2021": "4300",
         "AP - Oct 2021": "3900",
-        "AP - Nov 2021": "4100"
+        "AP - Nov 2021": "4165"
     },
     {
         "id": 611,
@@ -677,7 +713,8 @@
         "AP - May 2021": "343",
         "AP - Aug 2021": "361",
         "AP - Sep 2021": "367",
-        "AP - Oct 2021": "325"
+        "AP - Oct 2021": "325",
+        "AP - Nov 2021": "418"
     },
     {
         "id": 612,
@@ -755,7 +792,8 @@
         "AP - Jun 2021": "113",
         "AP - Aug 2021": "122",
         "AP - Sep 2021": "120",
-        "AP - Oct 2021": "137"
+        "AP - Oct 2021": "137",
+        "AP - Nov 2021": "169"
     },
     {
         "id": 617,
@@ -768,35 +806,7 @@
         "AP - Aug 2021": "241",
         "AP - Sep 2021": "261",
         "AP - Oct 2021": "270",
-        "AP - Nov 2021": "320"
-    },
-    {
-        "id": 618,
-        "ticker": "PG",
-        "type": "stock",
-        "country": "US",
-        "AP - Dec 2020": "160",
-        "AP - Jan 2021": "151.88",
-        "AP - Mar 2021": "155",
-        "AP - Apr 2021": "151",
-        "AP - Aug 2021": "153",
-        "AP - Sep 2021": "161",
-        "AP - Oct 2021": "150"
-    },
-    {
-        "id": 619,
-        "ticker": "JNJ",
-        "type": "stock",
-        "country": "US",
-        "AP - Dec 2020": "178.66",
-        "AP - Jan 2021": "191.42",
-        "AP - Feb 2021": "175",
-        "AP - Mar 2021": "193",
-        "AP - Apr 2021": "194.66",
-        "AP - Jun 2021": "193",
-        "AP - Aug 2021": "187",
-        "AP - Sep 2021": "187",
-        "AP - Oct 2021": "185"
+        "AP - Nov 2021": "361"
     },
     {
         "id": 620,
@@ -812,312 +822,407 @@
         "AP - Aug 2021": "3200",
         "AP - Sep 2021": "3400",
         "AP - Oct 2021": "3150",
-        "AP - Nov 2021": "3200"
+        "AP - Nov 2021": "3275"
     },
 
     {
         "id": 700,
         "ticker": "XIU",
-        "type": "etf"
+        "type": "etf",
+        "desc": "TSX"
     },
     {
         "id": 701,
-        "ticker": "XUU",
-        "type": "etf"
-    },
-    {
-        "id": 702,
-        "ticker": "XRE",
-        "type": "etf"
-    },
-    {
-        "id": 703,
-        "ticker": "XUT",
-        "type": "etf"
-    },
-    {
-        "id": 704,
-        "ticker": "XAW",
-        "type": "etf"
-    },
-    {
-        "id": 705,
-        "ticker": "XIC",
-        "type": "etf"
-    },
-    {
-        "id": 706,
-        "ticker": "XQQ",
-        "type": "etf"
-    },
-    {
-        "id": 707,
-        "ticker": "XDIV",
-        "type": "etf"
-    },
-    {
-        "id": 708,
-        "ticker": "XEQT",
-        "type": "etf"
-    },
-    {
-        "id": 709,
-        "ticker": "XSP",
-        "type": "etf"
-    },
-    {
-        "id": 710,
-        "ticker": "XGRO",
-        "type": "etf"
-    },
-    {
-        "id": 711,
-        "ticker": "XBAL",
-        "type": "etf"
-    },
-    {
-        "id": 712,
-        "ticker": "XCNS",
-        "type": "etf"
-    },
-    {
-        "id": 713,
-        "ticker": "XEF",
-        "type": "etf"
-    },
-    {
-        "id": 714,
-        "ticker": "XEF",
-        "type": "etf"
-    },
-    {
-        "id": 715,
-        "ticker": "XUS",
-        "type": "etf"
-    },
-    {
-        "id": 716,
-        "ticker": "XIT",
-        "type": "etf"
-    },
-    {
-        "id": 717,
-        "ticker": "XEC",
-        "type": "etf"
-    },
-    {
-        "id": 718,
-        "ticker": "XDV",
-        "type": "etf"
-    },
-    {
-        "id": 719,
-        "ticker": "XEI",
-        "type": "etf"
-    },
-    {
-        "id": 720,
-        "ticker": "XBB",
-        "type": "etf"
-    },
-    {
-        "id": 721,
-        "ticker": "CDZ",
-        "type": "etf"
-    },
-    {
-        "id": 800,
-        "ticker": "HXS",
-        "type": "etf"
-    },
-    {
-        "id": 801,
         "ticker": "HXT",
         "type": "etf"
     },
     {
-        "id": 802,
-        "ticker": "HGRO",
-        "type": "etf"
-    },
-    {
-        "id": 803,
-        "ticker": "HCLN",
-        "type": "etf"
-    },
-    {
-        "id": 804,
-        "ticker": "HMMJ",
-        "type": "etf"
-    },
-    {
-        "id": 805,
-        "ticker": "HULC",
-        "type": "etf"
-    },
-    {
-        "id": 806,
-        "ticker": "MIND",
-        "type": "etf"
-    },
-    {
-        "id": 900,
+        "id": 702,
         "ticker": "VCN",
         "type": "etf"
     },
     {
-        "id": 901,
-        "ticker": "VCE",
+        "id": 703,
+        "ticker": "XIC",
         "type": "etf"
     },
     {
-        "id": 902,
-        "ticker": "VRE",
-        "type": "etf"
-    },
-    {
-        "id": 903,
-        "ticker": "VUN",
-        "type": "etf"
-    },
-    {
-        "id": 904,
-        "ticker": "VSP",
-        "type": "etf"
-    },
-    {
-        "id": 905,
-        "ticker": "VBAL",
-        "type": "etf"
-    },
-    {
-        "id": 906,
-        "ticker": "VFV",
-        "type": "etf"
-    },
-    {
-        "id": 907,
-        "ticker": "VIU",
-        "type": "etf"
-    },
-    {
-        "id": 908,
-        "ticker": "VEE",
-        "type": "etf"
-    },
-    {
-        "id": 909,
-        "ticker": "VDY",
-        "type": "etf"
-    },
-    {
-        "id": 910,
-        "ticker": "VAB",
-        "type": "etf"
-    },
-    {
-        "id": 911,
-        "ticker": "VCNS",
-        "type": "etf"
-    },
-    {
-        "id": 912,
-        "ticker": "VGRO",
-        "type": "etf"
-    },
-    {
-        "id": 1000,
-        "ticker": "ZSP",
-        "type": "etf"
-    },
-    {
-        "id": 1001,
-        "ticker": "ZQQ",
-        "type": "etf"
-    },
-    {
-        "id": 1002,
-        "ticker": "ZCLN",
-        "type": "etf"
-    },
-    {
-        "id": 1003,
-        "ticker": "ZUT",
-        "type": "etf"
-    },
-    {
-        "id": 1004,
-        "ticker": "ZEA",
-        "type": "etf"
-    },
-    {
-        "id": 1005,
-        "ticker": "ZEM",
-        "type": "etf"
-    },
-    {
-        "id": 1006,
-        "ticker": "ZNQ",
-        "type": "etf"
-    },
-    {
-        "id": 1007,
+        "id": 704,
         "ticker": "ZCN",
         "type": "etf"
     },
     {
-        "id": 1008,
+        "id": 705,
+        "ticker": "VCE",
+        "type": "etf"
+    },    
+
+    {
+        "id": 800,
         "ticker": "ZAG",
+        "type": "etf",
+        "desc": "Bonds"
+    },
+    {
+        "id": 801,
+        "ticker": "VAB",
         "type": "etf"
     },
     {
-        "id": 1100,
-        "ticker": "TEC",
+        "id": 802,
+        "ticker": "ZDB",
         "type": "etf"
     },
     {
-        "id": 1101,
+        "id": 803,
+        "ticker": "VSB",
+        "type": "etf"
+    },
+    {
+        "id": 804,
+        "ticker": "XBB",
+        "type": "etf"
+    },
+
+    {
+        "id": 900,
+        "ticker": "VFV",
+        "type": "etf",
+        "desc": "S+P"
+    },
+    {
+        "id": 901,
+        "ticker": "HXS",
+        "type": "etf"
+    },
+    {
+        "id": 902,
+        "ticker": "XUU",
+        "type": "etf"
+    },
+    {
+        "id": 903,
+        "ticker": "ZSP",
+        "type": "etf"
+    },
+    {
+        "id": 904,
+        "ticker": "XSP",
+        "type": "etf"
+    },
+    {
+        "id": 905,
+        "ticker": "XUS",
+        "type": "etf"
+    },
+    {
+        "id": 906,
+        "ticker": "VUN",
+        "type": "etf"
+    },
+    {
+        "id": 907,
+        "ticker": "VSP",
+        "type": "etf"
+    },
+    {
+        "id": 908,
         "ticker": "TPU",
         "type": "etf"
     },
     {
-        "id": 1200,
-        "ticker": "PDC",
+        "id": 909,
+        "ticker": "HULC",
         "type": "etf"
+    },
+
+    {
+        "id": 1000,
+        "ticker": "VXC",
+        "type": "etf",
+        "desc": "Int"
+    },
+    {
+        "id": 1001,
+        "ticker": "XAW",
+        "type": "etf"
+    },
+    {
+        "id": 1002,
+        "ticker": "VEE",
+        "type": "etf"
+    },
+    {
+        "id": 1003,
+        "ticker": "VIU",
+        "type": "etf"
+    },
+    {
+        "id": 1004,
+        "ticker": "XEF",
+        "type": "etf"
+    },
+    {
+        "id": 1005,
+        "ticker": "XEC",
+        "type": "etf"
+    },
+    {
+        "id": 1006,
+        "ticker": "ZEA",
+        "type": "etf"
+    },
+    {
+        "id": 1007,
+        "ticker": "ZEM",
+        "type": "etf"
+    },
+    {
+        "id": 1008,
+        "ticker": "VRIF",
+        "type": "etf"
+    },
+    {
+        "id": 1009,
+        "ticker": "AVDV",
+        "type": "etf"
+    },
+
+    {
+        "id": 1100,
+        "ticker": "XEQT",
+        "type": "etf",
+        "desc": "AllInOne"
+    },
+    {
+        "id": 1101,
+        "ticker": "VEQT",
+        "type": "etf"
+    },
+    {
+        "id": 1102,
+        "ticker": "ZGRO",
+        "type": "etf"
+    },
+    {
+        "id": 1103,
+        "ticker": "HGRO",
+        "type": "etf"
+    },
+    {
+        "id": 1104,
+        "ticker": "XGRO",
+        "type": "etf"
+    },
+    {
+        "id": 1105,
+        "ticker": "VGRO",
+        "type": "etf"
+    },
+    {
+        "id": 1106,
+        "ticker": "XBAL",
+        "type": "etf"
+    },
+    {
+        "id": 1107,
+        "ticker": "VBAL",
+        "type": "etf"
+    },
+    {
+        "id": 1108,
+        "ticker": "ZBAL",
+        "type": "etf"
+    },
+    {
+        "id": 1109,
+        "ticker": "VCNS",
+        "type": "etf"
+    },
+    {
+        "id": 1110,
+        "ticker": "XCNS",
+        "type": "etf"
+    },
+    {
+        "id": 1111,
+        "ticker": "ZCON",
+        "type": "etf"
+    },
+    {
+        "id": 1112,
+        "ticker": "VCIP",
+        "type": "etf"
+    },
+    {
+        "id": 1113,
+        "ticker": "XINC",
+        "type": "etf"
+    },
+    {
+        "id": 1114,
+        "ticker": "XCG",
+        "type": "etf"
+    },
+
+    {
+        "id": 1200,
+        "ticker": "CDZ",
+        "type": "etf",
+        "desc": "DIV"
     },
     {
         "id": 1201,
-        "ticker": "QQC.F",
+        "ticker": "XDV",
         "type": "etf"
     },
     {
-        "id": 1300,
-        "ticker": "HERO",
+        "id": 1202,
+        "ticker": "VDY",
         "type": "etf"
+    },
+    {
+        "id": 1203,
+        "ticker": "XEI",
+        "type": "etf"
+    },
+    {
+        "id": 1204,
+        "ticker": "ZDV",
+        "type": "etf"
+    },
+    {
+        "id": 1205,
+        "ticker": "XDIV",
+        "type": "etf"
+    },
+    {
+        "id": 1206,
+        "ticker": "PDC",
+        "type": "etf"
+    },
+
+    {
+        "id": 1300,
+        "ticker": "VRE",
+        "type": "etf",
+        "desc": "REIT"
     },
     {
         "id": 1301,
-        "ticker": "BTCC.B",
+        "ticker": "ZRE",
         "type": "etf"
     },
     {
         "id": 1302,
-        "ticker": "CARS.B",
+        "ticker": "XRE",
         "type": "etf"
     },
     {
         "id": 1303,
+        "ticker": "RIT",
+        "type": "etf"
+    },
+
+    {
+        "id": 1400,
+        "ticker": "QQC.F",
+        "type": "etf",
+        "desc": "Nasdaq"
+    },
+    {
+        "id": 1401,
+        "ticker": "XQQ",
+        "type": "etf"
+    },
+    {
+        "id": 1402,
+        "ticker": "ZQQ",
+        "type": "etf"
+    },
+    {
+        "id": 1403,
+        "ticker": "ZNQ",
+        "type": "etf"
+    },
+
+    {
+        "id": 1500,
+        "ticker": "XUT",
+        "type": "etf",
+        "desc": "Sector"
+    },
+    {
+        "id": 1501,
+        "ticker": "ZUT",
+        "type": "etf"
+    },
+    {
+        "id": 1502,
         "ticker": "FAI",
         "type": "etf"
     },
     {
-        "id": 1400,
+        "id": 1503,
+        "ticker": "XIT",
+        "type": "etf"
+    },
+    {
+        "id": 1504,
+        "ticker": "TEC",
+        "type": "etf"
+    },
+    {
+        "id": 1505,
+        "ticker": "HCLN",
+        "type": "etf"
+    },
+    {
+        "id": 1506,
+        "ticker": "ZCLN",
+        "type": "etf"
+    },
+    {
+        "id": 1507,
+        "ticker": "HERO",
+        "type": "etf"
+    },
+    {
+        "id": 1508,
+        "ticker": "BTCC.B",
+        "type": "etf"
+    },
+    {
+        "id": 1509,
+        "ticker": "HMMJ",
+        "type": "etf"
+    },
+    {
+        "id": 1510,
+        "ticker": "CARS.B",
+        "type": "etf"
+    },
+
+    {
+        "id": 1600,
+        "ticker": "MIND",
+        "type": "etf"
+    },
+ 
+    {
+        "id": 1700,
+        "ticker": "ZESG",
+        "type": "etf"
+    },
+
+    {
+        "id": 1800,
         "ticker": "QQQ",
         "type": "etf",
         "country": "US"
     },
     {
-        "id": 1401,
+        "id": 1801,
         "ticker": "ARKK",
         "type": "etf",
         "country": "US"
