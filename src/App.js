@@ -249,7 +249,16 @@ const columns = [
     headerName: 'Oct 2021 Upside',
     width: 150,
   },
-
+  {
+    field: 'AP - Nov 2021',
+    headerName: 'Nov 2021',
+    type: 'number',
+  },
+  {
+    field: 'AP - Nov 2021 Upside',
+    headerName: 'Nov 2021 Upside',
+    width: 150,
+  },
   // {
   //   field: 'AP - xxx 2021',
   //   headerName: 'xxx 2021',
@@ -353,7 +362,7 @@ export default function App() {
       });
   });
 
-  // handle canadian stocks
+  // handle stocks
   const handleStocks = (props) => {
     const ticker = props.ticker;
     const country = props.country ? props.country : 'CAN';
@@ -392,7 +401,7 @@ export default function App() {
           if (key.startsWith('AP')) {
             elm[key] = value;
           }
-          const upside = ((value / elm['Price']) - 1) * 100;
+          const upside = ((value / elm['Price'].replace(',','')) - 1) * 100;
           elm[key + ' Upside'] = upside.toFixed(2) + '%';
         }
 
@@ -508,8 +517,14 @@ export default function App() {
         elm['1m-return'] = doc.querySelector('[headers="pricePerformanceData_period_1m pricePerformanceData_performance"] span')?.textContent.split('(')[1].split(')')[0];
         elm['3m-return'] = doc.querySelector('[headers="pricePerformanceData_period_3m pricePerformanceData_performance"] span')?.textContent.split('(')[1].split(')')[0];
         elm['1y-return'] = doc.querySelector('[name="return1y"]')?.getAttribute('value');
-        elm['3y-return'] = doc.querySelector('[name="return3y"]')?.getAttribute('value');
-        elm['5y-return'] = doc.querySelector('[name="return5y"]')?.getAttribute('value');
+        //only for stocks 
+        if (props['type'] === 'stock') {
+          elm['3y-return'] = doc.querySelector('[name="return3y"]')?.getAttribute('value');
+          elm['5y-return'] = doc.querySelector('[name="return5y"]')?.getAttribute('value');
+        }
+        else {
+          elm['1y-return'] = doc.querySelectorAll('.performancePrice')[2]?.textContent.split('(').pop().split(')')[0];
+        }
 
         // replace elm
         //localArr[index] = elm;
