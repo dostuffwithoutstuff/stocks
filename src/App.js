@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import rp from "request-promise";
 import { DataGrid } from '@mui/x-data-grid';
 import { makeStyles } from '@mui/styles';
+import Box from '@mui/material/Box';
+import Fade from '@mui/material/Fade';
+import CircularProgress from '@mui/material/CircularProgress';
 import "./App.css";
 
 
@@ -150,126 +153,115 @@ const columns = [
     type: 'number',
   },
   {
-    field: 'AP - Dec 2020',
-    headerName: 'Dec 2020',
+    field: 'AP - Jan',
+    headerName: 'Jan',
     type: 'number',
   },
   {
-    field: 'AP - Dec 2020 Upside',
-    headerName: 'Dec 2020 Upside',
+    field: 'AP - Jan Upside',
+    headerName: 'Jan Upside',
     width: 150,
   },
   {
-    field: 'AP - Jan 2021',
-    headerName: 'Jan 2021',
+    field: 'AP - Feb',
+    headerName: 'Feb',
     type: 'number',
   },
   {
-    field: 'AP - Jan 2021 Upside',
-    headerName: 'Jan 2021 Upside',
+    field: 'AP - Feb Upside',
+    headerName: 'Feb Upside',
     width: 150,
   },
   {
-    field: 'AP - Feb 2021',
-    headerName: 'Feb 2021',
+    field: 'AP - Mar',
+    headerName: 'Mar',
     type: 'number',
   },
   {
-    field: 'AP - Feb 2021 Upside',
-    headerName: 'Feb 2021 Upside',
+    field: 'AP - Mar Upside',
+    headerName: 'Mar Upside',
     width: 150,
   },
   {
-    field: 'AP - Mar 2021',
-    headerName: 'Mar 2021',
+    field: 'AP - Apr',
+    headerName: 'Apr',
     type: 'number',
   },
   {
-    field: 'AP - Mar 2021 Upside',
-    headerName: 'Mar 2021 Upside',
+    field: 'AP - Apr Upside',
+    headerName: 'Apr Upside',
     width: 150,
   },
   {
-    field: 'AP - Apr 2021',
-    headerName: 'Apr 2021',
+    field: 'AP - May',
+    headerName: 'May',
     type: 'number',
   },
   {
-    field: 'AP - Apr 2021 Upside',
-    headerName: 'Apr 2021 Upside',
+    field: 'AP - May Upside',
+    headerName: 'May Upside',
     width: 150,
   },
   {
-    field: 'AP - May 2021',
-    headerName: 'May 2021',
+    field: 'AP - Jun',
+    headerName: 'Jun',
     type: 'number',
   },
   {
-    field: 'AP - May 2021 Upside',
-    headerName: 'May 2021 Upside',
+    field: 'AP - Jun Upside',
+    headerName: 'Jun Upside',
     width: 150,
   },
   {
-    field: 'AP - Jun 2021',
-    headerName: 'Jun 2021',
+    field: 'AP - Aug',
+    headerName: 'Aug',
     type: 'number',
   },
   {
-    field: 'AP - Jun 2021 Upside',
-    headerName: 'Jun 2021 Upside',
+    field: 'AP - Aug Upside',
+    headerName: 'Aug Upside',
     width: 150,
   },
   {
-    field: 'AP - Aug 2021',
-    headerName: 'Aug 2021',
+    field: 'AP - Sep',
+    headerName: 'Sep',
     type: 'number',
   },
   {
-    field: 'AP - Aug 2021 Upside',
-    headerName: 'Aug 2021 Upside',
+    field: 'AP - Sep Upside',
+    headerName: 'Sep Upside',
     width: 150,
   },
   {
-    field: 'AP - Sep 2021',
-    headerName: 'Sep 2021',
+    field: 'AP - Oct',
+    headerName: 'Oct',
     type: 'number',
   },
   {
-    field: 'AP - Sep 2021 Upside',
-    headerName: 'Sep 2021 Upside',
+    field: 'AP - Oct Upside',
+    headerName: 'Oct Upside',
     width: 150,
   },
   {
-    field: 'AP - Oct 2021',
-    headerName: 'Oct 2021',
+    field: 'AP - Nov',
+    headerName: 'Nov',
     type: 'number',
   },
   {
-    field: 'AP - Oct 2021 Upside',
-    headerName: 'Oct 2021 Upside',
+    field: 'AP - Nov Upside',
+    headerName: 'Nov Upside',
     width: 150,
   },
   {
-    field: 'AP - Nov 2021',
-    headerName: 'Nov 2021',
+    field: 'AP - Dec',
+    headerName: 'Dec',
     type: 'number',
   },
   {
-    field: 'AP - Nov 2021 Upside',
-    headerName: 'Nov 2021 Upside',
+    field: 'AP - Dec Upside',
+    headerName: 'Dec Upside',
     width: 150,
-  },
-  // {
-  //   field: 'AP - xxx 2021',
-  //   headerName: 'xxx 2021',
-  //   type: 'number',
-  // },
-  // {
-  //   field: 'AP - xxx 2021 Upside',
-  //   headerName: 'xxx 2021 Upside',
-  //   width: 150,
-  // },
-
+  }
 ];
 
 
@@ -278,14 +270,14 @@ const sampleData = [
     "id": 100,
     "ticker": "TD",
     "type": "stock",
-    "AP - Dec 2020": "68.77",
-    "AP - Jan 2021": "75",
-    "AP - Feb 2021": "82.2",
-    "AP - Mar 2021": "87.62",
-    "AP - Apr 2021": "86.5",
-    "AP - May 2021": "91.71",
-    "AP - Jun 2021": "91",
-    "AP - Aug 2021": "93",
+    "AP - Dec": "68.77",
+    "AP - Jan": "75",
+    "AP - Feb": "82.2",
+    "AP - Mar": "87.62",
+    "AP - Apr": "86.5",
+    "AP - May": "91.71",
+    "AP - Jun": "91",
+    "AP - Aug": "93",
   },
 
   {
@@ -293,15 +285,15 @@ const sampleData = [
     "ticker": "TSLA",
     "type": "stock",
     "country": "US",
-    "AP - Dec 2020": "501.29",
-    "AP - Jan 2021": "753",
-    "AP - Feb 2021": "670",
-    "AP - Mar 2021": "882",
-    "AP - Apr 2021": "800",
-    "AP - May 2021": "772",
-    "AP - Jun 2021": "800",
-    "AP - Aug 2021": "900",
-    "AP - Sep 2021": "862",
+    "AP - Dec": "501.29",
+    "AP - Jan": "753",
+    "AP - Feb": "670",
+    "AP - Mar": "882",
+    "AP - Apr": "800",
+    "AP - May": "772",
+    "AP - Jun": "800",
+    "AP - Aug": "900",
+    "AP - Sep": "862",
   },
 
   {
@@ -340,7 +332,9 @@ const useStyles = makeStyles({
 
 export default function App() {
   const classes = useStyles();
+  const [loading, setLoading] = useState([]);
   const [data, setData] = useState([]);
+  let localLoading = [];
   let localArr = [];
 
   // read our data file in the public folder
@@ -354,8 +348,9 @@ export default function App() {
       }
     )
       .then(function (response) {
+        // switch to use real data or sample data for debugging
         resolve(response.json());
-        //resolve(sampleData);
+        // resolve(sampleData);
       })
       .catch(function (err) {
         reject(Error("Get config failed"));
@@ -371,8 +366,14 @@ export default function App() {
       url = proxy + 'https://marketsandresearch.td.com/tdwca/Public/Stocks/Overview/us/';
     }
 
+    localLoading = [...loading, ticker];
+    setLoading(localLoading);
     rp(url + ticker)
       .then(html => {
+        localLoading = loading.filter(function (element) {
+          return element != 2
+        });
+        setLoading(localLoading);
         // Convert the HTML string into a document object
         html = JSON.parse(html).contents; // for this proxy only
         var parser = new DOMParser();
@@ -395,13 +396,14 @@ export default function App() {
         elm['Market-Cap'] = doc.querySelectorAll('.fundamentalsTable tr')[0].querySelectorAll('div')[1].textContent;
         elm['DividendYield'] = doc.querySelectorAll('.fundamentalsTable tr')[3].querySelectorAll('div')[1].textContent;
         elm['Ex-Dividend-Date'] = doc.querySelectorAll('.fundamentalsTable tr')[5].querySelectorAll('div')[1].textContent;
+        elm['Rating'] = props.rating;
 
         // loop through Analyst Prices
         for (const [key, value] of Object.entries(props)) {
           if (key.startsWith('AP')) {
             elm[key] = value;
           }
-          const upside = ((value / elm['Price'].replace(',','')) - 1) * 100;
+          const upside = ((value / elm['Price'].replace(',', '')) - 1) * 100;
           elm[key + ' Upside'] = upside.toFixed(2) + '%';
         }
 
@@ -432,8 +434,14 @@ export default function App() {
       url = proxy + 'https://marketsandresearch.td.com/tdwca/Public/ETFsProfile/Summary/us/';
     }
 
+    localLoading = [...loading, ticker];
+    setLoading(localLoading);
     rp(url + ticker)
       .then(html => {
+        localLoading = loading.filter(function (element) {
+          return element != 2
+        });
+        setLoading(localLoading);
         // Convert the HTML string into a document object
         html = JSON.parse(html).contents; // for this proxy only
         var parser = new DOMParser();
@@ -501,8 +509,14 @@ export default function App() {
       url = proxy + 'https://www.theglobeandmail.com/investing/markets/stocks/' + ticker;
     }
 
+    localLoading = [...loading, ticker];
+    setLoading(localLoading);
     rp(url)
       .then(html => {
+        localLoading = loading.filter(function (element) {
+          return element != 2
+        });
+        setLoading(localLoading);
         // Convert the HTML string into a document object
         html = JSON.parse(html).contents; // for this proxy only
         var parser = new DOMParser();
@@ -551,8 +565,14 @@ export default function App() {
       url = proxy + 'https://marketsandresearch.td.com/tdwca/Public/ETFsProfile/PerformanceAndRisk/us/';
     }
 
+    localLoading = [...loading, ticker];
+    setLoading(localLoading);
     rp(url + ticker)
       .then(html => {
+        localLoading = loading.filter(function (element) {
+          return element != 2
+        });
+        setLoading(localLoading);
         // Convert the HTML string into a document object
         html = JSON.parse(html).contents; // for this proxy only
         var parser = new DOMParser();
@@ -613,6 +633,17 @@ export default function App() {
     <div className={classes.root}>
       <h1>Stocks</h1>
       <h3>Last refreshed: {new Date().toDateString()} {new Date().toLocaleTimeString()}</h3>
+      <Box sx={{ height: 40 }}>
+        <Fade
+          in={loading.length > 0}
+          style={{
+            transitionDelay: loading.length > 0 ? '800ms' : '0ms',
+          }}
+        // unmountOnExit
+        >
+          <CircularProgress />
+        </Fade>
+      </Box>
       <div style={{ height: window.innerHeight * 0.75, width: '100%' }}>
         <div style={{ display: 'flex', height: '100%' }}>
           <div style={{ flexGrow: 1 }}>
@@ -631,9 +662,14 @@ export default function App() {
                 else if (params.field === 'Change') {
                   return Number(params.value?.split('%')[0]) >= 0 ? 'hot' : 'cold';
                 }
-                else if (['5d-return','1m-return','3m-return','6m-return','1y-return','3y-return','5y-return','10y-return'].indexOf(params.field) !== -1) {
-                  return Number(params.value?.split('%')[0]) >= 2.5 ? 'hot' : null;
-                }                
+                else if (['5d-return', '1m-return', '3m-return', '6m-return', '1y-return', '3y-return', '5y-return', '10y-return'].indexOf(params.field) !== -1) {
+                  if (Number(params.value?.split('%')[0]) >= 2.5) {
+                    return 'hot';
+                  }
+                  else if ((Number(params.value?.split('%')[0]) <= -2.5)) {
+                    return 'cold';
+                  }
+                }
                 else if (params.field === 'id') {
                   return 'sticky';
                 }
