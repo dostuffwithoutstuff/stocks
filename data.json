@@ -74,7 +74,7 @@
         "AP - Oct": "87",
         "AP - Nov": "89",
         "AP - Dec": "93",
-        "AP - Jan": "97"
+        "AP - Jan": "97.5"
     },
     {
         "id": 200,
@@ -106,7 +106,8 @@
         "AP - Aug": "32",
         "AP - Sep": "32",
         "AP - Oct": "32",
-        "AP - Nov": "34"
+        "AP - Nov": "34",
+        "AP - Jan": "33"
     },
     {
         "id": 202,
@@ -137,36 +138,8 @@
         "AP - Aug": "70",
         "AP - Sep": "74.25",
         "AP - Oct": "71",
-        "AP - Nov": "75"
-    },
-    {
-        "id": 300,
-        "ticker": "PSK",
-        "type": "stock",
-        "rating": "3 stars",
-        "AP - Feb": "13.6",
-        "AP - Mar": "16.75",
-        "AP - Apr": "15",
-        "AP - May": "16.25",
-        "AP - Jun": "16.25",
-        "AP - Aug": "16.41",
-        "AP - Sep": "18.75",
-        "AP - Oct": "18.7",
-        "AP - Dec": "19",
-        "AP - Jan": "18.8"
-    },
-    {
-        "id": 301,
-        "ticker": "BIP.UN",
-        "type": "stock",
-        "rating": "3 stars",
-        "AP - Feb": "70.35",
-        "AP - Mar": "66.66",
-        "AP - May": "76",
-        "AP - Jun": "71",
-        "AP - Aug": "78",
-        "AP - Sep": "78.88",
-        "AP - Nov": "81"
+        "AP - Nov": "75",
+        "AP - Jan": "68.5"
     },
     {
         "id": 302,
@@ -182,7 +155,8 @@
         "AP - Sep": "73.67",
         "AP - Oct": "66.5",
         "AP - Nov": "67",
-        "AP - Dec": "70"
+        "AP - Dec": "70",
+        "AP - Jan": "69"
     },
     {
         "id": 303,
@@ -199,7 +173,7 @@
         "AP - Oct": "43",
         "AP - Nov": "40",
         "AP - Dec": "43",
-        "AP - Jan": "46"
+        "AP - Jan": "42.9"
     },
     {
         "id": 304,
@@ -214,155 +188,8 @@
         "AP - Aug": "56",
         "AP - Sep": "56",
         "AP - Oct": "57",
-        "AP - Dec": "55"
-    },
-    {
-        "id": 305,
-        "ticker": "RNW",
-        "type": "stock",
-        "rating": "3 stars",
-        "AP - Feb": "20",
-        "AP - Mar": "20.75",
-        "AP - Apr": "20",
-        "AP - May": "20.75",
-        "AP - Aug": "21",
-        "AP - Sep": "21",
-        "AP - Oct": "20.5",
-        "AP - Nov": "20.75",
-        "AP - Dec": "19"
-    },
-    {
-        "id": 306,
-        "ticker": "CU",
-        "type": "stock",
-        "rating": "3 stars",
-        "AP - Apr": "39.14",
-        "AP - Aug": "37",
-        "AP - Sep": "37",
-        "AP - Oct": "39",
-        "AP - Nov": "39"
-    },
-    {
-        "id": 307,
-        "ticker": "AQN",
-        "type": "stock",
-        "rating": "3 stars",
-        "AP - Mar": "20.94",
-        "AP - Apr": "21.5",
-        "AP - May": "21",
-        "AP - Aug": "17.5",
-        "AP - Oct": "18",
-        "AP - Nov": "18.5",
-        "AP - Dec": "21",
-        "AP - Jan": "18"
-    },
-    {
-        "id": 308,
-        "ticker": "EMA",
-        "type": "stock",
-        "rating": "3 stars",
-        "AP - Apr": "60",
-        "AP - May": "60",
-        "AP - Jun": "62",
-        "AP - Aug": "60",
-        "AP - Sep": "65",
-        "AP - Oct": "62",
-        "AP - Nov": "61.8",
-        "AP - Dec": "63",
-        "AP - Jan": "64"
-    },
-    {
-        "id": 309,
-        "ticker": "BEP.UN",
-        "type": "stock",
-        "rating": "3 stars",
-        "AP - Feb": "62.23",
-        "AP - Mar": "54.71",
-        "AP - Apr": "56.25",
-        "AP - May": "53",
-        "AP - Aug": "57",
-        "AP - Sep": "50",
-        "AP - Nov": "47",
-        "AP - Dec": "48"
-    },
-    {
-        "id": 310,
-        "ticker": "CPX",
-        "type": "stock",
-        "rating": "3 stars",
-        "AP - Feb": "40",
-        "AP - Apr": "42",
-        "AP - May": "42.74",
-        "AP - Jun": "42.6",
-        "AP - Aug": "44.25",
-        "AP - Sep": "44",
-        "AP - Oct": "45.5",
-        "AP - Dec": "44"
-    },
-    {
-        "id": 311,
-        "ticker": "INE",
-        "type": "stock",
-        "rating": "3 stars",
-        "AP - Feb": "32",
-        "AP - Mar": "25.5",
-        "AP - Apr": "29",
-        "AP - May": "24",
-        "AP - Aug": "25.5",
-        "AP - Sep": "27",
-        "AP - Oct": "26.65",
-        "AP - Nov": "24.95",
-        "AP - Dec": "23"
-    },
-    {
-        "id": 312,
-        "ticker": "BLX",
-        "type": "stock",
-        "rating": "3 stars",
-        "AP - Feb": "53.57",
-        "AP - Mar": "47",
-        "AP - Apr": "54",
-        "AP - May": "52",
-        "AP - Jun": "49",
-        "AP - Aug": "45",
-        "AP - Sep": "48",
-        "AP - Oct": "50",
-        "AP - Nov": "48.75",
-        "AP - Dec": "43"
-    },
-    {
-        "id": 313,
-        "ticker": "PPL",
-        "type": "stock",
-        "rating": "3 stars",
-        "AP - Jun": "45",
-        "AP - Aug": "45",
-        "AP - Nov": "43",
-        "AP - Dec": "46"
-    },
-    {
-        "id": 314,
-        "ticker": "POW",
-        "type": "stock",
-        "rating": "3.5 stars",
-        "AP - Aug": "45",
-        "AP - Sep": "47",
-        "AP - Oct": "48",
-        "AP - Nov": "47.5",
-        "AP - Dec": "48.5"
-    },
-    {
-        "id": 315,
-        "ticker": "CNQ",
-        "type": "stock",
-        "rating": "3 stars",
-        "AP - May": "53",
-        "AP - Aug": "53",
-        "AP - Sep": "67.5",
-        "AP - Oct": "51",
-        "AP - Nov": "63.2",
-        "AP - Dec": "64",
-        "AP - Jan": "76"
+        "AP - Dec": "55",
+        "AP - Jan": "57"
     },
     {
         "id": 400,
@@ -389,22 +216,6 @@
         "AP - Nov": "25"
     },
     {
-        "id": 402,
-        "ticker": "BAM.A",
-        "type": "stock",
-        "rating": "3 stars",
-        "AP - Feb": "62.46",
-        "AP - Mar": "68.54",
-        "AP - Apr": "61.44",
-        "AP - May": "64",
-        "AP - Jun": "77",
-        "AP - Aug": "80.5",
-        "AP - Sep": "90.75",
-        "AP - Nov": "90",
-        "AP - Dec": "78",
-        "AP - Jan": "92"
-    },
-    {
         "id": 500,
         "ticker": "CP",
         "type": "stock",
@@ -417,7 +228,7 @@
         "AP - Sep": "106.33",
         "AP - Oct": "103",
         "AP - Dec": "105",
-        "AP - Jan": "96"
+        "AP - Jan": "103.4"
     },
     {
         "id": 501,
@@ -432,7 +243,7 @@
         "AP - Oct": "160",
         "AP - Nov": "168",
         "AP - Dec": "170",
-        "AP - Jan": "150"
+        "AP - Jan": "157"
     },
     {
         "id": 502,
@@ -446,7 +257,7 @@
         "AP - Jun": "62.8",
         "AP - Aug": "61.8",
         "AP - Sep": "64",
-        "AP - Dec": "66"
+        "AP - Dec": "89"
     },
     {
         "id": 503,
@@ -476,7 +287,7 @@
         "AP - Oct": "2100",
         "AP - Nov": "2350",
         "AP - Dec": "2225",
-        "AP - Jan": "2262"
+        "AP - Jan": "1698"
     },
     {
         "id": 505,
@@ -492,24 +303,7 @@
         "AP - Oct": "90",
         "AP - Nov": "86.6",
         "AP - Dec": "75",
-        "AP - Jan": "60"
-    },
-    {
-        "id": 506,
-        "ticker": "WEED",
-        "type": "stock",
-        "rating": "4 stars",
-        "AP - Feb": "48.12",
-        "AP - Mar": "56",
-        "AP - Apr": "41",
-        "AP - May": "36.5",
-        "AP - Jun": "32",
-        "AP - Aug": "25.26",
-        "AP - Sep": "21.5",
-        "AP - Oct": "19.5",
-        "AP - Nov": "15",
-        "AP - Dec": "10",
-        "AP - Jan": "11"
+        "AP - Jan": "76"
     },
     {
         "id": 507,
@@ -537,7 +331,7 @@
         "AP - Oct": "92",
         "AP - Nov": "107",
         "AP - Dec": "100",
-        "AP - Jan": "115"
+        "AP - Jan": "115.5"
     },
     {
         "id": 600,
@@ -572,7 +366,8 @@
         "AP - Sep": "220",
         "AP - Oct": "200",
         "AP - Nov": "202",
-        "AP - Dec": "200"
+        "AP - Dec": "200",
+        "AP - Jan": "194.75"
     },
     {
         "id": 602,
@@ -607,7 +402,7 @@
         "AP - Oct": "675",
         "AP - Nov": "695",
         "AP - Dec": "600",
-        "AP - Jan": "692"
+        "AP - Jan": "530"
     },
     {
         "id": 604,
@@ -625,7 +420,7 @@
         "AP - Oct": "275",
         "AP - Nov": "279",
         "AP - Dec": "273",
-        "AP - Jan": "220"
+        "AP - Jan": "262"
     },
     {
         "id": 605,
@@ -643,7 +438,7 @@
         "AP - Oct": "430",
         "AP - Nov": "452",
         "AP - Dec": "437",
-        "AP - Jan": "400"
+        "AP - Jan": "426"
     },
     {
         "id": 606,
@@ -661,7 +456,7 @@
         "AP - Oct": "365",
         "AP - Nov": "378",
         "AP - Dec": "380",
-        "AP - Jan": "400"
+        "AP - Jan": "375"
     },
     {
         "id": 607,
@@ -677,7 +472,8 @@
         "AP - Aug": "172.5",
         "AP - Sep": "165",
         "AP - Oct": "188",
-        "AP - Nov": "170"
+        "AP - Nov": "170",
+        "AP - Jan": "453"
     },
     {
         "id": 608,
@@ -695,7 +491,7 @@
         "AP - Oct": "510",
         "AP - Nov": "546",
         "AP - Dec": "575",
-        "AP - Jan": "600"
+        "AP - Jan": "590"
     },
     {
         "id": 609,
@@ -740,40 +536,7 @@
         "AP - Oct": "325",
         "AP - Nov": "418",
         "AP - Dec": "445",
-        "AP - Jan": "460"
-    },
-    {
-        "id": 612,
-        "ticker": "UPS",
-        "type": "stock",
-        "rating": "1.5 stars",
-        "country": "US",
-        "AP - Feb": "192",
-        "AP - Mar": "193",
-        "AP - Apr": "206",
-        "AP - May": "192",
-        "AP - Jun": "240",
-        "AP - Aug": "228",
-        "AP - Oct": "220",
-        "AP - Nov": "221",
-        "AP - Dec": "245",
-        "AP - Jan": "215"
-    },
-    {
-        "id": 613,
-        "ticker": "FDX",
-        "type": "stock",
-        "rating": "3.5 stars",
-        "country": "US",
-        "AP - Feb": "324",
-        "AP - Mar": "335",
-        "AP - Apr": "335",
-        "AP - May": "360",
-        "AP - Jun": "356",
-        "AP - Aug": "340",
-        "AP - Sep": "306",
-        "AP - Oct": "295",
-        "AP - Dec": "305"
+        "AP - Jan": "450"
     },
     {
         "id": 614,
@@ -789,7 +552,7 @@
         "AP - Sep": "270",
         "AP - Oct": "246",
         "AP - Dec": "306",
-        "AP - Jan": "282"
+        "AP - Jan": "290"
     },
     {
         "id": 615,
@@ -806,7 +569,7 @@
         "AP - Oct": "62",
         "AP - Nov": "65",
         "AP - Dec": "63",
-        "AP - Jan": "66"
+        "AP - Jan": "65"
     },
     {
         "id": 616,
@@ -824,7 +587,7 @@
         "AP - Oct": "137",
         "AP - Nov": "169",
         "AP - Dec": "120",
-        "AP - Jan": "160"
+        "AP - Jan": "150"
     },
     {
         "id": 617,
@@ -857,7 +620,7 @@
         "AP - Oct": "3150",
         "AP - Nov": "3275",
         "AP - Dec": "3700",
-        "AP - Jan": "3200"
+        "AP - Jan": "3400"
     },
 
     {
