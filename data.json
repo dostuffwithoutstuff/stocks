@@ -51,14 +51,14 @@
         "ticker": "RY",
         "type": "stock",
         "rating": "3.5 stars",
-        "AP - Feb": "123.88",
         "AP - Mar": "122",
         "AP - Apr": "121.75",
         "AP - May": "136.5",
         "AP - Jun": "140",
         "AP - Aug": "144",
         "AP - Nov": "147",
-        "AP - Dec": "144"
+        "AP - Dec": "144",
+        "AP - Feb": "148"
     },
     {
         "id": 104,
@@ -81,7 +81,6 @@
         "ticker": "SJR.B",
         "type": "stock",
         "rating": "2.5 stars",
-        "AP - Feb": "27.91",
         "AP - Mar": "40.5",
         "AP - Apr": "40.5",
         "AP - May": "40.5",
@@ -91,14 +90,14 @@
         "AP - Oct": "40.5",
         "AP - Nov": "40.5",
         "AP - Dec": "40.5",
-        "AP - Jan": "40.5"
+        "AP - Jan": "40.5",
+        "AP - Feb": "40.5"
     },
     {
         "id": 201,
         "ticker": "T",
         "type": "stock",
         "rating": "3 stars",
-        "AP - Feb": "29.21",
         "AP - Mar": "31.28",
         "AP - Apr": "29",
         "AP - May": "29.79",
@@ -107,14 +106,14 @@
         "AP - Sep": "32",
         "AP - Oct": "32",
         "AP - Nov": "34",
-        "AP - Jan": "33"
+        "AP - Jan": "33",
+        "AP - Feb": "35"
     },
     {
         "id": 202,
         "ticker": "BCE",
         "type": "stock",
         "rating": "3 stars",
-        "AP - Feb": "60.66",
         "AP - Mar": "59.5",
         "AP - Apr": "61",
         "AP - May": "63.68",
@@ -123,7 +122,8 @@
         "AP - Sep": "69.5",
         "AP - Oct": "69",
         "AP - Nov": "66.5",
-        "AP - Jan": "70"
+        "AP - Jan": "70",
+        "AP - Feb": "68"
     },
     {
         "id": 203,
@@ -146,7 +146,6 @@
         "ticker": "TRP",
         "type": "stock",
         "rating": "4 stars",
-        "AP - Feb": "71.25",
         "AP - Mar": "66",
         "AP - Apr": "64",
         "AP - May": "70.66",
@@ -156,14 +155,14 @@
         "AP - Oct": "66.5",
         "AP - Nov": "67",
         "AP - Dec": "70",
-        "AP - Jan": "69"
+        "AP - Jan": "69",
+        "AP - Feb": "72"
     },
     {
         "id": 303,
         "ticker": "SU",
         "type": "stock",
         "rating": "4 stars",
-        "AP - Feb": "30.4",
         "AP - Mar": "35.48",
         "AP - Apr": "31",
         "AP - May": "32",
@@ -173,14 +172,14 @@
         "AP - Oct": "43",
         "AP - Nov": "40",
         "AP - Dec": "43",
-        "AP - Jan": "42.9"
+        "AP - Jan": "42.9",
+        "AP - Feb": "43"
     },
     {
         "id": 304,
         "ticker": "ENB",
         "type": "stock",
         "rating": "3.5 stars",
-        "AP - Feb": "53.75",
         "AP - Mar": "55",
         "AP - Apr": "51",
         "AP - May": "55",
@@ -189,7 +188,8 @@
         "AP - Sep": "56",
         "AP - Oct": "57",
         "AP - Dec": "55",
-        "AP - Jan": "57"
+        "AP - Jan": "57",
+        "AP - Feb": "58"
     },
     {
         "id": 400,
@@ -207,13 +207,13 @@
         "ticker": "REI.UN",
         "type": "stock",
         "rating": "4 stars",
-        "AP - Feb": "19.62",
         "AP - Mar": "20",
         "AP - Apr": "22",
         "AP - May": "22.46",
         "AP - Aug": "23.5",
         "AP - Oct": "25",
-        "AP - Nov": "25"
+        "AP - Nov": "25",
+        "AP - Feb": "26"
     },
     {
         "id": 500,
@@ -257,7 +257,8 @@
         "AP - Jun": "62.8",
         "AP - Aug": "61.8",
         "AP - Sep": "64",
-        "AP - Dec": "89"
+        "AP - Dec": "69",
+        "AP - Jan": "71"
     },
     {
         "id": 503,
@@ -277,7 +278,6 @@
         "ticker": "SHOP",
         "type": "stock",
         "rating": "1 star",
-        "AP - Feb": "1800",
         "AP - Mar": "1757",
         "AP - Apr": "1800",
         "AP - May": "1695",
@@ -287,7 +287,8 @@
         "AP - Oct": "2100",
         "AP - Nov": "2350",
         "AP - Dec": "2225",
-        "AP - Jan": "1698"
+        "AP - Jan": "1698",
+        "AP - Feb": "1450"
     },
     {
         "id": 505,
@@ -310,12 +311,12 @@
         "ticker": "CTC.A",
         "type": "stock",
         "rating": "3.5 stars",
-        "AP - Feb": "202",
         "AP - Apr": "215",
         "AP - May": "230",
         "AP - Aug": "242",
         "AP - Oct": "230",
-        "AP - Nov": "233"
+        "AP - Nov": "233",
+        "AP - Feb": "262"
     },
     {
         "id": 508,
@@ -357,7 +358,6 @@
         "type": "stock",
         "rating": "3.5 stars",
         "country": "US",
-        "AP - Feb": "206",
         "AP - Mar": "223",
         "AP - Apr": "205.8",
         "AP - May": "190",
@@ -367,7 +367,8 @@
         "AP - Oct": "200",
         "AP - Nov": "202",
         "AP - Dec": "200",
-        "AP - Jan": "194.75"
+        "AP - Jan": "194.75",
+        "AP - Feb": "200"
     },
     {
         "id": 602,
@@ -375,7 +376,6 @@
         "type": "stock",
         "rating": "1.5 stars",
         "country": "US",
-        "AP - Feb": "154",
         "AP - Mar": "138.75",
         "AP - Apr": "159",
         "AP - May": "126",
@@ -385,7 +385,8 @@
         "AP - Oct": "180",
         "AP - Nov": "168",
         "AP - Dec": "200",
-        "AP - Jan": "200"
+        "AP - Jan": "200",
+        "AP - Feb": "200"
     },
     {
         "id": 603,
@@ -402,7 +403,7 @@
         "AP - Oct": "675",
         "AP - Nov": "695",
         "AP - Dec": "600",
-        "AP - Jan": "530"
+        "AP - Jan": "500"
     },
     {
         "id": 604,
@@ -410,7 +411,6 @@
         "type": "stock",
         "rating": "3 stars",
         "country": "US",
-        "AP - Feb": "250",
         "AP - Mar": "264",
         "AP - Apr": "268",
         "AP - May": "267",
@@ -420,7 +420,8 @@
         "AP - Oct": "275",
         "AP - Nov": "279",
         "AP - Dec": "273",
-        "AP - Jan": "262"
+        "AP - Jan": "262",
+        "AP - Feb": "280"
     },
     {
         "id": 605,
@@ -428,7 +429,6 @@
         "type": "stock",
         "rating": "2.5 stars",
         "country": "US",
-        "AP - Feb": "376",
         "AP - Mar": "424.8",
         "AP - Apr": "430",
         "AP - May": "450",
@@ -438,7 +438,8 @@
         "AP - Oct": "430",
         "AP - Nov": "452",
         "AP - Dec": "437",
-        "AP - Jan": "426"
+        "AP - Jan": "426",
+        "AP - Feb": "433"
     },
     {
         "id": 606,
@@ -446,7 +447,6 @@
         "type": "stock",
         "rating": "3 stars",
         "country": "US",
-        "AP - Feb": "291.66",
         "AP - Mar": "279",
         "AP - Apr": "298",
         "AP - May": "300",
@@ -456,7 +456,8 @@
         "AP - Oct": "365",
         "AP - Nov": "378",
         "AP - Dec": "380",
-        "AP - Jan": "375"
+        "AP - Jan": "375",
+        "AP - Feb": "375"
     },
     {
         "id": 607,
@@ -464,7 +465,6 @@
         "type": "stock",
         "rating": "3 stars",
         "country": "US",
-        "AP - Feb": "165.33",
         "AP - Mar": "147.5",
         "AP - Apr": "154",
         "AP - May": "167",
@@ -473,7 +473,8 @@
         "AP - Sep": "165",
         "AP - Oct": "188",
         "AP - Nov": "170",
-        "AP - Jan": "453"
+        "AP - Jan": "153",
+        "AP - Feb": "160"
     },
     {
         "id": 608,
@@ -481,7 +482,6 @@
         "type": "stock",
         "rating": "1 star",
         "country": "US",
-        "AP - Feb": "405",
         "AP - Mar": "379",
         "AP - Apr": "383.75",
         "AP - May": "383",
@@ -491,7 +491,8 @@
         "AP - Oct": "510",
         "AP - Nov": "546",
         "AP - Dec": "575",
-        "AP - Jan": "590"
+        "AP - Jan": "590",
+        "AP - Feb": "650"
     },
     {
         "id": 609,
@@ -509,7 +510,6 @@
         "type": "stock",
         "rating": "3.5 stars",
         "country": "US",
-        "AP - Feb": "4138",
         "AP - Mar": "4030",
         "AP - Apr": "4300",
         "AP - May": "4322",
@@ -519,7 +519,8 @@
         "AP - Oct": "3900",
         "AP - Nov": "4165",
         "AP - Dec": "4500",
-        "AP - Jan": "4000"
+        "AP - Jan": "4000",
+        "AP - Feb": "4175"
     },
     {
         "id": 611,
@@ -527,7 +528,6 @@
         "type": "stock",
         "rating": "1 star",
         "country": "US",
-        "AP - Feb": "323",
         "AP - Mar": "315",
         "AP - Apr": "345",
         "AP - May": "343",
@@ -536,7 +536,8 @@
         "AP - Oct": "325",
         "AP - Nov": "418",
         "AP - Dec": "445",
-        "AP - Jan": "450"
+        "AP - Jan": "450",
+        "AP - Feb": "420"
     },
     {
         "id": 614,
@@ -560,7 +561,6 @@
         "type": "stock",
         "rating": "3.5 stars",
         "country": "US",
-        "AP - Feb": "56.75",
         "AP - Mar": "60",
         "AP - Apr": "59.88",
         "AP - Jun": "63.5",
@@ -569,7 +569,8 @@
         "AP - Oct": "62",
         "AP - Nov": "65",
         "AP - Dec": "63",
-        "AP - Jan": "65"
+        "AP - Jan": "65",
+        "AP - Feb": "66"
     },
     {
         "id": 616,
@@ -577,7 +578,6 @@
         "type": "stock",
         "rating": "1.5 stars",
         "country": "US",
-        "AP - Feb": "110",
         "AP - Mar": "101",
         "AP - Apr": "105",
         "AP - May": "105",
@@ -587,7 +587,8 @@
         "AP - Oct": "137",
         "AP - Nov": "169",
         "AP - Dec": "120",
-        "AP - Jan": "150"
+        "AP - Jan": "150",
+        "AP - Feb": "160"
     },
     {
         "id": 617,
@@ -603,7 +604,8 @@
         "AP - Oct": "270",
         "AP - Nov": "361",
         "AP - Dec": "375",
-        "AP - Jan": "350"
+        "AP - Jan": "350",
+        "AP - Feb": "350"
     },
     {
         "id": 620,
@@ -611,7 +613,6 @@
         "type": "stock",
         "rating": "3 stars",
         "country": "US",
-        "AP - Feb": "2300",
         "AP - Mar": "2418",
         "AP - Apr": "2700",
         "AP - May": "2725",
@@ -620,7 +621,8 @@
         "AP - Oct": "3150",
         "AP - Nov": "3275",
         "AP - Dec": "3700",
-        "AP - Jan": "3400"
+        "AP - Jan": "3400",
+        "AP - Feb": "3500"
     },
 
     {
