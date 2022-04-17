@@ -21,7 +21,7 @@ const columns = [
   {
     field: 'Ticker',
     headerName: 'Ticker',
-    width: 150,
+    width: 100,
     pinned: 'left',
   },
   {
