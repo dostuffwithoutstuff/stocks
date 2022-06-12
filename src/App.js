@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { AgGridReact } from 'ag-grid-react';
+import React, { useState, useEffect, useRef } from 'react';
+import { DataGrid } from '@mui/x-data-grid';
 import Box from '@mui/material/Box';
 import CircularProgress from '@mui/material/CircularProgress';
 import "./App.css";
 
-import 'ag-grid-community/dist/styles/ag-grid.css';
-import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
+import { renderProgress } from './RenderProgress';
 
 const proxy = 'https://stock-scrape.herokuapp.com/api/stonks/';
 
@@ -13,27 +12,22 @@ const columns = [
   {
     field: 'id',
     headerName: 'ID',
-    sort: 'asc',
-    pinned: 'left',
     width: 80,
-    checkboxSelection: true
+    type: 'number',
   },
   {
     field: 'Ticker',
     headerName: 'Ticker',
     width: 100,
-    pinned: 'left',
   },
   {
     field: 'Name',
     headerName: 'Name',
-    type: 'name',
     width: 175
   },
   {
     field: 'Category',
     headerName: 'Category',
-    type: 'category',
     width: 150
   },
   {
@@ -44,22 +38,24 @@ const columns = [
   {
     field: 'Change',
     headerName: 'Change',
-    cellStyle: params => {
-      if (Number(params.value?.split('%')[0]) > 2.5) {
-        return { backgroundColor: 'green', color: 'white' }
-      }
-      else if (Number(params.value?.split('%')[0]) < -2.5) {
-        return { backgroundColor: 'red', color: 'white' }
-      }
-    },
+    type: 'number',
   },
   {
-    field: '52W-Low',
+    field: 'Price52Week',
+    headerName: 'Price52Week',
+    valueGetter: (params) => {
+      return (params.row.Price - params.row.Low52W) / (params.row.High52W - params.row.Low52W);
+    },
+    renderCell: renderProgress,
+    type: "number",
+  },
+  {
+    field: 'Low52W',
     headerName: '52W-Low',
     type: 'number',
   },
   {
-    field: '52W-High',
+    field: 'High52W',
     headerName: '52W-High',
     type: 'number',
   },
@@ -114,113 +110,44 @@ const columns = [
     type: 'number',
   },
   {
-    field: 'DividendYield',
-    headerName: 'DividendYield',
-    type: 'number',
-  },
-  {
     field: '5d-return',
     headerName: '5d-return',
     type: 'number',
-    cellStyle: params => {
-      if (Number(params.value?.split('%')[0]) > 2.5) {
-        return { backgroundColor: 'green', color: 'white' }
-      }
-      else if (Number(params.value?.split('%')[0]) < -2.5) {
-        return { backgroundColor: 'red', color: 'white' }
-      }
-    },
   },
   {
     field: '1m-return',
     headerName: '1m-return',
     type: 'number',
-    cellStyle: params => {
-      if (Number(params.value?.split('%')[0]) > 2.5) {
-        return { backgroundColor: 'green', color: 'white' }
-      }
-      else if (Number(params.value?.split('%')[0]) < -2.5) {
-        return { backgroundColor: 'red', color: 'white' }
-      }
-    },
   },
   {
     field: '3m-return',
     headerName: '3m-return',
     type: 'number',
-    cellStyle: params => {
-      if (Number(params.value?.split('%')[0]) > 2.5) {
-        return { backgroundColor: 'green', color: 'white' }
-      }
-      else if (Number(params.value?.split('%')[0]) < -2.5) {
-        return { backgroundColor: 'red', color: 'white' }
-      }
-    },
   },
   {
     field: '6m-return',
     headerName: '6m-return',
     type: 'number',
-    cellStyle: params => {
-      if (Number(params.value?.split('%')[0]) > 2.5) {
-        return { backgroundColor: 'green', color: 'white' }
-      }
-      else if (Number(params.value?.split('%')[0]) < -2.5) {
-        return { backgroundColor: 'red', color: 'white' }
-      }
-    },
   },
   {
     field: '1y-return',
     headerName: '1y-return',
     type: 'number',
-    cellStyle: params => {
-      if (Number(params.value?.split('%')[0]) > 2.5) {
-        return { backgroundColor: 'green', color: 'white' }
-      }
-      else if (Number(params.value?.split('%')[0]) < -2.5) {
-        return { backgroundColor: 'red', color: 'white' }
-      }
-    },
   },
   {
     field: '3y-return',
     headerName: '3y-return',
     type: 'number',
-    cellStyle: params => {
-      if (Number(params.value?.split('%')[0]) > 5) {
-        return { backgroundColor: 'green', color: 'white' }
-      }
-      else if (Number(params.value?.split('%')[0]) < -5) {
-        return { backgroundColor: 'red', color: 'white' }
-      }
-    },
   },
   {
     field: '5y-return',
     headerName: '5y-return',
     type: 'number',
-    cellStyle: params => {
-      if (Number(params.value?.split('%')[0]) > 10) {
-        return { backgroundColor: 'green', color: 'white' }
-      }
-      else if (Number(params.value?.split('%')[0]) < -10) {
-        return { backgroundColor: 'red', color: 'white' }
-      }
-    },
   },
   {
     field: '10y-return',
     headerName: '10y-return',
     type: 'number',
-    cellStyle: params => {
-      if (Number(params.value?.split('%')[0]) > 15) {
-        return { backgroundColor: 'green', color: 'white' }
-      }
-      else if (Number(params.value?.split('%')[0]) < -15) {
-        return { backgroundColor: 'red', color: 'white' }
-      }
-    },
   },
   {
     field: 'AP - Mar',
@@ -231,14 +158,7 @@ const columns = [
     field: 'AP - Mar Upside',
     headerName: 'Mar Upside',
     width: 150,
-    cellStyle: params => {
-      if (Number(params.value?.split('%')[0]) > 2.5) {
-        return { backgroundColor: 'green', color: 'white' }
-      }
-      else if (Number(params.value?.split('%')[0]) < -2.5) {
-        return { backgroundColor: 'red', color: 'white' }
-      }
-    },
+    type: 'number',
   },
   {
     field: 'AP - Apr',
@@ -249,14 +169,7 @@ const columns = [
     field: 'AP - Apr Upside',
     headerName: 'Apr Upside',
     width: 150,
-    cellStyle: params => {
-      if (Number(params.value?.split('%')[0]) > 2.5) {
-        return { backgroundColor: 'green', color: 'white' }
-      }
-      else if (Number(params.value?.split('%')[0]) < -2.5) {
-        return { backgroundColor: 'red', color: 'white' }
-      }
-    },
+    type: 'number',
   },
   {
     field: 'AP - May',
@@ -267,14 +180,7 @@ const columns = [
     field: 'AP - May Upside',
     headerName: 'May Upside',
     width: 150,
-    cellStyle: params => {
-      if (Number(params.value?.split('%')[0]) > 2.5) {
-        return { backgroundColor: 'green', color: 'white' }
-      }
-      else if (Number(params.value?.split('%')[0]) < -2.5) {
-        return { backgroundColor: 'red', color: 'white' }
-      }
-    },
+    type: 'number',
   },
   {
     field: 'AP - Jun',
@@ -285,14 +191,7 @@ const columns = [
     field: 'AP - Jun Upside',
     headerName: 'Jun Upside',
     width: 150,
-    cellStyle: params => {
-      if (Number(params.value?.split('%')[0]) > 2.5) {
-        return { backgroundColor: 'green', color: 'white' }
-      }
-      else if (Number(params.value?.split('%')[0]) < -2.5) {
-        return { backgroundColor: 'red', color: 'white' }
-      }
-    },
+    type: 'number',
   },
   {
     field: 'AP - Aug',
@@ -303,14 +202,7 @@ const columns = [
     field: 'AP - Aug Upside',
     headerName: 'Aug Upside',
     width: 150,
-    cellStyle: params => {
-      if (Number(params.value?.split('%')[0]) > 2.5) {
-        return { backgroundColor: 'green', color: 'white' }
-      }
-      else if (Number(params.value?.split('%')[0]) < -2.5) {
-        return { backgroundColor: 'red', color: 'white' }
-      }
-    },
+    type: 'number',
   },
   {
     field: 'AP - Sep',
@@ -321,14 +213,7 @@ const columns = [
     field: 'AP - Sep Upside',
     headerName: 'Sep Upside',
     width: 150,
-    cellStyle: params => {
-      if (Number(params.value?.split('%')[0]) > 2.5) {
-        return { backgroundColor: 'green', color: 'white' }
-      }
-      else if (Number(params.value?.split('%')[0]) < -2.5) {
-        return { backgroundColor: 'red', color: 'white' }
-      }
-    },
+    type: 'number',
   },
   {
     field: 'AP - Oct',
@@ -339,14 +224,7 @@ const columns = [
     field: 'AP - Oct Upside',
     headerName: 'Oct Upside',
     width: 150,
-    cellStyle: params => {
-      if (Number(params.value?.split('%')[0]) > 2.5) {
-        return { backgroundColor: 'green', color: 'white' }
-      }
-      else if (Number(params.value?.split('%')[0]) < -2.5) {
-        return { backgroundColor: 'red', color: 'white' }
-      }
-    },
+    type: 'number',
   },
   {
     field: 'AP - Nov',
@@ -357,14 +235,7 @@ const columns = [
     field: 'AP - Nov Upside',
     headerName: 'Nov Upside',
     width: 150,
-    cellStyle: params => {
-      if (Number(params.value?.split('%')[0]) > 2.5) {
-        return { backgroundColor: 'green', color: 'white' }
-      }
-      else if (Number(params.value?.split('%')[0]) < -2.5) {
-        return { backgroundColor: 'red', color: 'white' }
-      }
-    },
+    type: 'number',
   },
   {
     field: 'AP - Dec',
@@ -375,14 +246,7 @@ const columns = [
     field: 'AP - Dec Upside',
     headerName: 'Dec Upside',
     width: 150,
-    cellStyle: params => {
-      if (Number(params.value?.split('%')[0]) > 2.5) {
-        return { backgroundColor: 'green', color: 'white' }
-      }
-      else if (Number(params.value?.split('%')[0]) < -2.5) {
-        return { backgroundColor: 'red', color: 'white' }
-      }
-    },
+    type: 'number',
   },
   {
     field: 'AP - Jan',
@@ -393,14 +257,7 @@ const columns = [
     field: 'AP - Jan Upside',
     headerName: 'Jan Upside',
     width: 150,
-    cellStyle: params => {
-      if (Number(params.value?.split('%')[0]) > 2.5) {
-        return { backgroundColor: 'green', color: 'white' }
-      }
-      else if (Number(params.value?.split('%')[0]) < -2.5) {
-        return { backgroundColor: 'red', color: 'white' }
-      }
-    },
+    type: 'number',
   },
   {
     field: 'AP - Feb',
@@ -411,17 +268,10 @@ const columns = [
     field: 'AP - Feb Upside',
     headerName: 'Feb Upside',
     width: 150,
-    cellStyle: params => {
-      if (Number(params.value?.split('%')[0]) > 2.5) {
-        return { backgroundColor: 'green', color: 'white' }
-      }
-      else if (Number(params.value?.split('%')[0]) < -2.5) {
-        return { backgroundColor: 'red', color: 'white' }
-      }
-    },
+    type: 'number',
   },
-];
 
+];
 
 const sampleData = [
   {
@@ -473,12 +323,14 @@ const sampleData = [
     "country": "US",
     "morningstar": "t=0P00002D82"
   },
+
 ]
 
 
 export default function App() {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
+  const calledOnce = useRef(false);
   let localArr = [];
 
   // read our data file in the public folder
@@ -487,7 +339,7 @@ export default function App() {
       .then(function (response) {
         // switch to use real data or sample data for debugging
         resolve(response.json());
-        //resolve(sampleData);
+        // resolve(sampleData);
       })
       .catch(function (err) {
         reject(Error("Get config failed"));
@@ -531,8 +383,87 @@ export default function App() {
     setLoading(false);
   }
 
+  function runLoop2(configs) {
+    let myArr = [];
+    for (const config of configs) {
+      const url = `${proxy}?id=${config.id}&ticker=${config.ticker}&type=${config.type}&country=${config.country}&morningstar=${config.morningstar}`;
+      console.log(url + '[' + new Date().toUTCString() + '] ');
+      myArr.push(url)
+    }
+
+
+    Promise.all(myArr.map(
+      url =>
+        fetch(url)
+    )
+    ).then(function (responses) {
+      // Get a JSON object from each of the responses
+      return Promise.all(responses.map(function (response) {
+        return response.json();
+      }));
+    }).then(function (data) {
+      // Log the data to the console
+      // You would do something with both sets of data here
+      console.log(data);
+    }).catch(function (error) {
+      // if there's an error, log it
+      console.log(error);
+    });
+
+  }
+
+  function chunk(items, size) {
+    const chunks = [];
+    items = [].concat(...items);
+
+    while (items.length) { chunks.push(items.splice(0, size)); }
+
+    return chunks;
+  }
+
+  async function runLoop3(configs) {
+    let myUrls = [];
+    for (const config of configs) {
+      const url = `${proxy}?id=${config.id}&ticker=${config.ticker}&type=${config.type}&country=${config.country}&morningstar=${config.morningstar}`;
+      console.log(url + '[' + new Date().toUTCString() + '] ');
+      myUrls.push(url)
+    }
+
+    var myChunks = chunk(myUrls, 2);
+    for (let i = 0; i < myChunks.length; i++) {
+      console.log('iiiiii: ' + i);
+      await Promise.allSettled(
+        myChunks[i].map(
+          url =>
+            fetch(url)
+        ))
+        .then(responseArr => {
+          responseArr.forEach(res => {
+            console.log(res.value);
+            // res.status & res.value
+          });
+          // .then(function (responses) {
+          //   // Get a JSON object from each of the responses
+          //   return Promise.all(responses.map(function (response) {
+          //     return response.json();
+          //   }));
+        }).then(function (data) {
+          // Log the data to the console
+          // You would do something with both sets of data here
+          console.log(data);
+        })
+        .catch((err) => { console.log("error: " + err); })
+
+    }
+
+  }
+
   // this runs once at start up
   useEffect(() => {
+    if (calledOnce.current) {
+      return;
+    }
+
     getConfig
       .then(configs => {
         runLoop(configs);
@@ -542,9 +473,9 @@ export default function App() {
         // .catch(error => {
         //   error.message; // 'An error has occurred: 404'
         // });
-      
-      })
 
+      })
+    calledOnce.current = true;
   }, []);
 
   return (
@@ -552,21 +483,48 @@ export default function App() {
       <h1>Stocks</h1>
       <h3>Last refreshed: {new Date().toDateString()} {new Date().toLocaleTimeString()}</h3>
       <Box sx={{ height: 40 }}>
-      {loading &&
+        {loading &&
           <CircularProgress />
-      }
+        }
       </Box>
       <br />
-      <div className="ag-theme-alpine" style={{ height: window.innerHeight * 0.75, width: '100%' }}>
-        <AgGridReact
-          rowData={data}
-          columnDefs={columns.map(({ field, pinned, cellStyle, width }) => ({ 'field': field, 'pinned': pinned, 'cellStyle': cellStyle, 'width': width, sortable: true, filter: true, resizable: true }))}
-          rowSelection={'multiple'}
-          rowMultiSelectWithClick={true}
-        >
-
-        </AgGridReact>
-      </div>
+      <br />
+      <Box
+        sx={{
+          width: 1,
+          '& .cold': {
+            backgroundColor: 'red',
+            color: 'white',
+            fontWeight: '600',
+          },
+          '& .hot': {
+            backgroundColor: 'green',
+            color: 'white',
+            fontWeight: '600',
+          },
+        }}
+      >
+        <DataGrid
+          autoHeight
+          rows={data}
+          columns={columns}
+          getCellClassName={(params) => {
+            if (params.field === 'Change' || params.field.includes("Upside") || params.field.includes("return")) {
+              if (Number(params.value?.split('%')[0]) > 2.5) {
+                return 'hot';
+              }
+              else if (Number(params.value?.split('%')[0]) < -2.5) {
+                return 'cold';
+              }
+            } else {
+              return '';
+            }
+          }}
+          onRowClick={(params, event) => {
+              alert(params.row.Ticker + ' ' + params.row.Price);
+          }}
+        />
+      </Box>
     </div>
   );
 }

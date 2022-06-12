@@ -1104,13 +1104,6 @@
         "type": "etf",
         "morningstar": "t=0P0001BPLA"
     },
-
-    {
-        "id": 1600,
-        "ticker": "MIND",
-        "type": "etf",
-        "morningstar": "t=0P0001BUR2"
-    },
  
     {
         "id": 1700,
