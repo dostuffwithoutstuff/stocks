@@ -2,10 +2,40 @@
 
 name: cacheStonks
 
-# Controls when the workflow will run 4pm Mountain (+6hrs)
+# Controls when the workflow will run 
+
+#Mountian vs UTC / GMT
+
+#7pm - 1
+#8pm - 2
+#9pm - 3
+#10pm - 4
+#11pm - 5
+#midnight - 6
+#1am - 7
+#2am - 8
+#3am - 9
+#4am - 10
+#5am - 11
+#6am - 12 
+#7am - 13
+#8am - 14
+#9am - 15
+#10am - 16
+#11am - 17
+#noon - 18
+#1pm - 19
+#2pm - 20
+#3pm - 21
+#4pm - 22
+#5pm - 23
+#6pm - 24
+
+#ex: "0 20 * * 1-5" # Runs at around 2pm every Monday, Wednesday, and Friday (Check https://crontab.guru/)
+
 on:
   schedule:
-  - cron: "0 20 * * 1-5" # Runs at around 2pm every Monday, Wednesday, and Friday (Check https://crontab.guru/)
+  - cron: "30 12,20 * * *" # Runs at around 6:30am and 2:30pm every day
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -21,7 +51,7 @@ jobs:
     steps:
 
       # Runs a single command using the runners shell
-      - name: REST API with curl1
+      - name: REST API with curl
         run: |
           curl -X GET "https://stock-scrape.herokuapp.com/api/stonks/?id=100&ticker=TD&type=stock&country=undefined&morningstar=t=0P00006899"
           curl -X GET "https://stock-scrape.herokuapp.com/api/stonks/?id=101&ticker=CM&type=stock&country=undefined&morningstar=t=0P000067ZZ"
