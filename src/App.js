@@ -5,6 +5,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 import "./App.css";
 
 import { renderProgress } from './RenderProgress';
+import { AlertDialog } from './AlertDialog';
 
 const proxy = 'https://stock-scrape.herokuapp.com/api/stonks/';
 
@@ -44,7 +45,7 @@ const columns = [
     field: 'Price52Week',
     headerName: 'Price52Week',
     valueGetter: (params) => {
-      return (params.row.Price - params.row.Low52W) / (params.row.High52W - params.row.Low52W);
+      return (params.row.Price?.replace(',', '') - params.row.Low52W?.replace(',', '')) / (params.row.High52W?.replace(',', '') - params.row.Low52W?.replace(',', ''));
     },
     renderCell: renderProgress,
     type: "number",
@@ -150,50 +151,6 @@ const columns = [
     type: 'number',
   },
   {
-    field: 'AP - Mar',
-    headerName: 'Mar',
-    type: 'number',
-  },
-  {
-    field: 'AP - Mar Upside',
-    headerName: 'Mar Upside',
-    width: 150,
-    type: 'number',
-  },
-  {
-    field: 'AP - Apr',
-    headerName: 'Apr',
-    type: 'number',
-  },
-  {
-    field: 'AP - Apr Upside',
-    headerName: 'Apr Upside',
-    width: 150,
-    type: 'number',
-  },
-  {
-    field: 'AP - May',
-    headerName: 'May',
-    type: 'number',
-  },
-  {
-    field: 'AP - May Upside',
-    headerName: 'May Upside',
-    width: 150,
-    type: 'number',
-  },
-  {
-    field: 'AP - Jun',
-    headerName: 'Jun',
-    type: 'number',
-  },
-  {
-    field: 'AP - Jun Upside',
-    headerName: 'Jun Upside',
-    width: 150,
-    type: 'number',
-  },
-  {
     field: 'AP - Aug',
     headerName: 'Aug',
     type: 'number',
@@ -270,6 +227,50 @@ const columns = [
     width: 150,
     type: 'number',
   },
+  {
+    field: 'AP - Mar',
+    headerName: 'Mar',
+    type: 'number',
+  },
+  {
+    field: 'AP - Mar Upside',
+    headerName: 'Mar Upside',
+    width: 150,
+    type: 'number',
+  },
+  {
+    field: 'AP - Apr',
+    headerName: 'Apr',
+    type: 'number',
+  },
+  {
+    field: 'AP - Apr Upside',
+    headerName: 'Apr Upside',
+    width: 150,
+    type: 'number',
+  },
+  {
+    field: 'AP - May',
+    headerName: 'May',
+    type: 'number',
+  },
+  {
+    field: 'AP - May Upside',
+    headerName: 'May Upside',
+    width: 150,
+    type: 'number',
+  },
+  {
+    field: 'AP - Jun',
+    headerName: 'Jun',
+    type: 'number',
+  },
+  {
+    field: 'AP - Jun Upside',
+    headerName: 'Jun Upside',
+    width: 150,
+    type: 'number',
+  },
 
 ];
 
@@ -326,12 +327,14 @@ const sampleData = [
 
 ]
 
-
 export default function App() {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
   const calledOnce = useRef(false);
   let localArr = [];
+  const [created, setCreated] = useState();
+  const [isOpen, setIsOpen] = useState(false);
+  const [message, setMessage] = useState();
 
   // read our data file in the public folder
   const getConfig = new Promise((resolve, reject) => {
@@ -359,6 +362,7 @@ export default function App() {
         const response = await fetch(url);
         let data = await response.json();
 
+        // add manual data
         if (config.type === 'stock') {
           data['Rating'] = config.rating;
         }
@@ -371,6 +375,9 @@ export default function App() {
           const upside = ((value / data['Price'].replace(',', '')) - 1) * 100;
           data[key + ' Upside'] = upside.toFixed(2) + '%';
         }
+
+        // add date
+        setCreated(new Date(data['created'] + ' UTC').toString());
 
         localArr = [...localArr, data];
         setData(localArr);
@@ -478,10 +485,21 @@ export default function App() {
     calledOnce.current = true;
   }, []);
 
+  // alert dialog
+  const handleDialogOpen = () => {
+    setIsOpen(true);
+  };
+
+  // alert dialog
+  const handleDialogClose = () => {
+    setIsOpen(false);
+  };
+
+
   return (
     <div>
       <h1>Stocks</h1>
-      <h3>Last refreshed: {new Date().toDateString()} {new Date().toLocaleTimeString()}</h3>
+      <h3>Last refreshed: {created}</h3>
       <Box sx={{ height: 40 }}>
         {loading &&
           <CircularProgress />
@@ -506,6 +524,7 @@ export default function App() {
       >
         <DataGrid
           autoHeight
+          rowsPerPageOptions={[10, 25, 100]}
           rows={data}
           columns={columns}
           getCellClassName={(params) => {
@@ -521,10 +540,17 @@ export default function App() {
             }
           }}
           onRowClick={(params, event) => {
-              alert(params.row.Ticker + ' ' + params.row.Price);
+              //alert(params.row.Ticker + ' ' + params.row.Price);
+              setMessage(params.row);
+              setIsOpen(true);
           }}
         />
       </Box>
+      <AlertDialog
+        isOpen={isOpen}
+        handleClose={handleDialogClose}
+        message={message}
+      />
     </div>
   );
 }

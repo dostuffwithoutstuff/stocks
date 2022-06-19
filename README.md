@@ -11,13 +11,7 @@ This sample gets stock info (dynamically) and analyst predictions (manually).
 
 ### Notes
 
-1. For deprecated use of request use:
-   npm install --save request
-   npm install --save request-promise
-
-2. To bypass CORS errors, switch out proxy services in App.js as needed
-
-3. To deploy to github pages use: 
+1. To deploy to github pages use: 
 
    * npm install gh-pages --save-dev
    * package.json "homepage": "http://{username}.github.io/{project}"
@@ -26,9 +20,22 @@ This sample gets stock info (dynamically) and analyst predictions (manually).
       * "predeploy": "npm run build",
       * "deploy": "gh-pages -d build"
 
-4. To run locally:
+2. To run locally:
   remove the homepage in package.json, then
   cmd: npm start 
 
+3. Create list of API calls for caching:
+var list = stocks.map( function(stock) {
+  var info = `curl -X GET 'https://stock-scrape.herokuapp.com/api/stonks/?id=${stock.id}&ticker=${stock.ticker}&type=${stock.type}&country=${stock.country}&morningstar=${stock.morningstar}'`
+     return info;
+});
+console.log(list);
+
+
+
 ### Run time sample
 https://thingsthatdothings.github.io/stocks/
+
+
+
+
