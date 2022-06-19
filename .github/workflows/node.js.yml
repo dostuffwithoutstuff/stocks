@@ -35,7 +35,7 @@ name: cacheStonks
 
 on:
   schedule:
-  - cron: "30 12,20 * * *" # Runs at around 6:30am and 2:30pm every day
+  - cron: "30 12,20,4 * * *" # Runs at around 6:30am and 2:30pm and 10:30pm every day
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
