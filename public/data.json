@@ -11,7 +11,7 @@
         "AP - Dec": "105",
         "AP - Jan": "104",
         "AP - Feb": "110",
-        "AP - Jun": "0"
+        "AP - May": "100"
     },
     {
         "id": 101,
@@ -24,7 +24,8 @@
         "AP - Dec": "82.5",
         "AP - Jan": "84.5",
         "AP - Feb": "86.5",
-        "AP - Jun": "0"
+        "AP - May": "80",
+        "AP - Jun": "80"
     },
     {
         "id": 102,
@@ -38,7 +39,7 @@
         "AP - Dec": "155",
         "AP - Jan": "160",
         "AP - Feb": "165",
-        "AP - Jun": "0"
+        "AP - May": "156"
     },
     {
         "id": 103,
@@ -50,7 +51,8 @@
         "AP - Nov": "147",
         "AP - Dec": "144",
         "AP - Feb": "153",
-        "AP - Jun": "0"
+        "AP - May": "140",
+        "AP - Jun": "157"
     },
     {
         "id": 104,
@@ -64,7 +66,7 @@
         "AP - Dec": "93",
         "AP - Jan": "97.5",
         "AP - Feb": "98",
-        "AP - Jun": "0"
+        "AP - May": "90"
     },
     {
         "id": 200,
@@ -79,7 +81,7 @@
         "AP - Dec": "40.5",
         "AP - Jan": "40.5",
         "AP - Feb": "40.5",
-        "AP - Jun": "0"
+        "AP - Jun": "40.5"
     },
     {
         "id": 201,
@@ -93,7 +95,8 @@
         "AP - Nov": "34",
         "AP - Jan": "33",
         "AP - Feb": "35",
-        "AP - Jun": "0"
+        "AP - May": "35",
+        "AP - Jun": "35"
     },
     {
         "id": 202,
@@ -107,7 +110,7 @@
         "AP - Nov": "66.5",
         "AP - Jan": "70",
         "AP - Feb": "68",
-        "AP - Jun": "0"
+        "AP - Jun": "68"
     },
     {
         "id": 203,
@@ -120,7 +123,7 @@
         "AP - Oct": "71",
         "AP - Nov": "75",
         "AP - Jan": "68.5",
-        "AP - Jun": "0"
+        "AP - Jun": "73"
     },
     {
         "id": 302,
@@ -135,7 +138,7 @@
         "AP - Dec": "70",
         "AP - Jan": "69",
         "AP - Feb": "70",
-        "AP - Jun": "0"
+        "AP - Jun": "78"
     },
     {
         "id": 303,
@@ -150,7 +153,7 @@
         "AP - Dec": "43",
         "AP - Jan": "43",
         "AP - Feb": "45",
-        "AP - Jun": "0"
+        "AP - Jun": "60"
     },
     {
         "id": 304,
@@ -164,7 +167,7 @@
         "AP - Dec": "55",
         "AP - Jan": "57",
         "AP - Feb": "58",
-        "AP - Jun": "0"
+        "AP - May": "62"
     },
     {
         "id": 400,
@@ -175,7 +178,7 @@
         "AP - Aug": "15",
         "AP - Nov": "16",
         "AP - Feb": "17",
-        "AP - Jun": "0"
+        "AP - May": "15.5"
     },
     {
         "id": 401,
@@ -187,7 +190,7 @@
         "AP - Oct": "25",
         "AP - Nov": "25",
         "AP - Feb": "26.5",
-        "AP - Jun": "0"
+        "AP - Jun": "25.5"
     },
     {
         "id": 500,
@@ -200,7 +203,7 @@
         "AP - Oct": "103",
         "AP - Dec": "105",
         "AP - Jan": "103.4",
-        "AP - Jun": "0"
+        "AP - Jun": "100"
     },
     {
         "id": 501,
@@ -215,7 +218,7 @@
         "AP - Dec": "170",
         "AP - Jan": "157",
         "AP - Feb": "184",
-        "AP - Jun": "0"
+        "AP - Jun": "160"
     },
     {
         "id": 502,
@@ -227,7 +230,7 @@
         "AP - Sep": "64",
         "AP - Dec": "69",
         "AP - Jan": "71",
-        "AP - Jun": "0"
+        "AP - Jun": "80"
     },
     {
         "id": 503,
@@ -239,7 +242,7 @@
         "AP - Sep": "58.5",
         "AP - Nov": "59.5",
         "AP - Dec": "56",
-        "AP - Jun": "0"
+        "AP - Jun": "77"
     },
     {
         "id": 504,
@@ -247,14 +250,14 @@
         "type": "stock",
         "rating": "1 star",
         "morningstar": "t=0P000162RX",
-        "AP - Aug": "2129",
-        "AP - Sep": "1964",
-        "AP - Oct": "2100",
-        "AP - Nov": "2350",
-        "AP - Dec": "2225",
-        "AP - Jan": "1698",
-        "AP - Feb": "1350",
-        "AP - Jun": "0"
+        "AP - Aug": "212.9",
+        "AP - Sep": "196.4",
+        "AP - Oct": "210.0",
+        "AP - Nov": "235.0",
+        "AP - Dec": "222.5",
+        "AP - Jan": "169.8",
+        "AP - Feb": "135.0",
+        "AP - Jun": "70"
     },
     {
         "id": 505,
@@ -269,7 +272,7 @@
         "AP - Dec": "75",
         "AP - Jan": "76",
         "AP - Feb": "80",
-        "AP - Jun": "0"
+        "AP - Jun": "79"
     },
     {
         "id": 507,
@@ -281,7 +284,7 @@
         "AP - Oct": "230",
         "AP - Nov": "233",
         "AP - Feb": "240",
-        "AP - Jun": "0"
+        "AP - Jun": "210"
     },
     {
         "id": 508,
@@ -296,7 +299,7 @@
         "AP - Dec": "100",
         "AP - Jan": "115",
         "AP - Feb": "118",
-        "AP - Jun": "0"
+        "AP - Jun": "133"
     },
     {
         "id": 600,
@@ -312,7 +315,7 @@
         "AP - Dec": "1300",
         "AP - Jan": "1300",
         "AP - Feb": "1062",
-        "AP - Jun": "0"
+        "AP - Jun": "1000"
     },
     {
         "id": 601,
@@ -328,7 +331,7 @@
         "AP - Dec": "200",
         "AP - Jan": "195",
         "AP - Feb": "195",
-        "AP - Jun": "0"
+        "AP - Jun": "130"
     },
     {
         "id": 602,
@@ -344,7 +347,7 @@
         "AP - Dec": "200",
         "AP - Jan": "200",
         "AP - Feb": "200",
-        "AP - Jun": "0"
+        "AP - Jun": "188"
     },
     {
         "id": 603,
@@ -360,7 +363,7 @@
         "AP - Dec": "600",
         "AP - Jan": "500",
         "AP - Feb": "605",
-        "AP - Jun": "0"
+        "AP - Jun": "240"
     },
     {
         "id": 604,
@@ -376,7 +379,7 @@
         "AP - Dec": "273",
         "AP - Jan": "262",
         "AP - Feb": "285",
-        "AP - Jun": "0"
+        "AP - Jun": "275"
     },
     {
         "id": 605,
@@ -392,7 +395,7 @@
         "AP - Dec": "437",
         "AP - Jan": "426",
         "AP - Feb": "430",
-        "AP - Jun": "0"
+        "AP - Jun": "420"
     },
     {
         "id": 606,
@@ -408,7 +411,7 @@
         "AP - Dec": "380",
         "AP - Jan": "375",
         "AP - Feb": "383",
-        "AP - Jun": "0"
+        "AP - Jun": "350"
     },
     {
         "id": 607,
@@ -423,7 +426,7 @@
         "AP - Nov": "170",
         "AP - Jan": "153",
         "AP - Feb": "160",
-        "AP - Jun": "0"
+        "AP - Jun": "155"
     },
     {
         "id": 608,
@@ -439,7 +442,7 @@
         "AP - Dec": "575",
         "AP - Jan": "590",
         "AP - Feb": "625",
-        "AP - Jun": "0"
+        "AP - Jun": "550"
     },
     {
         "id": 609,
@@ -448,8 +451,7 @@
         "rating": "1.5 stars",
         "morningstar": "t=0P000001P8",
         "country": "US",
-        "AP - Nov": "236",
-        "AP - Jun": "0"
+        "AP - Nov": "236"
     },
     {
         "id": 610,
@@ -465,7 +467,7 @@
         "AP - Dec": "225",
         "AP - Jan": "200",
         "AP - Feb": "212",
-        "AP - Jun": "0"
+        "AP - Jun": "165"
     },
     {
         "id": 611,
@@ -481,7 +483,7 @@
         "AP - Dec": "445",
         "AP - Jan": "450",
         "AP - Feb": "400",
-        "AP - Jun": "0"
+        "AP - Jun": "320"
     },
     {
         "id": 614,
@@ -496,7 +498,7 @@
         "AP - Dec": "306",
         "AP - Jan": "290",
         "AP - Feb": "282",
-        "AP - Jun": "0"
+        "AP - Jun": "280"
     },
     {
         "id": 615,
@@ -512,7 +514,7 @@
         "AP - Dec": "63",
         "AP - Jan": "65",
         "AP - Feb": "69",
-        "AP - Jun": "0"
+        "AP - Jun": "76"
     },
     {
         "id": 616,
@@ -528,7 +530,7 @@
         "AP - Dec": "120",
         "AP - Jan": "150",
         "AP - Feb": "155",
-        "AP - Jun": "0"
+        "AP - Jun": "120"
     },
     {
         "id": 617,
@@ -544,7 +546,7 @@
         "AP - Dec": "375",
         "AP - Jan": "350",
         "AP - Feb": "370",
-        "AP - Jun": "0"
+        "AP - Jun": "250"
     },
     {
         "id": 620,
@@ -560,7 +562,7 @@
         "AP - Dec": "3700",
         "AP - Jan": "3400",
         "AP - Feb": "3600",
-        "AP - Jun": "0"
+        "AP - Jun": "2800"
     },
 
     {
@@ -593,14 +595,7 @@
         "ticker": "ZCN",
         "type": "etf",
         "morningstar": "t=0P0000K8UH"
-    },
-    {
-        "id": 705,
-        "ticker": "VCE",
-        "type": "etf",
-        "morningstar": "t=0P0000UT18"
-    },    
-
+    },  
     {
         "id": 800,
         "ticker": "ZAG",
@@ -613,18 +608,6 @@
         "ticker": "VAB",
         "type": "etf",
         "morningstar": "t=0P0000UT1B"
-    },
-    {
-        "id": 802,
-        "ticker": "ZDB",
-        "type": "etf",
-        "morningstar": "t=0P00011VTB"
-    },
-    {
-        "id": 803,
-        "ticker": "VSB",
-        "type": "etf",
-        "morningstar": "t=0P0000UT1C"
     },
     {
         "id": 804,
@@ -645,12 +628,6 @@
         "ticker": "HXS",
         "type": "etf",
         "morningstar": "t=0P0000RVBG"
-    },
-    {
-        "id": 902,
-        "ticker": "XUU",
-        "type": "etf",
-        "morningstar": "t=0P00015E41"
     },
     {
         "id": 903,
@@ -676,336 +653,26 @@
         "type": "etf",
         "morningstar": "t=0P0000ZAH7"
     },
-    {
-        "id": 907,
-        "ticker": "VSP",
-        "type": "etf",
-        "morningstar": "t=0P0000XD8K"
-    },
-    {
-        "id": 908,
-        "ticker": "TPU",
-        "type": "etf",
-        "morningstar": "t=0P00017ET3"
-    },
-    {
-        "id": 909,
-        "ticker": "HULC",
-        "type": "etf",
-        "morningstar": "t=0P0001J5NM"
-    },
 
-    {
-        "id": 1000,
-        "ticker": "VXC",
-        "type": "etf",
-        "desc": "Int",
-        "morningstar": "t=0P00013MBZ"
-    },
-    {
-        "id": 1001,
-        "ticker": "XAW",
-        "type": "etf",
-        "morningstar": "t=0P00015E3Z"
-    },
-    {
-        "id": 1002,
-        "ticker": "VEE",
-        "type": "etf",
-        "morningstar": "t=0P0000UT1D"
-    },
-    {
-        "id": 1003,
-        "ticker": "VIU",
-        "type": "etf",
-        "morningstar": "t=0P0001749I"
-    },
     {
         "id": 1004,
         "ticker": "XEF",
         "type": "etf",
         "morningstar": "t=0P0000YUAV"
     },
-    {
-        "id": 1005,
-        "ticker": "XEC",
-        "type": "etf",
-        "morningstar": "t=0P0000YUAW"
-    },
+
     {
         "id": 1006,
         "ticker": "ZEA",
         "type": "etf",
         "morningstar": "t=0P00011VT9"
     },
-    {
-        "id": 1007,
-        "ticker": "ZEM",
-        "type": "etf",
-        "morningstar": "t=0P0000M57K"
-    },
-    {
-        "id": 1008,
-        "ticker": "VRIF",
-        "type": "etf",
-        "morningstar": "t=0P0001KPM7"
-    },
 
-    {
-        "id": 1100,
-        "ticker": "XEQT",
-        "type": "etf",
-        "desc": "AllInOne",
-        "morningstar": "t=0P0001I7EJ"
-    },
-    {
-        "id": 1101,
-        "ticker": "VEQT",
-        "type": "etf",
-        "morningstar": "t=0P0001FKYE"
-    },
-    {
-        "id": 1102,
-        "ticker": "ZGRO",
-        "type": "etf",
-        "morningstar": "t=0P0001FIP0"
-    },
-    {
-        "id": 1103,
-        "ticker": "HGRO",
-        "type": "etf",
-        "morningstar": "t=0P0001IFBA"
-    },
-    {
-        "id": 1104,
-        "ticker": "XGRO",
-        "type": "etf",
-        "morningstar": "t=0P0000934I"
-    },
     {
         "id": 1105,
         "ticker": "VGRO",
         "type": "etf",
         "morningstar": "t=0P0001CLVS"
-    },
-    {
-        "id": 1106,
-        "ticker": "XBAL",
-        "type": "etf",
-        "morningstar": "t=0P0000934G"
-    },
-    {
-        "id": 1107,
-        "ticker": "VBAL",
-        "type": "etf",
-        "morningstar": "t=0P0001CLVR"
-    },
-    {
-        "id": 1108,
-        "ticker": "ZBAL",
-        "type": "etf",
-        "morningstar": "t=0P0001FIOY"
-    },
-    {
-        "id": 1109,
-        "ticker": "VCNS",
-        "type": "etf",
-        "morningstar": "t=0P0001CLVQ"
-    },
-    {
-        "id": 1110,
-        "ticker": "XCNS",
-        "type": "etf",
-        "morningstar": "t=0P0001I7EI"
-    },
-    {
-        "id": 1111,
-        "ticker": "ZCON",
-        "type": "etf",
-        "morningstar": "t=0P0001FIOZ"
-    },
-    {
-        "id": 1112,
-        "ticker": "VCIP",
-        "type": "etf",
-        "morningstar": "t=0P0001FKYD"
-    },
-    {
-        "id": 1113,
-        "ticker": "XINC",
-        "type": "etf",
-        "morningstar": "t=0P0001I7EH"
-    },
-    {
-        "id": 1114,
-        "ticker": "XCG",
-        "type": "etf",
-        "morningstar": "t=0P000080SI"
-    },
-
-    {
-        "id": 1200,
-        "ticker": "CDZ",
-        "type": "etf",
-        "desc": "DIV",
-        "morningstar": "t=0P00006SO5"
-    },
-    {
-        "id": 1201,
-        "ticker": "XDV",
-        "type": "etf",
-        "morningstar": "t=0P000080SH"
-    },
-    {
-        "id": 1202,
-        "ticker": "VDY",
-        "type": "etf",
-        "morningstar": "t=0P0000XD8J"
-    },
-    {
-        "id": 1203,
-        "ticker": "XEI",
-        "type": "etf",
-        "morningstar": "t=0P0000SWUI"
-    },
-    {
-        "id": 1204,
-        "ticker": "ZDV",
-        "type": "etf",
-        "morningstar": "t=0P0000UHX5"
-    },
-    {
-        "id": 1205,
-        "ticker": "XDIV",
-        "type": "etf",
-        "morningstar": "t=0P0001ANNU"
-    },
-    {
-        "id": 1206,
-        "ticker": "PDC",
-        "type": "etf",
-        "morningstar": "t=0P0000TJY6"
-    },
-
-    {
-        "id": 1300,
-        "ticker": "VRE",
-        "type": "etf",
-        "desc": "REIT",
-        "morningstar": "t=0P0000XD8I"
-    },
-    {
-        "id": 1301,
-        "ticker": "ZRE",
-        "type": "etf",
-        "morningstar": "t=0P0000OMPH"
-    },
-    {
-        "id": 1302,
-        "ticker": "XRE",
-        "type": "etf",
-        "morningstar": "t=0P000080SU"
-    },
-    {
-        "id": 1303,
-        "ticker": "RIT",
-        "type": "etf",
-        "morningstar": "t=0P0000CXI2"
-    },
-
-    {
-        "id": 1400,
-        "ticker": "QQC.F",
-        "type": "etf",
-        "desc": "Nasdaq",
-        "morningstar": "t=0P0000TJY7"
-    },
-    {
-        "id": 1401,
-        "ticker": "XQQ",
-        "type": "etf",
-        "morningstar": "t=0P0000T32L"
-    },
-    {
-        "id": 1402,
-        "ticker": "ZQQ",
-        "type": "etf",
-        "morningstar": "t=0P0000N5JT"
-    },
-    {
-        "id": 1403,
-        "ticker": "ZNQ",
-        "type": "etf",
-        "morningstar": "t=0P0001FIP2"
-    },
-
-    {
-        "id": 1500,
-        "ticker": "XUT",
-        "type": "etf",
-        "desc": "Sector",
-        "morningstar": "t=0P0000SWUG"
-    },
-    {
-        "id": 1501,
-        "ticker": "ZUT",
-        "type": "etf",
-        "morningstar": "t=0P0000N5JN"
-    },
-    {
-        "id": 1502,
-        "ticker": "XIT",
-        "type": "etf",
-        "morningstar": "t=0P000080SS"
-    },
-    {
-        "id": 1503,
-        "ticker": "TEC",
-        "type": "etf",
-        "morningstar": "t=0P0001H7WG"
-    },
-    {
-        "id": 1504,
-        "ticker": "HCLN",
-        "type": "etf",
-        "morningstar": "t=0P0001LIIN"
-    },
-    {
-        "id": 1505,
-        "ticker": "ZCLN",
-        "type": "etf",
-        "morningstar": "t=0P0001LGHB"
-    },
-    {
-        "id": 1506,
-        "ticker": "HERO",
-        "type": "etf",
-        "morningstar": "t=0P0001HVU6"
-    },
-    {
-        "id": 1507,
-        "ticker": "BTCC.B",
-        "type": "etf",
-        "morningstar": "t=0P0001LRNS"
-    },
-    {
-        "id": 1510,
-        "ticker": "HMMJ",
-        "type": "etf",
-        "morningstar": "t=0P0001A2RY"
-    },
-    {
-        "id": 1511,
-        "ticker": "CARS.B",
-        "type": "etf",
-        "morningstar": "t=0P0001BPLA"
-    },
- 
-    {
-        "id": 1700,
-        "ticker": "ZESG",
-        "type": "etf",
-        "morningstar": "t=0P0001IVXC"
     },
 
     {
