@@ -5,13 +5,14 @@
         "type": "stock",
         "rating": "3 stars",
         "morningstar": "t=0P00006899",
-        "AP - Aug": "93",
         "AP - Sep": "93",
         "AP - Nov": "101",
         "AP - Dec": "105",
         "AP - Jan": "104",
         "AP - Feb": "110",
-        "AP - May": "100"
+        "AP - May": "100",
+        "AP - Jul": "93",
+        "AP - Aug": "99"
     },
     {
         "id": 101,
@@ -47,12 +48,12 @@
         "type": "stock",
         "rating": "3.5 stars",
         "morningstar": "t=0P0000687Q",
-        "AP - Aug": "144",
         "AP - Nov": "147",
         "AP - Dec": "144",
         "AP - Feb": "153",
         "AP - May": "140",
-        "AP - Jun": "157"
+        "AP - Jun": "157",
+        "AP - Aug": "118"
     },
     {
         "id": 104,
@@ -74,14 +75,15 @@
         "type": "stock",
         "rating": "2.5 stars",
         "morningstar": "t=0P00006883",
-        "AP - Aug": "40.5",
         "AP - Sep": "40.5",
         "AP - Oct": "40.5",
         "AP - Nov": "40.5",
         "AP - Dec": "40.5",
         "AP - Jan": "40.5",
         "AP - Feb": "40.5",
-        "AP - Jun": "40.5"
+        "AP - Jun": "40.5",
+        "AP - Jul": "40.5",
+        "AP - Aug": "40.5"
     },
     {
         "id": 201,
@@ -96,7 +98,7 @@
         "AP - Jan": "33",
         "AP - Feb": "35",
         "AP - May": "35",
-        "AP - Jun": "35"
+        "AP - Jul": "35"
     },
     {
         "id": 202,
@@ -104,13 +106,13 @@
         "type": "stock",
         "rating": "3 stars",
         "morningstar": "t=0P000067XW",
-        "AP - Aug": "70",
         "AP - Sep": "69.5",
         "AP - Oct": "69",
         "AP - Nov": "66.5",
         "AP - Jan": "70",
         "AP - Feb": "68",
-        "AP - Jun": "68"
+        "AP - Jun": "68",
+        "AP - Aug": "67"
     },
     {
         "id": 203,
@@ -118,12 +120,13 @@
         "type": "stock",
         "rating": "3.5 stars",
         "morningstar": "t=0P0000687M",
-        "AP - Aug": "70",
         "AP - Sep": "74.25",
         "AP - Oct": "71",
         "AP - Nov": "75",
         "AP - Jan": "68.5",
-        "AP - Jun": "73"
+        "AP - Jun": "73",
+        "AP - Jul": "74",
+        "AP - Aug": "80"
     },
     {
         "id": 302,
@@ -131,14 +134,15 @@
         "type": "stock",
         "rating": "4 stars",
         "morningstar": "t=0P0000689D",
-        "AP - Aug": "67",
         "AP - Sep": "73.67",
         "AP - Oct": "66.5",
         "AP - Nov": "67",
         "AP - Dec": "70",
         "AP - Jan": "69",
         "AP - Feb": "70",
-        "AP - Jun": "78"
+        "AP - Jun": "78",
+        "AP - Jul": "73",
+        "AP - Aug": "73"
     },
     {
         "id": 303,
@@ -146,14 +150,15 @@
         "type": "stock",
         "rating": "4 stars",
         "morningstar": "t=0P0000688T",
-        "AP - Aug": "32",
         "AP - Sep": "34",
         "AP - Oct": "43",
         "AP - Nov": "40",
         "AP - Dec": "43",
         "AP - Jan": "43",
         "AP - Feb": "45",
-        "AP - Jun": "60"
+        "AP - Jun": "60",
+        "AP - Jul": "50",
+        "AP - Aug": "60"
     },
     {
         "id": 304,
@@ -161,13 +166,14 @@
         "type": "stock",
         "rating": "3.5 stars",
         "morningstar": "t=0P0000681O",
-        "AP - Aug": "56",
         "AP - Sep": "56",
         "AP - Oct": "57",
         "AP - Dec": "55",
         "AP - Jan": "57",
         "AP - Feb": "58",
-        "AP - May": "62"
+        "AP - May": "62",
+        "AP - Jul": "65",
+        "AP - Aug": "59"
     },
     {
         "id": 400,
@@ -175,10 +181,11 @@
         "type": "stock",
         "rating": "3 stars",
         "morningstar": "t=0P0000Z316",
-        "AP - Aug": "15",
         "AP - Nov": "16",
         "AP - Feb": "17",
-        "AP - May": "15.5"
+        "AP - May": "15.5",
+        "AP - Jul": "14.5",
+        "AP - Aug": "15"
     },
     {
         "id": 401,
@@ -186,11 +193,12 @@
         "type": "stock",
         "rating": "4 stars",
         "morningstar": "t=0P000080IA",
-        "AP - Aug": "23.5",
         "AP - Oct": "25",
         "AP - Nov": "25",
         "AP - Feb": "26.5",
-        "AP - Jun": "25.5"
+        "AP - Jun": "25.5",
+        "AP - Jul": "24.75",
+        "AP - Aug": "23.75"
     },
     {
         "id": 500,
@@ -203,7 +211,8 @@
         "AP - Oct": "103",
         "AP - Dec": "105",
         "AP - Jan": "103.4",
-        "AP - Jun": "100"
+        "AP - Jun": "100",
+        "AP - Jul": "103"
     },
     {
         "id": 501,
@@ -211,14 +220,15 @@
         "type": "stock",
         "rating": "1.5 stars",
         "morningstar": "t=0P00006800",
-        "AP - Aug": "151",
         "AP - Sep": "155",
         "AP - Oct": "160",
         "AP - Nov": "168",
         "AP - Dec": "170",
         "AP - Jan": "157",
         "AP - Feb": "184",
-        "AP - Jun": "160"
+        "AP - Jun": "160",
+        "AP - Jul": "160",
+        "AP - Aug": "93"
     },
     {
         "id": 502,
@@ -230,7 +240,8 @@
         "AP - Sep": "64",
         "AP - Dec": "69",
         "AP - Jan": "71",
-        "AP - Jun": "80"
+        "AP - Jun": "80",
+        "AP - Jul": "82"
     },
     {
         "id": 503,
@@ -238,11 +249,11 @@
         "type": "stock",
         "rating": "3 stars",
         "morningstar": "t=0P00005RPW",
-        "AP - Aug": "57",
         "AP - Sep": "58.5",
         "AP - Nov": "59.5",
         "AP - Dec": "56",
-        "AP - Jun": "77"
+        "AP - Jun": "77",
+        "AP - Aug": "88"
     },
     {
         "id": 504,
@@ -257,7 +268,8 @@
         "AP - Dec": "222.5",
         "AP - Jan": "169.8",
         "AP - Feb": "135.0",
-        "AP - Jun": "70"
+        "AP - Jun": "70",
+        "AP - Jul": "59"
     },
     {
         "id": 505,
@@ -265,14 +277,15 @@
         "type": "stock",
         "rating": "3.5 stars",
         "morningstar": "t=0P000151U5",
-        "AP - Aug": "96",
         "AP - Sep": "80",
         "AP - Oct": "90",
         "AP - Nov": "86.6",
         "AP - Dec": "75",
         "AP - Jan": "76",
         "AP - Feb": "80",
-        "AP - Jun": "79"
+        "AP - Jun": "79",
+        "AP - Jul": "70",
+        "AP - Aug": "85"
     },
     {
         "id": 507,
@@ -280,11 +293,12 @@
         "type": "stock",
         "rating": "3.5 stars",
         "morningstar": "t=0P00005RO3",
-        "AP - Aug": "242",
         "AP - Oct": "230",
         "AP - Nov": "233",
         "AP - Feb": "240",
-        "AP - Jun": "210"
+        "AP - Jun": "210",
+        "AP - Jul": "250",
+        "AP - Aug": "210"
     },
     {
         "id": 508,
@@ -299,7 +313,8 @@
         "AP - Dec": "100",
         "AP - Jan": "115",
         "AP - Feb": "118",
-        "AP - Jun": "133"
+        "AP - Jun": "133",
+        "AP - Jul": "127"
     },
     {
         "id": 600,
@@ -308,14 +323,15 @@
         "rating": "1.5 stars",
         "morningstar": "t=0P0000OQN8",
         "country": "US",
-        "AP - Aug": "900",
         "AP - Sep": "1000",
         "AP - Oct": "1225",
         "AP - Nov": "1333",
         "AP - Dec": "1300",
         "AP - Jan": "1300",
         "AP - Feb": "1062",
-        "AP - Jun": "1000"
+        "AP - Jun": "1000",
+        "AP - Jul": "800",
+        "AP - Aug": "1500"
     },
     {
         "id": 601,
@@ -324,14 +340,15 @@
         "rating": "3.5 stars",
         "morningstar": "t=0P000005UJ",
         "country": "US",
-        "AP - Aug": "225",
         "AP - Sep": "220",
         "AP - Oct": "200",
         "AP - Nov": "202",
         "AP - Dec": "200",
         "AP - Jan": "195",
         "AP - Feb": "195",
-        "AP - Jun": "130"
+        "AP - Jun": "130",
+        "AP - Jul": "125",
+        "AP - Aug": "140"
     },
     {
         "id": 602,
@@ -340,14 +357,15 @@
         "rating": "1.5 stars",
         "morningstar": "t=0P000000GY",
         "country": "US",
-        "AP - Aug": "172.5",
         "AP - Sep": "175",
         "AP - Oct": "180",
         "AP - Nov": "168",
         "AP - Dec": "200",
         "AP - Jan": "200",
         "AP - Feb": "200",
-        "AP - Jun": "188"
+        "AP - Jun": "188",
+        "AP - Jul": "185",
+        "AP - Aug": "175"
     },
     {
         "id": 603,
@@ -356,14 +374,15 @@
         "rating": "1 star",
         "morningstar": "t=0P000003UP",
         "country": "US",
-        "AP - Aug": "640",
         "AP - Sep": "641",
         "AP - Oct": "675",
         "AP - Nov": "695",
         "AP - Dec": "600",
         "AP - Jan": "500",
         "AP - Feb": "605",
-        "AP - Jun": "240"
+        "AP - Jun": "240",
+        "AP - Jul": "220",
+        "AP - Aug": "240"
     },
     {
         "id": 604,
@@ -372,14 +391,15 @@
         "rating": "3 stars",
         "morningstar": "t=0P0000CPCP",
         "country": "US",
-        "AP - Aug": "278",
         "AP - Sep": "277",
         "AP - Oct": "275",
         "AP - Nov": "279",
         "AP - Dec": "273",
         "AP - Jan": "262",
         "AP - Feb": "285",
-        "AP - Jun": "275"
+        "AP - Jun": "275",
+        "AP - Jul": "255",
+        "AP - Aug": "265"
     },
     {
         "id": 605,
@@ -388,14 +408,15 @@
         "rating": "2.5 stars",
         "morningstar": "t=0P00005U6B",
         "country": "US",
-        "AP - Aug": "430",
         "AP - Sep": "482",
         "AP - Oct": "430",
         "AP - Nov": "452",
         "AP - Dec": "437",
         "AP - Jan": "426",
         "AP - Feb": "430",
-        "AP - Jun": "420"
+        "AP - Jun": "420",
+        "AP - Jul": "410",
+        "AP - Aug": "417"
     },
     {
         "id": 606,
@@ -404,14 +425,15 @@
         "rating": "3 stars",
         "morningstar": "t=0P000003MH",
         "country": "US",
-        "AP - Aug": "350",
         "AP - Sep": "353",
         "AP - Oct": "365",
         "AP - Nov": "378",
         "AP - Dec": "380",
         "AP - Jan": "375",
         "AP - Feb": "383",
-        "AP - Jun": "350"
+        "AP - Jun": "350",
+        "AP - Jul": "320",
+        "AP - Aug": "331"
     },
     {
         "id": 607,
@@ -426,7 +448,8 @@
         "AP - Nov": "170",
         "AP - Jan": "153",
         "AP - Feb": "160",
-        "AP - Jun": "155"
+        "AP - Jun": "155",
+        "AP - Jul": "145"
     },
     {
         "id": 608,
@@ -435,14 +458,15 @@
         "rating": "1 star",
         "morningstar": "t=0P000001IK",
         "country": "US",
-        "AP - Aug": "482",
         "AP - Sep": "506",
         "AP - Oct": "510",
         "AP - Nov": "546",
         "AP - Dec": "575",
         "AP - Jan": "590",
         "AP - Feb": "625",
-        "AP - Jun": "550"
+        "AP - Jun": "550",
+        "AP - Jul": "550",
+        "AP - Aug": "575"
     },
     {
         "id": 609,
@@ -451,7 +475,8 @@
         "rating": "1.5 stars",
         "morningstar": "t=0P000001P8",
         "country": "US",
-        "AP - Nov": "236"
+        "AP - Nov": "236",
+        "AP - Jul": "220"
     },
     {
         "id": 610,
@@ -460,14 +485,15 @@
         "rating": "3.5 stars",
         "morningstar": "t=0P000000B7",
         "country": "US",
-        "AP - Aug": "205",
         "AP - Sep": "215",
         "AP - Oct": "195",
         "AP - Nov": "208",
         "AP - Dec": "225",
         "AP - Jan": "200",
         "AP - Feb": "212",
-        "AP - Jun": "165"
+        "AP - Jun": "165",
+        "AP - Jul": "175",
+        "AP - Aug": "170"
     },
     {
         "id": 611,
@@ -476,14 +502,15 @@
         "rating": "1 star",
         "morningstar": "t=0P000002OY",
         "country": "US",
-        "AP - Aug": "361",
         "AP - Sep": "367",
         "AP - Oct": "325",
         "AP - Nov": "418",
         "AP - Dec": "445",
         "AP - Jan": "450",
         "AP - Feb": "400",
-        "AP - Jun": "320"
+        "AP - Jun": "320",
+        "AP - Jul": "325",
+        "AP - Aug": "340"
     },
     {
         "id": 614,
@@ -498,7 +525,8 @@
         "AP - Dec": "306",
         "AP - Jan": "290",
         "AP - Feb": "282",
-        "AP - Jun": "280"
+        "AP - Jun": "280",
+        "AP - Jul": "285"
     },
     {
         "id": 615,
@@ -514,7 +542,8 @@
         "AP - Dec": "63",
         "AP - Jan": "65",
         "AP - Feb": "69",
-        "AP - Jun": "76"
+        "AP - Jun": "76",
+        "AP - Jul": "68"
     },
     {
         "id": 616,
@@ -530,7 +559,8 @@
         "AP - Dec": "120",
         "AP - Jan": "150",
         "AP - Feb": "155",
-        "AP - Jun": "120"
+        "AP - Jun": "120",
+        "AP - Jul": "120"
     },
     {
         "id": 617,
@@ -539,14 +569,15 @@
         "rating": "1.5 stars",
         "morningstar": "t=0P000003RE",
         "country": "US",
-        "AP - Aug": "241",
         "AP - Sep": "261",
         "AP - Oct": "270",
         "AP - Nov": "361",
         "AP - Dec": "375",
         "AP - Jan": "350",
         "AP - Feb": "370",
-        "AP - Jun": "250"
+        "AP - Jun": "250",
+        "AP - Jul": "230",
+        "AP - Aug": "220"
     },
     {
         "id": 620,
@@ -555,14 +586,15 @@
         "rating": "3 stars",
         "morningstar": "t=0P00012BBI",
         "country": "US",
-        "AP - Aug": "3200",
-        "AP - Sep": "3400",
-        "AP - Oct": "3150",
-        "AP - Nov": "3275",
-        "AP - Dec": "3700",
-        "AP - Jan": "3400",
-        "AP - Feb": "3600",
-        "AP - Jun": "2800"
+        "AP - Sep": "170",
+        "AP - Oct": "157",
+        "AP - Nov": "163",
+        "AP - Dec": "185",
+        "AP - Jan": "170",
+        "AP - Feb": "180",
+        "AP - Jun": "140",
+        "AP - Jul": "140",
+        "AP - Aug": "155"
     },
 
     {
