@@ -323,15 +323,15 @@
         "rating": "1.5 stars",
         "morningstar": "t=0P0000OQN8",
         "country": "US",
-        "AP - Sep": "1000",
-        "AP - Oct": "1225",
-        "AP - Nov": "1333",
-        "AP - Dec": "1300",
-        "AP - Jan": "1300",
-        "AP - Feb": "1062",
-        "AP - Jun": "1000",
-        "AP - Jul": "800",
-        "AP - Aug": "1500"
+        "AP - Sep": "333",
+        "AP - Oct": "408",
+        "AP - Nov": "444",
+        "AP - Dec": "433",
+        "AP - Jan": "433",
+        "AP - Feb": "354",
+        "AP - Jun": "333",
+        "AP - Jul": "266",
+        "AP - Aug": "500"
     },
     {
         "id": 601,
@@ -605,12 +605,6 @@
         "morningstar": "t=0P000080SM"
     },
     {
-        "id": 701,
-        "ticker": "HXT",
-        "type": "etf",
-        "morningstar": "t=0P0000PVWG"
-    },
-    {
         "id": 702,
         "ticker": "VCN",
         "type": "etf",
@@ -655,12 +649,7 @@
         "desc": "S+P",
         "morningstar": "t=0P0000XD8M"
     },
-    {
-        "id": 901,
-        "ticker": "HXS",
-        "type": "etf",
-        "morningstar": "t=0P0000RVBG"
-    },
+
     {
         "id": 903,
         "ticker": "ZSP",
