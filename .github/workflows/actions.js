@@ -1,6 +1,8 @@
-const { setFailed, getInput, debug } = require( '@actions/core' );
-const { context, getOctokit } = require( '@actions/github' );
+// const { setFailed, getInput, debug } = require( '@actions/core' );
+// const { context, getOctokit } = require( '@actions/github' );
+// 
+// ( async function main() {
+// 	debug( 'Our action is running' );
+// } )();
 
-( async function main() {
-	debug( 'Our action is running' );
-} )();
+console.log("hello world");
