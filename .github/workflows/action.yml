@@ -1,0 +1,5 @@
+name: "JS Action Test"
+description: "runs js via an action"
+runs:
+  using: node16
+  main: "action.js"
