@@ -1,13 +1,17 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { DataGrid } from '@mui/x-data-grid';
 import Box from '@mui/material/Box';
 import CircularProgress from '@mui/material/CircularProgress';
-import "./App.css";
 
 import { renderProgress } from './RenderProgress';
 import { AlertDialog } from './AlertDialog';
 
-const proxy = 'https://stock-scrape.herokuapp.com/api/stonks/';
+//const proxy = 'https://cors-anywhere.herokuapp.com/';  // unlock time period
+//const proxy = 'https://cors.bridged.cc/';   // api key
+//const proxy = 'https://api.allorigins.win/get?url=';    // data.contents
+//const proxy = 'https://api.codetabs.com/v1/proxy/?quest=';  // 5 calls per second
+//const proxy = 'https://proxy.cors.sh/';
+const proxy = 'https://corsproxy.io/?';
 
 const columns = [
   {
@@ -151,6 +155,50 @@ const columns = [
     type: 'number',
   },
   {
+    field: 'AP - Mar',
+    headerName: 'Mar',
+    type: 'number',
+  },
+  {
+    field: 'AP - Mar Upside',
+    headerName: 'Mar Upside',
+    width: 150,
+    type: 'number',
+  },
+  {
+    field: 'AP - Apr',
+    headerName: 'Apr',
+    type: 'number',
+  },
+  {
+    field: 'AP - Apr Upside',
+    headerName: 'Apr Upside',
+    width: 150,
+    type: 'number',
+  },
+  {
+    field: 'AP - May',
+    headerName: 'May',
+    type: 'number',
+  },
+  {
+    field: 'AP - May Upside',
+    headerName: 'May Upside',
+    width: 150,
+    type: 'number',
+  },
+  {
+    field: 'AP - Jun',
+    headerName: 'Jun',
+    type: 'number',
+  },
+  {
+    field: 'AP - Jun Upside',
+    headerName: 'Jun Upside',
+    width: 150,
+    type: 'number',
+  },
+  {
     field: 'AP - Aug',
     headerName: 'Aug',
     type: 'number',
@@ -226,52 +274,7 @@ const columns = [
     headerName: 'Feb Upside',
     width: 150,
     type: 'number',
-  },
-  {
-    field: 'AP - Mar',
-    headerName: 'Mar',
-    type: 'number',
-  },
-  {
-    field: 'AP - Mar Upside',
-    headerName: 'Mar Upside',
-    width: 150,
-    type: 'number',
-  },
-  {
-    field: 'AP - Apr',
-    headerName: 'Apr',
-    type: 'number',
-  },
-  {
-    field: 'AP - Apr Upside',
-    headerName: 'Apr Upside',
-    width: 150,
-    type: 'number',
-  },
-  {
-    field: 'AP - May',
-    headerName: 'May',
-    type: 'number',
-  },
-  {
-    field: 'AP - May Upside',
-    headerName: 'May Upside',
-    width: 150,
-    type: 'number',
-  },
-  {
-    field: 'AP - Jun',
-    headerName: 'Jun',
-    type: 'number',
-  },
-  {
-    field: 'AP - Jun Upside',
-    headerName: 'Jun Upside',
-    width: 150,
-    type: 'number',
-  },
-
+  }
 ];
 
 const sampleData = [
@@ -298,15 +301,15 @@ const sampleData = [
     "rating": "1.5 stars",
     "morningstar": "t=0P0000OQN8",
     "country": "US",
-    "AP - Dec": "501.29",
-    "AP - Jan": "753",
-    "AP - Feb": "670",
-    "AP - Mar": "882",
-    "AP - Apr": "800",
-    "AP - May": "772",
-    "AP - Jun": "800",
-    "AP - Aug": "900",
-    "AP - Sep": "862",
+    "AP - Dec": "200",
+    "AP - Jan": "210",
+    "AP - Feb": "220",
+    "AP - Mar": "225",
+    "AP - Apr": "230",
+    "AP - May": "240",
+    "AP - Jun": "250",
+    "AP - Aug": "260",
+    "AP - Sep": "270",
   },
 
   {
@@ -330,7 +333,6 @@ const sampleData = [
 export default function App() {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
-  const calledOnce = useRef(false);
   let localArr = [];
   const [created, setCreated] = useState();
   const [isOpen, setIsOpen] = useState(false);
@@ -338,163 +340,292 @@ export default function App() {
 
   // read our data file in the public folder
   const getConfig = new Promise((resolve, reject) => {
-    fetch('./data.json')
+    fetch('./data.json',
+      {
+        // headers: {
+        //   'Content-Type': 'application/json',
+        //   'Accept': 'application/json'
+        // }
+      })
       .then(function (response) {
         // switch to use real data or sample data for debugging
-        resolve(response.json());
-        // resolve(sampleData);
+        //resolve(response.json());
+        resolve(sampleData);
       })
       .catch(function (err) {
         reject(Error("Get config failed"));
       });
+
   });
 
-  const sleepNow = (delay) => new Promise((resolve) => setTimeout(resolve, delay));
+  // handle stocks
+  const handleStocks = (props) => {
+    const ticker = props.ticker;
+    const country = props.country ? props.country : 'CAN';
+    let url = proxy + 'https://marketsandresearch.td.com/tdwca/Public/Stocks/Overview/ca/';
+    if (country === 'US') {
+      url = proxy + 'https://marketsandresearch.td.com/tdwca/Public/Stocks/Overview/us/';
+    }
 
-  async function runLoop(configs) {
     setLoading(true);
-    for (const config of configs) {
-      //await sleepNow(2500);
+    fetch(url + ticker)
+      .then(response => response.text())
+      .then(html => {
+        setLoading(false);
+        // Convert the HTML string into a document object
+        //html = JSON.parse(html).contents; // for this proxy only
+        var parser = new DOMParser();
+        var doc = parser.parseFromString(html, 'text/html');
+        var elm = {};
 
-      const url = `${proxy}?id=${config.id}&ticker=${config.ticker}&type=${config.type}&country=${config.country}&morningstar=${config.morningstar}`;
-      console.log(url + '[' + new Date().toUTCString() + '] ')
-      try {
-        const response = await fetch(url);
-        let data = await response.json();
+        //common
+        elm['id'] = props.id;
+        elm['Ticker'] = doc.querySelector(".issueExchange").textContent + doc.querySelector(".issueSymbol").textContent;
+        props['exchange'] = doc.querySelector(".issueExchange").textContent;
+        elm['Name'] = doc.querySelector(".issueName").textContent;
+        elm['Category'] = doc.querySelector(".PeersModule a").text.split('-')[0];
+        elm['Price'] = doc.querySelector(".primary-data-content li div span").textContent;
+        elm['Change'] = doc.querySelector(".changePercent").textContent.replace('(', '').replace(')', '').trim();
+        elm['Low52W'] = doc.querySelectorAll("div[low]")[1].getAttribute('low');
+        elm['High52W'] = doc.querySelectorAll("div[low]")[1].getAttribute('high');
+        elm['Volume'] = doc.querySelector('.volume-label ~ div').textContent;
 
-        // add manual data
-        if (config.type === 'stock') {
-          data['Rating'] = config.rating;
-        }
+        //stocks
+        elm['Market-Cap'] = doc.querySelectorAll('.fundamentalsTable tr')[0].querySelectorAll('div')[1].textContent;
+        elm['DividendYield'] = doc.querySelectorAll('.fundamentalsTable tr')[3].querySelectorAll('div')[1].textContent;
+        elm['Ex-Dividend-Date'] = doc.querySelectorAll('.fundamentalsTable tr')[5].querySelectorAll('div')[1].textContent;
+        elm['Rating'] = props.rating;
 
         // loop through Analyst Prices
-        for (const [key, value] of Object.entries(config)) {
+        for (const [key, value] of Object.entries(props)) {
           if (key.startsWith('AP')) {
-            data[key] = value;
+            elm[key] = value;
           }
-          const upside = ((value / data['Price'].replace(',', '')) - 1) * 100;
-          data[key + ' Upside'] = upside.toFixed(2) + '%';
+          const upside = ((value / elm['Price'].replace(',', '')) - 1) * 100;
+          elm[key + ' Upside'] = upside.toFixed(2) + '%';
         }
 
         // add date
-        setCreated(new Date(data['created'] + ' UTC').toString());
+        setCreated(new Date().toString());
 
-        localArr = [...localArr, data];
+        localArr = [...localArr, elm];
         setData(localArr);
-      }
-      catch (ex) {
-        setLoading(false);
-        throw new Error('failed to process: ' + ex);
-      }
-    }
-    setLoading(false);
-  }
-
-  function runLoop2(configs) {
-    let myArr = [];
-    for (const config of configs) {
-      const url = `${proxy}?id=${config.id}&ticker=${config.ticker}&type=${config.type}&country=${config.country}&morningstar=${config.morningstar}`;
-      console.log(url + '[' + new Date().toUTCString() + '] ');
-      myArr.push(url)
-    }
-
-
-    Promise.all(myArr.map(
-      url =>
-        fetch(url)
-    )
-    ).then(function (responses) {
-      // Get a JSON object from each of the responses
-      return Promise.all(responses.map(function (response) {
-        return response.json();
-      }));
-    }).then(function (data) {
-      // Log the data to the console
-      // You would do something with both sets of data here
-      console.log(data);
-    }).catch(function (error) {
-      // if there's an error, log it
-      console.log(error);
-    });
-
-  }
-
-  function chunk(items, size) {
-    const chunks = [];
-    items = [].concat(...items);
-
-    while (items.length) { chunks.push(items.splice(0, size)); }
-
-    return chunks;
-  }
-
-  async function runLoop3(configs) {
-    let myUrls = [];
-    for (const config of configs) {
-      const url = `${proxy}?id=${config.id}&ticker=${config.ticker}&type=${config.type}&country=${config.country}&morningstar=${config.morningstar}`;
-      console.log(url + '[' + new Date().toUTCString() + '] ');
-      myUrls.push(url)
-    }
-
-    var myChunks = chunk(myUrls, 2);
-    for (let i = 0; i < myChunks.length; i++) {
-      console.log('iiiiii: ' + i);
-      await Promise.allSettled(
-        myChunks[i].map(
-          url =>
-            fetch(url)
-        ))
-        .then(responseArr => {
-          responseArr.forEach(res => {
-            console.log(res.value);
-            // res.status & res.value
-          });
-          // .then(function (responses) {
-          //   // Get a JSON object from each of the responses
-          //   return Promise.all(responses.map(function (response) {
-          //     return response.json();
-          //   }));
-        }).then(function (data) {
-          // Log the data to the console
-          // You would do something with both sets of data here
-          console.log(data);
-        })
-        .catch((err) => { console.log("error: " + err); })
-
-    }
-
-  }
-
-  // this runs once at start up
-  useEffect(() => {
-    if (calledOnce.current) {
-      return;
-    }
-
-    getConfig
-      .then(configs => {
-        runLoop(configs);
-        // .then(data => {
-        //   data; 
-        // })
-        // .catch(error => {
-        //   error.message; // 'An error has occurred: 404'
+        // setData(prevState => {
+        //   return {
+        //     ...localArr
+        //   };
         // });
 
-      })
-    calledOnce.current = true;
-  }, []);
+        // more stock items
+        handlePerf(props);
 
-  // alert dialog
-  const handleDialogOpen = () => {
-    setIsOpen(true);
+      })
+      .catch(function (err) {
+        console.log("Stocks failed");
+      });
+
+  }
+
+  const handleEtfs = (props) => {
+    const ticker = props.ticker;
+    const country = props.country ? props.country : 'CAN';
+
+    let url = proxy + 'https://marketsandresearch.td.com/tdwca/Public/ETFsProfile/Summary/ca/';
+    if (country === 'US') {
+      url = proxy + 'https://marketsandresearch.td.com/tdwca/Public/ETFsProfile/Summary/us/';
+    }
+
+    setLoading(true);
+    fetch(url + ticker)
+      .then(response => response.text())
+      .then(html => {
+        setLoading(false);
+        // Convert the HTML string into a document object
+        // html = JSON.parse(html).contents; // for this proxy only
+        var parser = new DOMParser();
+        var doc = parser.parseFromString(html, 'text/html');
+        var elm = {};
+
+        //common
+        elm['id'] = props.id;
+        elm['Ticker'] = doc.querySelector(".issueExchange").textContent + doc.querySelector(".issueSymbol").textContent;
+        props['exchange'] = doc.querySelector(".issueExchange").textContent;
+        elm['Name'] = doc.querySelector(".issueName").textContent;
+        elm['Price'] = doc.querySelector(".primary-data-content li div span").textContent;
+        elm['Change'] = doc.querySelector(".changePercent").textContent.replace('(', '').replace(')', '').trim();
+        elm['Low52W'] = doc.querySelectorAll("div[low]")[1].getAttribute('low');
+        elm['High52W'] = doc.querySelectorAll("div[low]")[1].getAttribute('high');
+        elm['Volume'] = doc.querySelector('.volume-label ~ div').textContent;
+
+        //ETF's summary
+        elm['Rating'] = doc.querySelector('.secondary-data-content').querySelector('li:last-child').querySelector('.star-row').querySelectorAll('span')[10]?.textContent;
+        elm['Category'] = doc.querySelector('.topFundInfo').querySelectorAll('tr')[1].querySelector('span:last-child').textContent;
+        elm['Inception'] = doc.querySelector('.topFundInfo').querySelectorAll('tr')[3].querySelector('span:last-child').textContent;
+        elm['Assets'] = doc.querySelectorAll(".FundProfileView table tr")[5].querySelector('td')?.textContent;
+        elm['DividendYield'] = doc.querySelectorAll(".FundProfileView table tr")[10].querySelector('td')?.textContent;
+        elm['Ex-Dividend-Date'] = doc.querySelectorAll(".FundProfileView table tr")[12].querySelector('td')?.textContent;
+        elm['MER'] = doc.querySelectorAll(".FundProfileView table tr")[19].querySelector('td')?.textContent;
+
+        localArr = [...localArr, elm];
+        setData(localArr);
+        // setData(prevState => {
+        //   return {
+        //     ...localArr
+        //   };
+        // });
+
+        // more ETF items
+        handleEtfsPerf(props);
+
+      })
+      .catch(function (err) {
+        console.log("ETFs failed");
+      });
+
+  }
+
+
+  const handlePerf = (props) => {
+    let ticker = props.ticker.replace(".", "-");
+
+    const country = props.country ? props.country : 'CAN';
+    const id = props.id;
+
+    let url = proxy + 'https://www.theglobeandmail.com/investing/markets/stocks/' + ticker + '-T/statistics';
+    if (country === 'US') {
+      // the above url doesn't work well with US ETFs
+      if (props['type'] === 'etf') {
+        return;
+      }
+
+      if (props['exchange'].startsWith('NYSE')) {
+        ticker = ticker + '-N/';
+      }
+      else { //Nasdaq
+        ticker = ticker + '-Q/';
+      }
+      url = proxy + 'https://www.theglobeandmail.com/investing/markets/stocks/' + ticker;
+    }
+
+    setLoading(true);
+    fetch(url)
+      .then(response => response.text())
+      .then(html => {
+        setLoading(false);
+        // Convert the HTML string into a document object
+        // html = JSON.parse(html).contents; // for this proxy only
+        var parser = new DOMParser();
+        var doc = parser.parseFromString(html, 'text/html');
+
+        // find the correct item from array
+        const index = localArr.findIndex(item => item.id === id);
+        const elm = localArr[index];
+
+        //Stocks's performance
+        elm['5d-return'] = doc.querySelector('[name="percentChange5d"]')?.getAttribute('value');
+        elm['1m-return'] = doc.querySelector('[headers="pricePerformanceData_period_1m pricePerformanceData_performance"] span')?.textContent.split('(')[1].split(')')[0];
+        elm['3m-return'] = doc.querySelector('[headers="pricePerformanceData_period_3m pricePerformanceData_performance"] span')?.textContent.split('(')[1].split(')')[0];
+        elm['1y-return'] = doc.querySelector('[name="return1y"]')?.getAttribute('value');
+        //only for stocks 
+        if (props['type'] === 'stock') {
+          elm['3y-return'] = doc.querySelector('[name="return3y"]')?.getAttribute('value');
+          elm['5y-return'] = doc.querySelector('[name="return5y"]')?.getAttribute('value');
+        }
+        else {
+          elm['1y-return'] = doc.querySelectorAll('.performancePrice')[2]?.textContent.split('(').pop().split(')')[0];
+        }
+
+        // replace elm
+        //localArr[index] = elm;
+        setData(localArr);
+        // setData(prevState => {
+        //   return {
+        //     ...localArr
+        //   };
+        // });
+      })
+      .catch(function (err) {
+        console.log("Stocks Perf failed");
+      });
+
   };
+
+  const handleEtfsPerf = (props) => {
+    const ticker = props.ticker;
+    const country = props.country ? props.country : 'CAN';
+    const id = props.id;
+
+    let url = proxy + 'https://marketsandresearch.td.com/tdwca/Public/ETFsProfile/PerformanceAndRisk/ca/';
+    if (country === 'US') {
+      url = proxy + 'https://marketsandresearch.td.com/tdwca/Public/ETFsProfile/PerformanceAndRisk/us/';
+    }
+
+    setLoading(true);
+    fetch(url + ticker)
+      .then(response => response.text())
+      .then(html => {
+        setLoading(false);
+        // Convert the HTML string into a document object
+        // html = JSON.parse(html).contents; // for this proxy only
+        var parser = new DOMParser();
+        var doc = parser.parseFromString(html, 'text/html');
+
+        // find the correct item from array
+        const index = localArr.findIndex(item => item.id === id);
+        const elm = localArr[index];
+
+        //ETF's performance and risk
+        elm['Risk'] = doc.querySelectorAll(".risk-rating")[0]?.querySelector('.active').textContent;
+        elm['Return'] = doc.querySelectorAll(".risk-rating")[1]?.querySelector('.active').textContent;
+        elm['3m-return'] = doc.querySelectorAll(".PerformanceOverTimeView table tr")[1]?.querySelectorAll('div')[1].textContent;
+        elm['6m-return'] = doc.querySelectorAll(".PerformanceOverTimeView table tr")[1]?.querySelectorAll('div')[2].textContent;
+        elm['3y-return'] = doc.querySelectorAll(".PerformanceOverTimeView table tr")[1]?.querySelectorAll('div')[3].textContent;
+        elm['5y-return'] = doc.querySelectorAll(".PerformanceOverTimeView table tr")[1]?.querySelectorAll('div')[4].textContent;
+        elm['10y-return'] = doc.querySelectorAll(".PerformanceOverTimeView table tr")[1]?.querySelectorAll('div')[5].textContent;
+
+        // replace elm
+        //localArr[index] = elm;
+        setData(localArr);
+        // setData(prevState => {
+        //   return {
+        //     ...localArr
+        //   };
+        // });
+
+        handlePerf(props);
+      })
+      .catch(function (err) {
+        console.log("ETFs Perf failed");
+      });
+
+  };
+  // // alert dialog
+  // const handleDialogOpen = () => {
+  //   setIsOpen(true);
+  // };
 
   // alert dialog
   const handleDialogClose = () => {
     setIsOpen(false);
   };
 
+  // this runs once at start up
+  useEffect(() => {
+    getConfig
+      .then(configs => {
+        // loop through values in config
+        configs.forEach(function (config) {
+          if (config.type === 'stock') {
+            handleStocks(config);
+          } else {
+            handleEtfs(config);
+          }
+        });
+      });
+    // .finally(() => {
+    //   setData(localArr);
+    // });
+  }, []);
 
   return (
     <div>
@@ -520,6 +651,11 @@ export default function App() {
             color: 'white',
             fontWeight: '600',
           },
+          '& .warm': {
+            backgroundColor: 'yellow',
+            color: 'white',
+            fontWeight: '600',
+          },
         }}
       >
         <DataGrid
@@ -535,14 +671,17 @@ export default function App() {
               else if (Number(params.value?.split('%')[0]) < -2.5) {
                 return 'cold';
               }
-            } else {
+            } else if (params.field === 'Price52Week') {
+
+            }
+            else {
               return '';
             }
           }}
           onRowClick={(params, event) => {
-              //alert(params.row.Ticker + ' ' + params.row.Price);
-              setMessage(params.row);
-              setIsOpen(true);
+            //alert(params.row.Ticker + ' ' + params.row.Price);
+            setMessage(params.row);
+            setIsOpen(true);
           }}
         />
       </Box>

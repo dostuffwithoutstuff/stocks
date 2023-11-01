@@ -24,14 +24,6 @@ This sample gets stock info (dynamically) and analyst predictions (manually).
   remove the homepage in package.json, then
   cmd: npm start 
 
-3. Create list of API calls for caching:
-var list = stocks.map( function(stock) {
-  var info = `curl -X GET 'https://stock-scrape.herokuapp.com/api/stonks/?id=${stock.id}&ticker=${stock.ticker}&type=${stock.type}&country=${stock.country}&morningstar=${stock.morningstar}'`
-     return info;
-});
-console.log(list);
-
-
 
 ### Run time sample
 https://thingsthatdothings.github.io/stocks/
@@ -39,8 +31,14 @@ https://thingsthatdothings.github.io/stocks/
 
 
 -----------------
-notes: less than a few billion removed from list
+notes: less than a few billion and no dividends removed from list
 
+    {
+        "id": 701,
+        "ticker": "HXT",
+        "type": "etf",
+        "morningstar": "t=0P0000PVWG"
+    },
     {
         "id": 705,
         "ticker": "VCE",
@@ -63,6 +61,12 @@ notes: less than a few billion removed from list
         "morningstar": "t=0P0000UT1C"
     },
 
+    {
+        "id": 901,
+        "ticker": "HXS",
+        "type": "etf",
+        "morningstar": "t=0P0000RVBG"
+    },
         {
         "id": 902,
         "ticker": "XUU",
