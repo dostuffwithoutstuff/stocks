@@ -330,6 +330,14 @@ const sampleData = [
 
 ]
 
+var wait = (ms) => {
+  const start = Date.now();
+  let now = start;
+  while (now - start < ms) {
+    now = Date.now();
+  }
+}
+
 export default function App() {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
@@ -349,8 +357,8 @@ export default function App() {
       })
       .then(function (response) {
         // switch to use real data or sample data for debugging
-        //resolve(response.json());
-        resolve(sampleData);
+        resolve(response.json());
+        // resolve(sampleData);
       })
       .catch(function (err) {
         reject(Error("Get config failed"));
@@ -368,6 +376,7 @@ export default function App() {
     }
 
     setLoading(true);
+    wait(1000);
     fetch(url + ticker)
       .then(response => response.text())
       .then(html => {
@@ -410,11 +419,6 @@ export default function App() {
 
         localArr = [...localArr, elm];
         setData(localArr);
-        // setData(prevState => {
-        //   return {
-        //     ...localArr
-        //   };
-        // });
 
         // more stock items
         handlePerf(props);
@@ -436,6 +440,7 @@ export default function App() {
     }
 
     setLoading(true);
+    wait(1000);
     fetch(url + ticker)
       .then(response => response.text())
       .then(html => {
@@ -468,11 +473,6 @@ export default function App() {
 
         localArr = [...localArr, elm];
         setData(localArr);
-        // setData(prevState => {
-        //   return {
-        //     ...localArr
-        //   };
-        // });
 
         // more ETF items
         handleEtfsPerf(props);
@@ -487,27 +487,23 @@ export default function App() {
 
   const handlePerf = (props) => {
     let ticker = props.ticker.replace(".", "-");
+    let url = "";
 
     const country = props.country ? props.country : 'CAN';
     const id = props.id;
 
-    let url = proxy + 'https://www.theglobeandmail.com/investing/markets/stocks/' + ticker + '-T/statistics';
-    if (country === 'US') {
-      // the above url doesn't work well with US ETFs
-      if (props['type'] === 'etf') {
-        return;
-      }
+    if (country === 'CAN') {
+      ticker += '.TO';
+    }
 
-      if (props['exchange'].startsWith('NYSE')) {
-        ticker = ticker + '-N/';
-      }
-      else { //Nasdaq
-        ticker = ticker + '-Q/';
-      }
-      url = proxy + 'https://www.theglobeandmail.com/investing/markets/stocks/' + ticker;
+    if (props['type'] === 'stock') {
+    url = proxy + 'https://www.barchart.com/stockss/quotes/' + ticker + '/performance';
+    } else {
+      url = proxy + 'https://www.barchart.com/etfs-funds/quotes/' + ticker + '/performance';
     }
 
     setLoading(true);
+    wait(1000);
     fetch(url)
       .then(response => response.text())
       .then(html => {
@@ -522,27 +518,29 @@ export default function App() {
         const elm = localArr[index];
 
         //Stocks's performance
-        elm['5d-return'] = doc.querySelector('[name="percentChange5d"]')?.getAttribute('value');
-        elm['1m-return'] = doc.querySelector('[headers="pricePerformanceData_period_1m pricePerformanceData_performance"] span')?.textContent.split('(')[1].split(')')[0];
-        elm['3m-return'] = doc.querySelector('[headers="pricePerformanceData_period_3m pricePerformanceData_performance"] span')?.textContent.split('(')[1].split(')')[0];
-        elm['1y-return'] = doc.querySelector('[name="return1y"]')?.getAttribute('value');
-        //only for stocks 
-        if (props['type'] === 'stock') {
-          elm['3y-return'] = doc.querySelector('[name="return3y"]')?.getAttribute('value');
-          elm['5y-return'] = doc.querySelector('[name="return5y"]')?.getAttribute('value');
-        }
-        else {
-          elm['1y-return'] = doc.querySelectorAll('.performancePrice')[2]?.textContent.split('(').pop().split(')')[0];
-        }
+        // elm['5d-return'] = doc.querySelector('.bc-table-scrollable-inner > ng-transclude > table > tbody > tr:nth-child(2) > td.cell-period-change > div > span:nth-child(2)')?.textContent.split('(')[1].split(')')[0];
+        // elm['1m-return'] = doc.querySelector('.bc-table-scrollable-inner > ng-transclude > table > tbody > tr:nth-child(3) > td.cell-period-change > div > span:nth-child(2)')?.textContent.split('(')[1].split(')')[0];
+        // elm['3m-return'] = doc.querySelector('.bc-table-scrollable-inner > ng-transclude > table > tbody > tr:nth-child(4) > td.cell-period-change > div > span:nth-child(2)')?.textContent.split('(')[1].split(')')[0];
+        // elm['6m-return'] = doc.querySelector('.bc-table-scrollable-inner > ng-transclude > table > tbody > tr:nth-child(5) > td.cell-period-change > div > span:nth-child(2)')?.textContent.split('(')[1].split(')')[0];
+        // elm['1y-return'] = doc.querySelector('.bc-table-scrollable-inner > ng-transclude > table > tbody > tr:nth-child(7) > td.cell-period-change > div > span:nth-child(2)')?.textContent.split('(')[1].split(')')[0];
+        // elm['3y-return'] = doc.querySelector('.bc-table-scrollable-inner > ng-transclude > table > tbody > tr:nth-child(9) > td.cell-period-change > div > span:nth-child(2)')?.textContent.split('(')[1].split(')')[0];
+        // elm['5y-return'] = doc.querySelector('.bc-table-scrollable-inner > ng-transclude > table > tbody > tr:nth-child(10) > td.cell-period-change > div > span:nth-child(2)')?.textContent.split('(')[1].split(')')[0];
+        // elm['10y-return'] = doc.querySelector('.bc-table-scrollable-inner > ng-transclude > table > tbody > tr:nth-child(11) > td.cell-period-change > div > span:nth-child(2)')?.textContent.split('(')[1].split(')')[0];
+
+        // through proxy, use this:
+        elm['5d-return'] = doc.querySelector('div.barchart-content-block.symbol-price-performance > div.block-content > barchart-table-scroll > table > tbody > tr:nth-child(2) > td.cell-period-change > div > span:nth-child(2)')?.textContent.split('(')[1].split(')')[0];
+        elm['1m-return'] = doc.querySelector('div.barchart-content-block.symbol-price-performance > div.block-content > barchart-table-scroll > table > tbody > tr:nth-child(3) > td.cell-period-change > div > span:nth-child(2)')?.textContent.split('(')[1].split(')')[0];
+        elm['3m-return'] = doc.querySelector('div.barchart-content-block.symbol-price-performance > div.block-content > barchart-table-scroll > table > tbody > tr:nth-child(4) > td.cell-period-change > div > span:nth-child(2)')?.textContent.split('(')[1].split(')')[0];
+        elm['6m-return'] = doc.querySelector('div.barchart-content-block.symbol-price-performance > div.block-content > barchart-table-scroll > table > tbody > tr:nth-child(5) > td.cell-period-change > div > span:nth-child(2)')?.textContent.split('(')[1].split(')')[0];
+        elm['1y-return'] = doc.querySelector('div.barchart-content-block.symbol-price-performance > div.block-content > barchart-table-scroll > table > tbody > tr:nth-child(7) > td.cell-period-change > div > span:nth-child(2)')?.textContent.split('(')[1].split(')')[0];
+        elm['3y-return'] = doc.querySelector('div.barchart-content-block.symbol-price-performance > div.block-content > barchart-table-scroll > table > tbody > tr:nth-child(9) > td.cell-period-change > div > span:nth-child(2)')?.textContent.split('(')[1].split(')')[0];
+        elm['5y-return'] = doc.querySelector('div.barchart-content-block.symbol-price-performance > div.block-content > barchart-table-scroll > table > tbody > tr:nth-child(10) > td.cell-period-change > div > span:nth-child(2)')?.textContent.split('(')[1].split(')')[0];
+        elm['10y-return'] = doc.querySelector('div.barchart-content-block.symbol-price-performance > div.block-content > barchart-table-scroll > table > tbody > tr:nth-child(11) > td.cell-period-change > div > span:nth-child(2)')?.textContent.split('(')[1].split(')')[0];
 
         // replace elm
         //localArr[index] = elm;
         setData(localArr);
-        // setData(prevState => {
-        //   return {
-        //     ...localArr
-        //   };
-        // });
+
       })
       .catch(function (err) {
         console.log("Stocks Perf failed");
@@ -561,6 +559,7 @@ export default function App() {
     }
 
     setLoading(true);
+    wait(1000);
     fetch(url + ticker)
       .then(response => response.text())
       .then(html => {
@@ -586,12 +585,8 @@ export default function App() {
         // replace elm
         //localArr[index] = elm;
         setData(localArr);
-        // setData(prevState => {
-        //   return {
-        //     ...localArr
-        //   };
-        // });
 
+        // this gets some additional fields
         handlePerf(props);
       })
       .catch(function (err) {
@@ -665,7 +660,7 @@ export default function App() {
           columns={columns}
           getCellClassName={(params) => {
             if (params.field === 'Change' || params.field.includes("Upside") || params.field.includes("return")) {
-              if (Number(params.value?.split('%')[0]) > 2.5) {
+              if (Number(params.value?.replaceAll(',','').split('%')[0]) > 2.5) {
                 return 'hot';
               }
               else if (Number(params.value?.split('%')[0]) < -2.5) {
