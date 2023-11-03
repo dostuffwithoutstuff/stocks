@@ -155,68 +155,13 @@ const columns = [
     type: 'number',
   },
   {
-    field: 'AP - Mar',
-    headerName: 'Mar',
+    field: 'AP - Nov',
+    headerName: 'Nov',
     type: 'number',
   },
   {
-    field: 'AP - Mar Upside',
-    headerName: 'Mar Upside',
-    width: 150,
-    type: 'number',
-  },
-  {
-    field: 'AP - Apr',
-    headerName: 'Apr',
-    type: 'number',
-  },
-  {
-    field: 'AP - Apr Upside',
-    headerName: 'Apr Upside',
-    width: 150,
-    type: 'number',
-  },
-  {
-    field: 'AP - May',
-    headerName: 'May',
-    type: 'number',
-  },
-  {
-    field: 'AP - May Upside',
-    headerName: 'May Upside',
-    width: 150,
-    type: 'number',
-  },
-  {
-    field: 'AP - Jun',
-    headerName: 'Jun',
-    type: 'number',
-  },
-  {
-    field: 'AP - Jun Upside',
-    headerName: 'Jun Upside',
-    width: 150,
-    type: 'number',
-  },
-  {
-    field: 'AP - Aug',
-    headerName: 'Aug',
-    type: 'number',
-  },
-  {
-    field: 'AP - Aug Upside',
-    headerName: 'Aug Upside',
-    width: 150,
-    type: 'number',
-  },
-  {
-    field: 'AP - Sep',
-    headerName: 'Sep',
-    type: 'number',
-  },
-  {
-    field: 'AP - Sep Upside',
-    headerName: 'Sep Upside',
+    field: 'AP - Nov Upside',
+    headerName: 'Nov Upside',
     width: 150,
     type: 'number',
   },
@@ -232,24 +177,90 @@ const columns = [
     type: 'number',
   },
   {
-    field: 'AP - Nov',
-    headerName: 'Nov',
+    field: 'AP - Sep',
+    headerName: 'Sep',
     type: 'number',
   },
   {
-    field: 'AP - Nov Upside',
-    headerName: 'Nov Upside',
+    field: 'AP - Sep Upside',
+    headerName: 'Sep Upside',
     width: 150,
     type: 'number',
   },
   {
-    field: 'AP - Dec',
-    headerName: 'Dec',
+    field: 'AP - Aug',
+    headerName: 'Aug',
     type: 'number',
   },
   {
-    field: 'AP - Dec Upside',
-    headerName: 'Dec Upside',
+    field: 'AP - Aug Upside',
+    headerName: 'Aug Upside',
+    width: 150,
+    type: 'number',
+  },
+  {
+    field: 'AP - Jul',
+    headerName: 'Jul',
+    type: 'number',
+  },
+  {
+    field: 'AP - Jul Upside',
+    headerName: 'Jul Upside',
+    width: 150,
+    type: 'number',
+  },
+  {
+    field: 'AP - Jun',
+    headerName: 'Jun',
+    type: 'number',
+  },
+  {
+    field: 'AP - Jun Upside',
+    headerName: 'Jun Upside',
+    width: 150,
+    type: 'number',
+  },
+  {
+    field: 'AP - May',
+    headerName: 'May',
+    type: 'number',
+  },
+  {
+    field: 'AP - May Upside',
+    headerName: 'May Upside',
+    width: 150,
+    type: 'number',
+  },
+  {
+    field: 'AP - Apr',
+    headerName: 'Apr',
+    type: 'number',
+  },
+  {
+    field: 'AP - Apr Upside',
+    headerName: 'Apr Upside',
+    width: 150,
+    type: 'number',
+  },
+  {
+    field: 'AP - Mar',
+    headerName: 'Mar',
+    type: 'number',
+  },
+  {
+    field: 'AP - Mar Upside',
+    headerName: 'Mar Upside',
+    width: 150,
+    type: 'number',
+  },
+  {
+    field: 'AP - Feb',
+    headerName: 'Feb',
+    type: 'number',
+  },
+  {
+    field: 'AP - Feb Upside',
+    headerName: 'Feb Upside',
     width: 150,
     type: 'number',
   },
@@ -265,13 +276,13 @@ const columns = [
     type: 'number',
   },
   {
-    field: 'AP - Feb',
-    headerName: 'Feb',
+    field: 'AP - Dec',
+    headerName: 'Dec',
     type: 'number',
   },
   {
-    field: 'AP - Feb Upside',
-    headerName: 'Feb Upside',
+    field: 'AP - Dec Upside',
+    headerName: 'Dec Upside',
     width: 150,
     type: 'number',
   }
@@ -282,34 +293,33 @@ const sampleData = [
     "id": 100,
     "ticker": "TD",
     "type": "stock",
-    "rating": "3 stars",
+    "rating": "4 stars",
     "morningstar": "t=0P00006899",
-    "AP - Dec": "68.77",
-    "AP - Jan": "75",
-    "AP - Feb": "82.2",
-    "AP - Mar": "87.62",
-    "AP - Apr": "86.5",
-    "AP - May": "91.71",
-    "AP - Jun": "91",
-    "AP - Aug": "93",
+    "AP - Dec": "105",
+    "AP - Jan": "104",
+    "AP - Feb": "110",
+    "AP - May": "100",
+    "AP - Jul": "93",
+    "AP - Aug": "99",
+    "AP - Sep": "98",
+    "AP - Nov": "90.32"
   },
 
   {
     "id": 600,
     "ticker": "TSLA",
     "type": "stock",
-    "rating": "1.5 stars",
+    "rating": "3 stars",
     "morningstar": "t=0P0000OQN8",
     "country": "US",
-    "AP - Dec": "200",
-    "AP - Jan": "210",
-    "AP - Feb": "220",
-    "AP - Mar": "225",
-    "AP - Apr": "230",
-    "AP - May": "240",
-    "AP - Jun": "250",
-    "AP - Aug": "260",
-    "AP - Sep": "270",
+    "AP - Dec": "433",
+    "AP - Jan": "433",
+    "AP - Feb": "354",
+    "AP - Jun": "333",
+    "AP - Jul": "266",
+    "AP - Aug": "361",
+    "AP - Sep": "361",
+    "AP - Nov": "215.07"
   },
 
   {
@@ -321,12 +331,12 @@ const sampleData = [
   },
 
   {
-    "id": 1400,
+    "id": 1800,
     "ticker": "QQQ",
     "type": "etf",
     "country": "US",
     "morningstar": "t=0P00002D82"
-  },
+  }
 
 ]
 
@@ -497,7 +507,7 @@ export default function App() {
     }
 
     if (props['type'] === 'stock') {
-    url = proxy + 'https://www.barchart.com/stockss/quotes/' + ticker + '/performance';
+      url = proxy + 'https://www.barchart.com/stockss/quotes/' + ticker + '/performance';
     } else {
       url = proxy + 'https://www.barchart.com/etfs-funds/quotes/' + ticker + '/performance';
     }
@@ -660,7 +670,7 @@ export default function App() {
           columns={columns}
           getCellClassName={(params) => {
             if (params.field === 'Change' || params.field.includes("Upside") || params.field.includes("return")) {
-              if (Number(params.value?.replaceAll(',','').split('%')[0]) > 2.5) {
+              if (Number(params.value?.replaceAll(',', '').split('%')[0]) > 2.5) {
                 return 'hot';
               }
               else if (Number(params.value?.split('%')[0]) < -2.5) {
