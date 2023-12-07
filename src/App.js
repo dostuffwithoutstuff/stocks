@@ -155,6 +155,17 @@ const columns = [
     type: 'number',
   },
   {
+    field: 'AP - Dec',
+    headerName: 'Dec',
+    type: 'number',
+  },
+  {
+    field: 'AP - Dec Upside',
+    headerName: 'Dec Upside',
+    width: 150,
+    type: 'number',
+  },
+  {
     field: 'AP - Nov',
     headerName: 'Nov',
     type: 'number',
@@ -272,17 +283,6 @@ const columns = [
   {
     field: 'AP - Jan Upside',
     headerName: 'Jan Upside',
-    width: 150,
-    type: 'number',
-  },
-  {
-    field: 'AP - Dec',
-    headerName: 'Dec',
-    type: 'number',
-  },
-  {
-    field: 'AP - Dec Upside',
-    headerName: 'Dec Upside',
     width: 150,
     type: 'number',
   }
