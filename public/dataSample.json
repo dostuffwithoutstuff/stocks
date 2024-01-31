@@ -1,0 +1,48 @@
+[
+    {
+        "id": 100,
+        "ticker": "TD",
+        "type": "stock",
+        "rating": "4 stars",
+        "morningstar": "t=0P00006899",
+        "AP - Jan": "104",
+        "AP - Dec": "105",
+        "AP - Nov": "90.32",
+        "AP - Sep": "98",
+        "AP - Aug": "99",
+        "AP - Jul": "93",
+        "AP - May": "100",
+        "AP - Feb": "110"
+    },
+
+    {
+        "id": 600,
+        "ticker": "TSLA",
+        "type": "stock",
+        "rating": "3 stars",
+        "morningstar": "t=0P0000OQN8",
+        "country": "US",
+        "AP - Jan": "433",
+        "AP - Dec": "433",
+        "AP - Nov": "215.07",
+        "AP - Sep": "361",
+        "AP - Aug": "361",
+        "AP - Jul": "266",
+        "AP - Jun": "333",
+        "AP - Feb": "354"
+    },
+    {
+        "id": 700,
+        "ticker": "XIU",
+        "type": "etf",
+        "desc": "TSX",
+        "morningstar": "t=0P000080SM"
+    },
+    {
+        "id": 1800,
+        "ticker": "QQQ",
+        "type": "etf",
+        "country": "US",
+        "morningstar": "t=0P00002D82"
+    }
+]
