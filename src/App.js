@@ -56,17 +56,17 @@ export default function App() {
     console.log('newRow added: ', newRow);
   };
 
-  // Function to replace a row in the data array
-  const replaceRow = (id, newValues) => {
-    setData(prevData => (
-      prevData.map(item => {
-        if (item.id === id) {
-          return { ...item, ...newValues }; // Replace the row with new values
-        }
-        return item; // Return the original item if it's not the one to be replaced
-      })
-    ));
-  };
+  // // Function to replace a row in the data array
+  // const replaceRow = (id, newValues) => {
+  //   setData(prevData => (
+  //     prevData.map(item => {
+  //       if (item.id === id) {
+  //         return { ...item, ...newValues }; // Replace the row with new values
+  //       }
+  //       return item; // Return the original item if it's not the one to be replaced
+  //     })
+  //   ));
+  // };
 
   // handle stocks
   const handleStocks = async (props) => {
@@ -79,7 +79,7 @@ export default function App() {
     setLoading(true);
 
     try {
-      wait(2000);
+      wait(1000);
       const response = await fetch(url + ticker);
       const html = await response.text();
 
@@ -144,7 +144,7 @@ export default function App() {
     setLoading(true);
 
     try {
-      wait(2000);
+      wait(1000);
       const response = await fetch(url + ticker);
       const html = await response.text();
 
@@ -208,7 +208,7 @@ export default function App() {
     setLoading(true);
 
     try {
-      wait(3000);
+      wait(2000);
       const response = await fetch(url);
       const html = await response.text();
 
@@ -250,7 +250,7 @@ export default function App() {
     setLoading(true);
 
     try {
-      wait(2000);
+      wait(1000);
       const response = await fetch(url + ticker);
       const html = await response.text();
 

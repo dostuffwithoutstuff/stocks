@@ -97,6 +97,9 @@ const columns = [
       field: 'Inception',
       headerName: 'Inception',
       type: 'date',
+      valueGetter: (params) => {
+        return new Date(params.value);
+      },
       width: 150,
     },
     {
