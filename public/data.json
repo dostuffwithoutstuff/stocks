@@ -3,9 +3,7 @@
         "id": 100,
         "ticker": "TD",
         "type": "stock",
-        "rating": "3.5 stars",
         "morningstar": "t=0P00006899",
-        "AP - Feb": "110",
         "AP - May": "100",
         "AP - Jun": "94",
         "AP - Jul": "93",
@@ -13,552 +11,521 @@
         "AP - Sep": "98",
         "AP - Nov": "90.32",
         "AP - Dec": "91.89",
-        "AP - Jan": "87.27"
+        "AP - Jan": "87.27",
+        "AP - Feb": "90.72"
     },
     {
         "id": 101,
         "ticker": "CM",
         "type": "stock",
-        "rating": "3 stars",
         "morningstar": "t=0P000067ZZ",
-        "AP - Feb": "86.5",
         "AP - May": "80",
         "AP - Jun": "80",
         "AP - Aug": "78.5",
         "AP - Sep": "65",
         "AP - Nov": "59.71",
         "AP - Dec": "67.58",
-        "AP - Jan": "68.29"
+        "AP - Jan": "68.29",
+        "AP - Feb": "68.95"
     },
     {
         "id": 102,
         "ticker": "BMO",
         "type": "stock",
-        "rating": "3 stars",
         "morningstar": "t=0P000067YX",
-        "AP - Feb": "165",
         "AP - May": "156",
         "AP - Jun": "136",
         "AP - Aug": "146.25",
         "AP - Sep": "143",
         "AP - Nov": "127.05",
         "AP - Dec": "135.66",
-        "AP - Jan": "139.34"
+        "AP - Jan": "139.34",
+        "AP - Feb": "139.96"
     },
     {
         "id": 103,
         "ticker": "RY",
         "type": "stock",
-        "rating": "3 stars",
         "morningstar": "t=0P0000687Q",
-        "AP - Feb": "153",
         "AP - May": "130.77",
         "AP - Jun": "157",
         "AP - Aug": "139.87",
         "AP - Sep": "134.5",
         "AP - Nov": "132.85",
         "AP - Dec": "142.03",
-        "AP - Jan": "147.14"
+        "AP - Jan": "147.14",
+        "AP - Feb": "147.5"
     },
     {
         "id": 104,
         "ticker": "BNS",
         "type": "stock",
-        "rating": "3.5 stars",
         "morningstar": "t=0P000067YY",
-        "AP - Feb": "98",
         "AP - May": "90",
         "AP - Aug": "85.5",
         "AP - Sep": "82",
         "AP - Nov": "68.51",
         "AP - Dec": "71.03",
-        "AP - Jan": "69.92"
+        "AP - Jan": "69.92",
+        "AP - Feb": "71.32"
     },
     {
         "id": 201,
         "ticker": "T",
         "type": "stock",
-        "rating": "5 stars",
         "morningstar": "t=0P00006893",
-        "AP - Feb": "35",
         "AP - May": "33",
         "AP - Jul": "35",
         "AP - Aug": "35.5",
         "AP - Sep": "34.5",
         "AP - Nov": "30.51",
         "AP - Dec": "31.46",
-        "AP - Jan": "30.25"
+        "AP - Jan": "30.25",
+        "AP - Feb": "29.63"
     },
     {
         "id": 202,
         "ticker": "BCE",
         "type": "stock",
-        "rating": "4.5 stars",
         "morningstar": "t=0P000067XW",
-        "AP - Feb": "68",
         "AP - Jun": "68",
         "AP - Aug": "67.5",
         "AP - Sep": "69",
         "AP - Nov": "65.48",
         "AP - Dec": "54.51",
-        "AP - Jan": "63.57"
+        "AP - Jan": "63.57",
+        "AP - Feb": "62.75"
     },
     {
         "id": 203,
         "ticker": "RCI.B",
         "type": "stock",
-        "rating": "5 stars",
         "morningstar": "t=0P0000687M",
         "AP - Jun": "73",
         "AP - Jul": "74",
         "AP - Sep": "76",
         "AP - Nov": "68.9",
         "AP - Dec": "75.05",
-        "AP - Jan": "75.25"
+        "AP - Jan": "75.25",
+        "AP - Feb": "74.32"
     },
     {
         "id": 302,
         "ticker": "TRP",
         "type": "stock",
-        "rating": "4 stars",
         "morningstar": "t=0P0000689D",
-        "AP - Feb": "70",
         "AP - Jun": "78",
         "AP - Jul": "73",
         "AP - Aug": "72.8",
         "AP - Sep": "70",
         "AP - Nov": "59.65",
         "AP - Dec": "60.03",
-        "AP - Jan": "60.42"
+        "AP - Jan": "60.42",
+        "AP - Feb": "60.85"
     },
     {
         "id": 303,
         "ticker": "SU",
         "type": "stock",
-        "rating": "3 stars",
         "morningstar": "t=0P0000688T",
-        "AP - Feb": "45",
         "AP - Jun": "60",
         "AP - Jul": "50",
         "AP - Aug": "60",
         "AP - Sep": "51",
         "AP - Nov": "53.48",
         "AP - Dec": "50.01",
-        "AP - Jan": "46.67"
+        "AP - Jan": "46.67",
+        "AP - Feb": "48.49"
     },
     {
         "id": 304,
         "ticker": "ENB",
         "type": "stock",
-        "rating": "3.5 stars",
         "morningstar": "t=0P0000681O",
-        "AP - Feb": "58",
         "AP - May": "62",
         "AP - Jul": "65",
         "AP - Aug": "59.5",
         "AP - Sep": "64.5",
         "AP - Nov": "51.8",
         "AP - Dec": "51.4",
-        "AP - Jan": "52.31"
+        "AP - Jan": "52.31",
+        "AP - Feb": "51.51"
     },
     {
         "id": 400,
         "ticker": "CHP.UN",
         "type": "stock",
-        "rating": "4 stars",
         "morningstar": "t=0P0000Z316",
-        "AP - Feb": "17",
         "AP - May": "15.5",
         "AP - Jul": "14.5",
         "AP - Aug": "15",
         "AP - Nov": "16.24",
         "AP - Dec": "16.13",
-        "AP - Jan": "16.54"
+        "AP - Jan": "16.54",
+        "AP - Feb": "16.53"
     },
     {
         "id": 401,
         "ticker": "REI.UN",
         "type": "stock",
-        "rating": "4 stars",
         "morningstar": "t=0P000080IA",
-        "AP - Feb": "26.5",
         "AP - Jun": "25.5",
         "AP - Jul": "24.75",
         "AP - Aug": "24.5",
         "AP - Nov": "25.03",
-        "AP - Jan": "25.16"
+        "AP - Jan": "25.16",
+        "AP - Feb": "25.38"
     },
     {
         "id": 500,
         "ticker": "CP",
         "type": "stock",
-        "rating": "3 stars",
         "morningstar": "t=0P00006802",
         "AP - Jun": "100",
         "AP - Jul": "103",
         "AP - Sep": "111.5",
         "AP - Nov": "102.19",
         "AP - Dec": "102.19",
-        "AP - Jan": "102.19"
+        "AP - Jan": "102.19",
+        "AP - Feb": "102.19"
     },
     {
         "id": 501,
         "ticker": "CNR",
         "type": "stock",
-        "rating": "3 stars",
         "morningstar": "t=0P00006800",
-        "AP - Feb": "184",
         "AP - Jun": "160",
         "AP - Jul": "160",
         "AP - Aug": "111",
         "AP - Sep": "172",
         "AP - Nov": "155.56",
         "AP - Dec": "160.29",
-        "AP - Jan": "161.45"
+        "AP - Jan": "161.45",
+        "AP - Feb": "161.30"
     },
     {
         "id": 502,
         "ticker": "DOL",
         "type": "stock",
-        "rating": "2 star",
         "morningstar": "t=0P0000M3XI",
         "AP - Jun": "80",
         "AP - Jul": "82",
         "AP - Sep": "89",
         "AP - Nov": "85.98",
         "AP - Dec": "86.97",
-        "AP - Jan": "86.36"
+        "AP - Jan": "86.36",
+        "AP - Feb": "84.91"
     },
     {
         "id": 503,
         "ticker": "ATD",
         "type": "stock",
-        "rating": "3 stars",
         "morningstar": "t=0P00005RPW",
         "AP - Jun": "77",
         "AP - Aug": "79",
         "AP - Nov": "78.66",
         "AP - Dec": "75.25",
-        "AP - Jan": "72.54"
+        "AP - Jan": "72.54",
+        "AP - Feb": "73.11"
     },
     {
         "id": 504,
         "ticker": "SHOP",
         "type": "stock",
-        "rating": "1.5 star",
         "morningstar": "t=0P000162RX",
-        "AP - Feb": "135.0",
         "AP - Jun": "70",
         "AP - Jul": "59",
         "AP - Aug": "61",
         "AP - Sep": "65",
         "AP - Nov": "80.40",
         "AP - Dec": "85.39",
-        "AP - Jan": "90.42"
+        "AP - Jan": "90.42",
+        "AP - Feb": "89.40"
     },
     {
         "id": 505,
         "ticker": "QSR",
         "type": "stock",
-        "rating": "2.5 stars",
         "morningstar": "t=0P000151U5",
-        "AP - Feb": "80",
         "AP - Jun": "79",
         "AP - Jul": "70",
         "AP - Aug": "86",
         "AP - Sep": "67",
         "AP - Nov": "103.84",
         "AP - Dec": "103.24",
-        "AP - Jan": "103.26"
+        "AP - Jan": "103.26",
+        "AP - Feb": "104.83"
     },
     {
         "id": 507,
         "ticker": "CTC.A",
         "type": "stock",
-        "rating": "4.5 stars",
         "morningstar": "t=0P00005RO3",
-        "AP - Feb": "240",
         "AP - Jun": "210",
         "AP - Jul": "250",
         "AP - Aug": "208",
         "AP - Nov": "185.53",
         "AP - Dec": "179.3",
-        "AP - Jan": "176.66"
+        "AP - Jan": "176.66",
+        "AP - Feb": "172.72"
     },
     {
         "id": 508,
         "ticker": "L",
         "type": "stock",
-        "rating": "2.5 stars",
         "morningstar": "t=0P00005RPE",
-        "AP - Feb": "118",
         "AP - Jun": "133",
         "AP - Jul": "127",
         "AP - Nov": "121.21",
         "AP - Dec": "123.22",
-        "AP - Jan": "126.56"
+        "AP - Jan": "126.56",
+        "AP - Feb": "126.99"
     },
     {
         "id": 600,
         "ticker": "TSLA",
         "type": "stock",
-        "rating": "3 stars",
         "morningstar": "t=0P0000OQN8",
         "country": "US",
-        "AP - Feb": "354",
         "AP - Jun": "333",
         "AP - Jul": "266",
         "AP - Aug": "361",
         "AP - Sep": "361",
         "AP - Nov": "215.07",
         "AP - Dec": "227.9",
-        "AP - Jan": "219.23"
+        "AP - Jan": "219.23",
+        "AP - Feb": "218.23"
     },
     {
         "id": 601,
         "ticker": "DIS",
         "type": "stock",
-        "rating": "4.5 stars",
         "morningstar": "t=0P000005UJ",
         "country": "US",
-        "AP - Feb": "195",
         "AP - Jun": "130",
         "AP - Jul": "125",
         "AP - Aug": "160",
         "AP - Sep": "125",
         "AP - Nov": "120.87",
         "AP - Dec": "114.7",
-        "AP - Jan": "111.07"
+        "AP - Jan": "111.07",
+        "AP - Feb": "115.67"
     },
     {
         "id": 602,
         "ticker": "AAPL",
         "type": "stock",
-        "rating": "2 stars",
         "morningstar": "t=0P000000GY",
         "country": "US",
-        "AP - Feb": "200",
         "AP - Jun": "188",
         "AP - Jul": "185",
         "AP - Sep": "175",
         "AP - Nov": "166.61",
         "AP - Dec": "176.22",
-        "AP - Jan": "167.48"
+        "AP - Jan": "167.48",
+        "AP - Feb": "166.36"
     },
     {
         "id": 603,
         "ticker": "NFLX",
         "type": "stock",
-        "rating": "2.5 star",
         "morningstar": "t=0P000003UP",
         "country": "US",
-        "AP - Feb": "605",
         "AP - Jun": "240",
         "AP - Jul": "220",
         "AP - Aug": "238",
         "AP - Sep": "260",
         "AP - Nov": "415.25",
         "AP - Dec": "446.7",
-        "AP - Jan": "468.36"
+        "AP - Jan": "468.36",
+        "AP - Feb": "480.63"
     },
     {
         "id": 604,
         "ticker": "V",
         "type": "stock",
-        "rating": "2.5 stars",
         "morningstar": "t=0P0000CPCP",
         "country": "US",
-        "AP - Feb": "285",
         "AP - Jun": "275",
         "AP - Jul": "255",
         "AP - Aug": "273",
         "AP - Nov": "227.79",
         "AP - Dec": "239.2",
-        "AP - Jan": "245.39"
+        "AP - Jan": "245.39",
+        "AP - Feb": "247.30"
     },
     {
         "id": 605,
         "ticker": "MA",
         "type": "stock",
-        "rating": "2.5 stars",
         "morningstar": "t=0P00005U6B",
         "country": "US",
-        "AP - Feb": "430",
         "AP - Jun": "420",
         "AP - Jul": "410",
         "AP - Aug": "440",
         "AP - Nov": "366.65",
         "AP - Dec": "392.07",
-        "AP - Jan": "391.01"
+        "AP - Jan": "391.01",
+        "AP - Feb": "394.74"
     },
     {
         "id": 606,
         "ticker": "MSFT",
         "type": "stock",
-        "rating": "2.5 stars",
         "morningstar": "t=0P000003MH",
         "country": "US",
-        "AP - Feb": "383",
         "AP - Jun": "350",
         "AP - Jul": "320",
         "AP - Aug": "307",
         "AP - Sep": "349",
         "AP - Nov": "341.19",
         "AP - Dec": "350.7",
-        "AP - Jan": "360.53"
+        "AP - Jan": "360.53",
+        "AP - Feb": "359.53"
     },
     {
         "id": 607,
         "ticker": "WMT",
         "type": "stock",
-        "rating": "3 stars",
         "morningstar": "t=0P000005UH",
         "country": "US",
-        "AP - Feb": "160",
         "AP - Jun": "155",
         "AP - Jul": "145",
         "AP - Aug": "155",
         "AP - Sep": "155",
         "AP - Nov": "162",
         "AP - Dec": "151.33",
-        "AP - Jan": "146.09"
+        "AP - Jan": "146.09",
+        "AP - Feb": "149.29"
     },
     {
         "id": 608,
         "ticker": "COST",
         "type": "stock",
-        "rating": "1 star",
         "morningstar": "t=0P000001IK",
         "country": "US",
-        "AP - Feb": "625",
         "AP - Jun": "550",
         "AP - Jul": "550",
         "AP - Aug": "563",
         "AP - Sep": "564",
         "AP - Nov": "487.89",
         "AP - Dec": "501.48",
-        "AP - Jan": "545.66"
+        "AP - Jan": "545.66",
+        "AP - Feb": "545.25"
     },
     {
         "id": 609,
         "ticker": "DEO",
         "type": "stock",
-        "rating": "3 stars",
         "morningstar": "t=0P000001P8",
         "country": "US",
         "AP - Jul": "220",
         "AP - Nov": "168.82",
         "AP - Dec": "155.86",
-        "AP - Jan": "152.89"
+        "AP - Jan": "152.89",
+        "AP - Feb": "159.9"
     },
     {
         "id": 610,
         "ticker": "AMZN",
         "type": "stock",
-        "rating": "3 stars",
         "morningstar": "t=0P000000B7",
         "country": "US",
-        "AP - Feb": "212",
         "AP - Jun": "165",
         "AP - Jul": "175",
         "AP - Aug": "170",
         "AP - Sep": "170",
         "AP - Nov": "149.50",
         "AP - Dec": "146.87",
-        "AP - Jan": "147.05"
+        "AP - Jan": "147.05",
+        "AP - Feb": "149.48"
     },
     {
         "id": 611,
         "ticker": "HD",
         "type": "stock",
-        "rating": "2 star",
         "morningstar": "t=0P000002OY",
         "country": "US",
-        "AP - Feb": "400",
         "AP - Jun": "320",
         "AP - Jul": "325",
         "AP - Aug": "340",
         "AP - Sep": "355",
         "AP - Nov": "301.26",
-        "AP - Jan": "316.98"
+        "AP - Jan": "316.98",
+        "AP - Feb": "320.13"
     },
     {
         "id": 614,
         "ticker": "MCD",
         "type": "stock",
-        "rating": "3.5 stars",
         "morningstar": "t=0P000003IJ",
         "country": "US",
-        "AP - Feb": "282",
         "AP - Jun": "280",
         "AP - Jul": "285",
         "AP - Aug": "310",
         "AP - Sep": "276",
         "AP - Nov": "289.01",
         "AP - Dec": "296.87",
-        "AP - Jan": "302.91"
+        "AP - Jan": "302.91",
+        "AP - Feb": "300.97"
     },
     {
         "id": 615,
         "ticker": "KO",
         "type": "stock",
-        "rating": "3.5 stars",
         "morningstar": "t=0P000001BW",
         "country": "US",
-        "AP - Feb": "69",
         "AP - Jun": "76",
         "AP - Jul": "68",
         "AP - Nov": "61.14",
         "AP - Dec": "62.29",
-        "AP - Jan": "63.02"
+        "AP - Jan": "63.02",
+        "AP - Feb": "61.67"
     },
     {
         "id": 616,
         "ticker": "AMD",
         "type": "stock",
-        "rating": "2.5 stars",
         "morningstar": "t=0P0000006A",
         "country": "US",
-        "AP - Feb": "155",
         "AP - Jun": "120",
         "AP - Jul": "120",
         "AP - Aug": "115",
         "AP - Sep": "116.75",
         "AP - Nov": "121.73",
         "AP - Dec": "130.27",
-        "AP - Jan": "145.9"
+        "AP - Jan": "145.9",
+        "AP - Feb": "149.72"
     },
     {
         "id": 617,
         "ticker": "NVDA",
         "type": "stock",
-        "rating": "2 stars",
         "morningstar": "t=0P000003RE",
         "country": "US",
-        "AP - Feb": "370",
         "AP - Jun": "250",
         "AP - Jul": "230",
         "AP - Aug": "210",
         "AP - Sep": "220",
         "AP - Nov": "419.59",
         "AP - Dec": "424.67",
-        "AP - Jan": "467.23"
+        "AP - Jan": "467.23",
+        "AP - Feb": "481.92"
     },
     {
         "id": 620,
         "ticker": "GOOG",
         "type": "stock",
-        "rating": "3 stars",
         "morningstar": "t=0P00012BBI",
         "country": "US",
-        "AP - Feb": "180",
         "AP - Jun": "140",
         "AP - Jul": "140",
         "AP - Aug": "165",
         "AP - Sep": "152",
         "AP - Nov": "151.55",
         "AP - Dec": "150.35",
-        "AP - Jan": "145.9"
+        "AP - Jan": "145.9",
+        "AP - Feb": "148.05"
     },
 
     {
@@ -569,92 +536,96 @@
         "morningstar": "t=0P000080SM"
     },
     {
-        "id": 702,
-        "ticker": "VCN",
-        "type": "etf",
-        "morningstar": "t=0P0000ZAH3"
-    },
-    {
-        "id": 703,
+        "id": 701,
         "ticker": "XIC",
         "type": "etf",
         "morningstar": "t=0P000080SN"
     },
     {
-        "id": 704,
+        "id": 702,
         "ticker": "ZCN",
         "type": "etf",
         "morningstar": "t=0P0000K8UH"
     },  
     {
+        "id": 703,
+        "ticker": "VCN",
+        "type": "etf",
+        "morningstar": "t=0P0000ZAH3"
+    },
+
+    {
         "id": 800,
-        "ticker": "ZAG",
+        "ticker": "CSAV",
         "type": "etf",
         "desc": "Bonds",
-        "morningstar": "t=0P0000N5JL"
+        "morningstar": "t=0P0001HS3G"
     },
     {
         "id": 801,
-        "ticker": "VAB",
+        "ticker": "ZAG",
         "type": "etf",
-        "morningstar": "t=0P0000UT1B"
+        "morningstar": "t=0P0000N5JL"
     },
     {
-        "id": 804,
+        "id": 802,
         "ticker": "XBB",
         "type": "etf",
         "morningstar": "t=0P000080T1"
     },
-
     {
-        "id": 900,
-        "ticker": "VFV",
+        "id": 803,
+        "ticker": "VAB",
         "type": "etf",
-        "desc": "S+P",
-        "morningstar": "t=0P0000XD8M"
+        "morningstar": "t=0P0000UT1B"
     },
 
     {
-        "id": 903,
+        "id": 900,
         "ticker": "ZSP",
         "type": "etf",
         "morningstar": "t=0P0000XMSP"
     },
     {
-        "id": 904,
+        "id": 901,
+        "ticker": "VFV",
+        "type": "etf",
+        "desc": "S+P",
+        "morningstar": "t=0P0000XD8M"
+    },
+    {
+        "id": 902,
+        "ticker": "VUN",
+        "type": "etf",
+        "morningstar": "t=0P0000ZAH7"
+    },
+    {
+        "id": 903,
         "ticker": "XSP",
         "type": "etf",
         "morningstar": "t=0P000080SL"
     },
     {
-        "id": 905,
+        "id": 904,
         "ticker": "XUS",
         "type": "etf",
         "morningstar": "t=0P0000YUAU"
     },
-    {
-        "id": 906,
-        "ticker": "VUN",
-        "type": "etf",
-        "morningstar": "t=0P0000ZAH7"
-    },
 
     {
-        "id": 1004,
+        "id": 1000,
         "ticker": "XEF",
         "type": "etf",
         "morningstar": "t=0P0000YUAV"
     },
-
     {
-        "id": 1006,
+        "id": 1001,
         "ticker": "ZEA",
         "type": "etf",
         "morningstar": "t=0P00011VT9"
     },
-
     {
-        "id": 1105,
+        "id": 1002,
         "ticker": "VGRO",
         "type": "etf",
         "morningstar": "t=0P0001CLVS"

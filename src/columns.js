@@ -89,10 +89,10 @@ const columns = [
       headerName: 'Return',
       width: 125
     },
-    {
-      field: 'Rating',
-      headerName: 'Rating'
-    },
+    // {
+    //   field: 'Rating',
+    //   headerName: 'Rating'
+    // },
     {
       field: 'Inception',
       headerName: 'Inception',
@@ -146,6 +146,17 @@ const columns = [
       field: '10y-return',
       headerName: '10y-return',
       // type: 'number',
+    },
+    {
+      field: 'AP - Feb',
+      headerName: 'Feb',
+      type: 'number',
+    },
+    {
+      field: 'AP - Feb Upside',
+      headerName: 'Feb Upside',
+      width: 150,
+      type: 'number',
     },
     {
       field: 'AP - Jan',
@@ -265,17 +276,6 @@ const columns = [
     {
       field: 'AP - Mar Upside',
       headerName: 'Mar Upside',
-      width: 150,
-      type: 'number',
-    },
-    {
-      field: 'AP - Feb',
-      headerName: 'Feb',
-      type: 'number',
-    },
-    {
-      field: 'AP - Feb Upside',
-      headerName: 'Feb Upside',
       width: 150,
       type: 'number',
     }
