@@ -148,6 +148,17 @@ const columns = [
       // type: 'number',
     },
     {
+      field: 'AP - Mar',
+      headerName: 'Mar',
+      type: 'number',
+    },
+    {
+      field: 'AP - Mar Upside',
+      headerName: 'Mar Upside',
+      width: 150,
+      type: 'number',
+    },
+    {
       field: 'AP - Feb',
       headerName: 'Feb',
       type: 'number',
@@ -267,18 +278,8 @@ const columns = [
       headerName: 'Apr Upside',
       width: 150,
       type: 'number',
-    },
-    {
-      field: 'AP - Mar',
-      headerName: 'Mar',
-      type: 'number',
-    },
-    {
-      field: 'AP - Mar Upside',
-      headerName: 'Mar Upside',
-      width: 150,
-      type: 'number',
     }
+
   ];
   
   export default columns;
