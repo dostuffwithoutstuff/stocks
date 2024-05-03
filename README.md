@@ -25,7 +25,7 @@ This sample gets stock info (dynamically) and analyst predictions (manually).
   cmd: npm start 
 
 
-### Run time sample (note, it takes a few mins to fully load)
+### Run time sample (note, it takes a few mins to fully load - throttled)
 https://thingsthatdothings.github.io/stocks/
 
 
@@ -405,7 +405,12 @@ notes: less than a few billion and no dividends removed from list
         "type": "etf",
         "morningstar": "t=0P0001IVXC"
     },
-
+    {
+        "id": 1002,
+        "ticker": "VGRO",
+        "type": "etf",
+        "morningstar": "t=0P0001CLVS"
+    },
 
 
 
