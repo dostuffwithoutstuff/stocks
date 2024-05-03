@@ -148,6 +148,28 @@ const columns = [
       // type: 'number',
     },
     {
+      field: 'AP - Apr',
+      headerName: 'Apr',
+      type: 'number',
+    },
+    {
+      field: 'AP - Apr Upside',
+      headerName: 'Apr Upside',
+      width: 150,
+      type: 'number',
+    },
+    {
+      field: 'AP - Mar',
+      headerName: 'Mar',
+      type: 'number',
+    },
+    {
+      field: 'AP - Mar Upside',
+      headerName: 'Mar Upside',
+      width: 150,
+      type: 'number',
+    },
+    {
       field: 'AP - Feb',
       headerName: 'Feb',
       type: 'number',
@@ -254,28 +276,6 @@ const columns = [
     {
       field: 'AP - May Upside',
       headerName: 'May Upside',
-      width: 150,
-      type: 'number',
-    },
-    {
-      field: 'AP - Apr',
-      headerName: 'Apr',
-      type: 'number',
-    },
-    {
-      field: 'AP - Apr Upside',
-      headerName: 'Apr Upside',
-      width: 150,
-      type: 'number',
-    },
-    {
-      field: 'AP - Mar',
-      headerName: 'Mar',
-      type: 'number',
-    },
-    {
-      field: 'AP - Mar Upside',
-      headerName: 'Mar Upside',
       width: 150,
       type: 'number',
     }

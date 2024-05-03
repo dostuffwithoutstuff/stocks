@@ -25,7 +25,7 @@ This sample gets stock info (dynamically) and analyst predictions (manually).
   cmd: npm start 
 
 
-### Run time sample (note, it takes a few mins to load - click wait a few times)
+### Run time sample (note, it takes a few mins to fully load)
 https://thingsthatdothings.github.io/stocks/
 
 
